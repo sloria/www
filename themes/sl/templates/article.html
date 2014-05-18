@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} {{ article.title }} | {{ SITENAME }} {% endblock %}
+
+{% block content %}
+    <h1 class="title"> {{ article.title }}</h1>
+    <p class=date> {{ article.locale_date }} </p>
+
+    <article>
+      <div class="content article-content">
+        {{ article.content }}
+      </div>
+    </article>
+
+
+    {% if article.tags %}
+    <p class=tags>tagged in
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    <section class="meta">
+      <p>Please send comments by
+      <a href="mailto:{{ MAIL_USERNAME }}@{{MAIL_HOST}}">email</a>. I welcome your feedback, advice, and criticism.</p>
+    </section>
+{% endblock %}

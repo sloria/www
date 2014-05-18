@@ -1,0 +1,9 @@
+
+### Python ###
+__pycache__/
+*.pyc
+
+#### Pelican ###
+output
+_build
+_nb_header.html

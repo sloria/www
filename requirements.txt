@@ -1,0 +1,4 @@
+markdown==2.4
+pelican==3.3
+ghp-import==0.4.1
+fabric==1.8.3
