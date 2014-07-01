@@ -13,6 +13,8 @@ slug: projects
 
 ## Tiny Utilities
 
+**[doitlive](https://github.com/sloria/konch)**: A tool for "live" presentations in the terminal.
+
 **[konch](https://github.com/sloria/konch)**: Allows you to customize your Python shell.
 
 **[webargs](https://github.com/sloria/webargs)**: Request argument parser compatible with Flask, Django, and Bottle.
