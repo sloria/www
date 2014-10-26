@@ -22,8 +22,7 @@ As you know, synonyms are words that have similar meanings. A synonym set, or **
 
 In TextBlob, you can access the synsets that a word belongs to by accessing the `synsets` property of a `Word` object.
 
-```
-#!python
+```python
 from textblob import Word
 word = Word("plant")
 word.synsets[:5]
@@ -36,8 +35,7 @@ word.synsets[:5]
 
 It would be helpful to know the definitions of these synsets. You can access these via the `definitions` property.
 
-```
-#!python
+```python
 word.definitions[:5]
 # ['buildings for carrying on industrial labor',
 #  '(botany) a living organism lacking the power of locomotion',
@@ -76,8 +74,7 @@ Hyponyms have an **"is-a"** relationship to their hypernyms.
 
 Let's use our plant synset as an example.
 
-```
-#!python
+```python
 plant.hypernyms()
 # [Synset('organism.n.01')]
 plant.hyponyms()[:3]
@@ -98,8 +95,7 @@ For a given synset, its. . .
 
 Let's look at our plant example again.
 
-```
-#!python
+```python
 plant.member_holonyms()
 # [Synset('plantae.n.01')]
 plant.part_meronyms()
@@ -121,8 +117,7 @@ similar) to 1.0 (identical).
 Let's compare the path similarities between "octopus" and "nautilus" (another
 cephalapod), "shrimp" (a non-cephalopod), and "pearl" (a mineral). We'll create the synsets directly.
 
-```
-#!python
+```python
 from textblob.wordnet import Synset
 octopus = Synset("octopus.n.02")
 nautilus = Synset('paper_nautilus.n.01')
@@ -133,8 +128,7 @@ pearl = Synset('pearl.n.01')
 The results are as expected, with octopus more similar to another cephalopod
 than a non-cephalapod and most dissimilar to a non-living thing.
 
-```
-#!python
+```python
 octopus.path_similarity(octopus)  # 1.0
 octopus.path_similarity(nautilus)  # 0.33
 octopus.path_similarity(shrimp)  # 0.11
