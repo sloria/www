@@ -3,6 +3,8 @@ category: programming
 tags: python, textblob, nlp
 slug: tutorial-wordnet-textblob
 
+*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
+
 In short, WordNet is a database of English words that are linked together by their semantic relationships. It is like a supercharged dictionary/thesaurus with a graph structure.
 
 [TextBlob](http://textblob.readthedocs.org/) 0.7
@@ -22,7 +24,7 @@ In TextBlob, you can access the synsets that a word belongs to by accessing the 
 
 ```
 #!python
-from text.blob import Word
+from textblob import Word
 word = Word("plant")
 word.synsets[:5]
 # [Synset('plant.n.01'),
@@ -121,7 +123,7 @@ cephalapod), "shrimp" (a non-cephalopod), and "pearl" (a mineral). We'll create 
 
 ```
 #!python
-from text.wordnet import Synset
+from textblob.wordnet import Synset
 octopus = Synset("octopus.n.02")
 nautilus = Synset('paper_nautilus.n.01')
 shrimp = Synset('shrimp.n.03')

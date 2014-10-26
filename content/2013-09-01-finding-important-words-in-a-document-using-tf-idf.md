@@ -3,8 +3,9 @@ category: programming
 tags: python, textblob
 slug: finding-important-words-in-a-document-using-tf-idf
 
+*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
-Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
+ Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
 
 ## What is TF-IDF?
 
@@ -21,8 +22,9 @@ Therefore, common words like "the" and "for", which appear in many documents, wi
 
 The code here is tested on Python 3 with [TextBlob 0.6.1][TextBlob]. If you're using Python 2, you'll probably need to add `from __future__ import division, unicode_literals` at the top.
 
-<pre><code class="python">import math
-from text.blob import TextBlob as tb
+```python
+import math
+from textblob import TextBlob as tb
 
 def tf(word, blob):
     return blob.words.count(word) / len(blob.words)
@@ -35,7 +37,7 @@ def idf(word, bloblist):
 
 def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
-</code></pre>
+```
 
 14 lines and we're already [flying](http://xkcd.com/353/).
 
@@ -46,7 +48,8 @@ def tfidf(word, blob, bloblist):
 
 Now to test it out on some real documents taken from Wikipedia.
 
-<pre><code class="python">document1 = tb("""Python is a 2000 made-for-TV horror movie directed by Richard
+```python
+document1 = tb("""Python is a 2000 made-for-TV horror movie directed by Richard
 Clabaugh. The film features several cult favorite actors, including William
 Zabka of The Karate Kid fame, Wil Wheaton, Casper Van Dien, Jenny McCarthy,
 Keith Coogan, Robert Englund (best known for his role as Freddy Krueger in the
@@ -78,13 +81,14 @@ for i, blob in enumerate(bloblist):
     sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     for word, score in sorted_words[:3]:
         print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
-</code></pre>
+```
 
 For each document, we store the TF-IDF scores in a dictionary `scores` mapping `word => score` using a [dict comprehension](http://www.python.org/dev/peps/pep-0274/). We then sort the words by their scores and output the top 3 words.
 
 The full script is [here](https://gist.github.com/6407257). The output of the program is:
 
-<pre><code>Top words in document 1
+```
+Top words in document 1
     Word: films, TF-IDF: 0.00997
     Word: film, TF-IDF: 0.00665
     Word: California, TF-IDF: 0.00665
@@ -96,7 +100,7 @@ Top words in document 3
     Word: Magnum, TF-IDF: 0.01382
     Word: revolver, TF-IDF: 0.01382
     Word: Colt, TF-IDF: 0.01382
-</code></pre>
+```
 
 There may be ways to improve the our TF-IDF algorithm, such as by ignoring stopwords or using a different `tf` scheme. I'll leave it up to the reader to experiment.
 

@@ -3,6 +3,7 @@ category: programming
 tags: programming, python, textblob, nlp
 ---
 
+*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
 Following the tradition of writing a short tutorial with each new [TextBlob][] release (0.6.3, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), here's an introduction to TextBlob's first outside code contribution from Matthew Honnibal, a.k.a. [syllog1sm](https://github.com/syllog1sm): a part-of-speech tagger based on the [Averaged Perceptron][Perceptron] algorithm which is **faster and more accurate than [NLTK](http://nltk.org/)'s and [pattern](http://www.clips.ua.ac.be/pages/pattern-en)'s default implementations**.
 
@@ -23,7 +24,7 @@ $ pip install -U textblob textblob-aptagger
 
 -----
 <s>
-    
+
 First, upgrade to the latest version of `TextBlob`.
 
 ```bash
@@ -53,9 +54,8 @@ You're all set to use the tagger!
 
 Let's start tagging some text. To do this, you pass an instance of the tagger into the `TextBlob` constructor.
 
-```
-#!python
-from text.blob import TextBlob as tb
+```python
+from textblob import TextBlob as tb
 from textblob_aptagger import PerceptronTagger
 
 ap_tagger = PerceptronTagger()
@@ -70,9 +70,8 @@ print(b2.tags)
 
 However, passing the tagger can get repetitive when making many `TextBlobs`. To avoid this, we can use the ``Blobber`` class, which is a "factory" that creates `TextBlobs` that share the same models. Let's rewrite the above code using a `Blobber`.
 
-```
-#!python
-from text.blob import Blobber
+```python
+from textblob import Blobber
 from textblob_aptagger import PerceptronTagger
 
 tb = Blobber(pos_tagger=PerceptronTagger())
@@ -89,43 +88,41 @@ Now let's do a quick-and-dirty accuracy comparison of the Perceptron tagger with
 
 The test data will be three tagged sentences (81 total words), stored as a list of lists.
 
-```
-#!python
-test = [[(u'Pierre', u'NNP'), (u'Vinken', u'NNP'), (u',', u','), (u'61', u'CD'), 
-            (u'years', u'NNS'), (u'old', u'JJ'), (u',', u','), (u'will', u'MD'), 
-            (u'join', u'VB'), (u'the', u'DT'), (u'board', u'NN'), (u'as', u'IN'), 
-            (u'a', u'DT'), (u'nonexecutive', u'JJ'), (u'director', u'NN'), 
-            (u'Nov.', u'NNP'), (u'29', u'CD'), (u'.', u'.')], 
-        [(u'Mr.', u'NNP'), (u'Vinken', u'NNP'), (u'is', u'VBZ'), (u'chairman', u'NN'), 
-            (u'of', u'IN'), (u'Elsevier', u'NNP'), (u'N.V.', u'NNP'), (u',', u','), 
-            (u'the', u'DT'), (u'Dutch', u'NNP'), (u'publishing', u'VBG'), 
-            (u'group', u'NN'), (u'.', u'.'), (u'Rudolph', u'NNP'), (u'Agnew', u'NNP'), 
-            (u',', u','), (u'55', u'CD'), (u'years', u'NNS'), (u'old', u'JJ'), 
-            (u'and', u'CC'), (u'former', u'JJ'), (u'chairman', u'NN'), (u'of', u'IN'), 
-            (u'Consolidated', u'NNP'), (u'Gold', u'NNP'), (u'Fields', u'NNP'), 
-            (u'PLC', u'NNP'), (u',', u','), (u'was', u'VBD'), (u'named', u'VBN'), 
-            (u'a', u'DT'), (u'nonexecutive', u'JJ'), (u'director', u'NN'), (u'of', u'IN'), 
-            (u'this', u'DT'), (u'British', u'JJ'), (u'industrial', u'JJ'), 
-            (u'conglomerate', u'NN'), (u'.', u'.')], 
-        [(u'A', u'DT'), (u'form', u'NN'), 
-            (u'of', u'IN'), (u'asbestos', u'NN'), (u'once', u'RB'), (u'used', u'VBN'), 
-            (u'to', u'TO'), (u'make', u'VB'), (u'Kent', u'NNP'), (u'cigarette', u'NN'), 
-            (u'filters', u'NNS'), (u'has', u'VBZ'), (u'caused', u'VBN'), (u'a', u'DT'), 
-            (u'high', u'JJ'), (u'percentage', u'NN'), (u'of', u'IN'), 
+```python
+test = [[(u'Pierre', u'NNP'), (u'Vinken', u'NNP'), (u',', u','), (u'61', u'CD'),
+            (u'years', u'NNS'), (u'old', u'JJ'), (u',', u','), (u'will', u'MD'),
+            (u'join', u'VB'), (u'the', u'DT'), (u'board', u'NN'), (u'as', u'IN'),
+            (u'a', u'DT'), (u'nonexecutive', u'JJ'), (u'director', u'NN'),
+            (u'Nov.', u'NNP'), (u'29', u'CD'), (u'.', u'.')],
+        [(u'Mr.', u'NNP'), (u'Vinken', u'NNP'), (u'is', u'VBZ'), (u'chairman', u'NN'),
+            (u'of', u'IN'), (u'Elsevier', u'NNP'), (u'N.V.', u'NNP'), (u',', u','),
+            (u'the', u'DT'), (u'Dutch', u'NNP'), (u'publishing', u'VBG'),
+            (u'group', u'NN'), (u'.', u'.'), (u'Rudolph', u'NNP'), (u'Agnew', u'NNP'),
+            (u',', u','), (u'55', u'CD'), (u'years', u'NNS'), (u'old', u'JJ'),
+            (u'and', u'CC'), (u'former', u'JJ'), (u'chairman', u'NN'), (u'of', u'IN'),
+            (u'Consolidated', u'NNP'), (u'Gold', u'NNP'), (u'Fields', u'NNP'),
+            (u'PLC', u'NNP'), (u',', u','), (u'was', u'VBD'), (u'named', u'VBN'),
+            (u'a', u'DT'), (u'nonexecutive', u'JJ'), (u'director', u'NN'), (u'of', u'IN'),
+            (u'this', u'DT'), (u'British', u'JJ'), (u'industrial', u'JJ'),
+            (u'conglomerate', u'NN'), (u'.', u'.')],
+        [(u'A', u'DT'), (u'form', u'NN'),
+            (u'of', u'IN'), (u'asbestos', u'NN'), (u'once', u'RB'), (u'used', u'VBN'),
+            (u'to', u'TO'), (u'make', u'VB'), (u'Kent', u'NNP'), (u'cigarette', u'NN'),
+            (u'filters', u'NNS'), (u'has', u'VBZ'), (u'caused', u'VBN'), (u'a', u'DT'),
+            (u'high', u'JJ'), (u'percentage', u'NN'), (u'of', u'IN'),
             (u'cancer', u'NN'), (u'deaths', u'NNS'),
-            (u'among', u'IN'), (u'a', u'DT'), (u'group', u'NN'), (u'of', u'IN'), 
-            (u'workers', u'NNS'), (u'exposed', u'VBN'), (u'to', u'TO'), (u'it', u'PRP'), 
-            (u'more', u'RBR'), (u'than', u'IN'), (u'30', u'CD'), (u'years', u'NNS'), 
-            (u'ago', u'IN'), (u',', u','), (u'researchers', u'NNS'), 
+            (u'among', u'IN'), (u'a', u'DT'), (u'group', u'NN'), (u'of', u'IN'),
+            (u'workers', u'NNS'), (u'exposed', u'VBN'), (u'to', u'TO'), (u'it', u'PRP'),
+            (u'more', u'RBR'), (u'than', u'IN'), (u'30', u'CD'), (u'years', u'NNS'),
+            (u'ago', u'IN'), (u',', u','), (u'researchers', u'NNS'),
             (u'reported', u'VBD'), (u'.', u'.')]]
 ```
 
 We then define an `accuracy()` method that is passed our test dataset and an instance of a tagger.
 
-```
-#!python
+```python
 import string
-from text.blob import Blobber
+from textblob import Blobber
 from text.taggers import PatternTagger, NLTKTagger
 from textblob_aptagger import PerceptronTagger
 
@@ -141,7 +138,7 @@ def accuracy(test_set, tagger):
         # tagger excludes punctuation by default
         tags = [tag for word, tag in blob.tags]
         # exclude punctuation in test data
-        target_tags = [tag for word, tag in tagged_sentence 
+        target_tags = [tag for word, tag in tagged_sentence
                        if tag not in string.punctuation]
         total += len(tags)
         # Add the number of correct tags
@@ -151,8 +148,7 @@ def accuracy(test_set, tagger):
 
 We can then get the accuracy of each tagger.
 
-```
-#!python
+```python
 print(accuracy(test, PerceptronTagger()))
 print(accuracy(test, NLTKTagger()))
 print(accuracy(test, PatternTagger()))

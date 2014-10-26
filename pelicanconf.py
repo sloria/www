@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Steven Loria'
 SITENAME = u'stevenloria.com'
-SITEURL = ''
+SITEURL = 'http://stevenloria.com'
 PATH = 'content'
-PAGE_DIR = 'pages'
+PAGE_PATHS = ['pages']
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
@@ -22,7 +22,7 @@ ARTICLE_SAVE_AS = '{slug}/index.html'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
-PLUGIN_PATH = 'plugins'
+PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'post_stats'
 ]

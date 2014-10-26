@@ -1,6 +1,6 @@
-Title: My MOOC education 2013
-Category: lists
-Tags: notes
+title: My MOOC education 2013
+category: lists
+tags: notes
 
 *Updated: May 26, 2013*
 

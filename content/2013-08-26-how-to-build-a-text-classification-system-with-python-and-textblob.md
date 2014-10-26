@@ -3,11 +3,13 @@ category: programming
 tags: python, textblob
 slug: how-to-build-a-text-classification-system-with-python-and-textblob
 
-*Edit February 22, 2014*: Update command to donwnload corpora. Thanks `Jason` for pointing this out.
+*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0. Thanks Justyna Chromik for pointing this out.
+
+*Edit February 22, 2014*: Update command to download corpora. Thanks `Jason` for pointing this out.
 
 Yesterday, [TextBlob 0.6.0][TextBlob] was released ([changelog][]), which introduces Naive Bayes classification. This tutorial shows how to use TextBlob to create your own text classification systems.
 
-The tutorial assumes that you have TextBlob >= 0.6.0 and nltk >= 2.0 installed. If you don't yet have TextBlob or need to upgrade, run:
+The tutorial assumes that you have <strike>TextBlob >= 0.6.0 and nltk >= 2.0</strike> TextBlob >= 8.0 installed. If you don't yet have TextBlob or need to upgrade, run:
 
 ```bash
 $ pip install -U textblob nltk
@@ -34,7 +36,7 @@ Our first classifier will be a simple sentiment analyzer trained on a small data
 To begin, we'll import the `text.classifiers` and create some training and test data.
 
 ```python
-from text.classifiers import NaiveBayesClassifier
+from textblob.classifiers import NaiveBayesClassifier
 
 train = [
     ('I love this sandwich.', 'pos'),
@@ -71,20 +73,20 @@ cl.classify("Their burgers are amazing")  # "pos"
 cl.classify("I don't like their pizza.")  # "neg"
 ```
 
-Another way to classify strings of text is to use `TextBlob` objects. 
+Another way to classify strings of text is to use `TextBlob` objects.
 You can pass classifiers into the constructor of a TextBlob.
 
-```
->from text.blob import TextBlob
+```python
+from textblob import TextBlob
 blob = TextBlob("The beer was amazing. "
-                "But the hangover was horrible. My boss was not happy.", 
+                "But the hangover was horrible. My boss was not happy.",
                 classifier=cl)
 ```
 
 You can then call the `classify()` method on the blob.
 
 ```python
->blob.classify()  # "neg"
+blob.classify()  # "neg"
 ```
 
 You can also take advantage of TextBlob's sentence tokenization and classify each sentence indvidually.
@@ -99,7 +101,7 @@ for sentence in blob.sentences:
 Let's check the accuracy on the test set.
 
 ```python
-cl.accuracy(test)  
+cl.accuracy(test)
 # 0.83
 ```
 
@@ -115,7 +117,7 @@ cl.show_informative_features(5)
 #             contains(of) = False             pos : neg    =      1.2 : 1.0
 ```
 
-This indicates that tweets containing the word "my" but not containing the word "place" tend to be negative. 
+This indicates that tweets containing the word "my" but not containing the word "place" tend to be negative.
 
 Here is the full script:
 
@@ -165,7 +167,7 @@ We can now update our classifier with the new training data using the `update(ne
 
 ```python
 cl.update(new_train)
-accuracy = cl.accuracy(test + new_test)    
+accuracy = cl.accuracy(test + new_test)
 ```
 
 Here's the full, updated script:
