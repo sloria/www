@@ -3,6 +3,8 @@ category: software design
 tags: python, rest
 slug: mvc-and-apis-keep-em-light-and-fluffy
 
+*Edit October 26, 2014*: Update code for marshmallow 1.0.
+
 The MVC design pattern gives us general guidelines on where various components of an application should go. Web frameworks attempt to enforce MVC by giving us cookiecutter classes and interfaces for each of the three layers.
 
 But as an application gets larger, it becomes more difficult to decide where certain components belong. Even if we adhere to the "fat models, skinny controllers" advice, we can end up with massive, god-like model classes with many coupled responsibilities.
@@ -55,7 +57,7 @@ We should separate these entities so that they can be changed independently of e
 
 ## Slimming down
 
-The best solution here is to put the serialization logic into a separate class, responsible only for formatting the output data. 
+The best solution here is to put the serialization logic into a separate class, responsible only for formatting the output data.
 
 You could write these from scratch, though there are a number of libraries that make this easier. One of these is [marshmallow](http://marshmallow.readthedocs.org), written for Python (full disclosure: I'm the author).
 
@@ -66,10 +68,10 @@ You could write these from scratch, though there are a number of libraries that 
 ## Why marshmallow?
 
 - **Separates business logic from the presentation.** See above.
-- **Reusability.** Serializers classes are reusable, are nestable, and allow for inheritance.
-- **Testability.** Serializer classes are easier to test than views and controllers.
+- **Reusability.** Schema classes are reusable, are nestable, and allow for inheritance.
+- **Testability.** Schema classes are easier to test than views and controllers.
 - **Agnostic.** ORM, ODM, Flask, Django—doesn't matter. Marshmallow serializes all objects in the same way.
-- **Familiar syntax**. Serializers look very much like [WTForms](https://wtforms.readthedocs.org/en/latest/) or a model definition in any of the popular ORMs.
+- **Familiar syntax**. Schemas look very much like [WTForms](https://wtforms.readthedocs.org/en/latest/) or a model definition in any of the popular ORMs.
 
 ## First steps with marshmallow
 
@@ -85,35 +87,33 @@ class Todo(Model):
     task = CharField()
     done = BooleanField(default=False)
     user = ForeignKey(User)
-```      
+```
 
-
-Then we'll declare our serializers. 
+Then we'll declare our serializer schemas.
 
 ```python
-from marshmallow import Serializer, fields
+from marshmallow import Schema, fields
 
-class UserSerializer(Serializer):
+class UserSchema(Schema):
     email = fields.Email()  # Validates email
     joined_on = fields.DateTime()  # Formats datetimes as RFC-822 string
 
-class TodoSerializer(Serializer):
-    task = fields.String()
-    done = fields.Boolean()
-    user = fields.Nested(UserSerializer)
+class TodoSchema(Schema):
+    task = fields.Str()
+    done = fields.Bool()
+    user = fields.Nested(UserSchema)
 ```
 
 Example usage:
 
 ```python
 user = User(email="monty@python.org", password="secret")
-todo = Todo("Refactor everything")   
-serialized = TodoSerializer(todo)
-serialized.is_valid()
-# True
-serialized.data
-# {"task": "Refactor everything", "done": false, 
-# "user": {"joined_on": "Mon, 18 Nov 2013 00:42:19 -0000", 
+todo = Todo("Refactor everything")
+schema = TodoSchema()
+result = schema.dump(todo)
+result.data
+# {"task": "Refactor everything", "done": false,
+# "user": {"joined_on": "Mon, 18 Nov 2013 00:42:19 -0000",
 #          "email": "monty@python.org"}
 # }
 ```
@@ -121,12 +121,13 @@ serialized.data
 We can make the serializer more concise by using the `fields` option on the `Meta` options class.
 
 ```python
-class TodoSerializer(Serializer):
-    user = fields.Nested(UserSerializer)
+class TodoSchema(Schema):
+    user = fields.Nested(UserSchema)
     class Meta:
         fields = ('task', 'done', 'user')
 
-TodoSerializer(todo).data  # Same as above
+schema = TodoSchema()
+schema.dump(todo).data  # Same as above
 ```
 
 Check out marshmallow's documentation—with examples in Flask, SQL-Alchemy, and Peewee—at [http://marshmallow.rtfd.org](http://marshmallow.rtfd.org).
