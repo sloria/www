@@ -24,7 +24,7 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 **NOTE**: As Keleshev points out in the video, the code examples are written for **Python 3**, so all classes are new-style, even if they do not explicitly subclass from `object`.
 
 ## Composed method
-    
+
 - Divide program into methods that perform one task
     - Keep *all* operation in a method at the same level of abstraction
 - Use many methods only a few lines long
@@ -43,12 +43,13 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 - provide constructors that create well-formed instances
     - Pass all required parameters to them
 
-<script src="https://gist.github.com/sloria/5895677.js"> </script>
+[gist:id=5895677]
 
 - Can use class methods to make multiple constructors
     - Example: Using Cartesian or polar coordinates
 
-<script src="https://gist.github.com/sloria/5895679.js"> </script>
+[gist:id=5895679]
+
 
 ## Method objects
 - How do you code a method where many lines of code share many arguments and temporary variables?
@@ -110,7 +111,7 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 <script src="https://gist.github.com/sloria/5895758.js"> </script>
 
 ## Equality method
-<script src="https://gist.github.com/sloria/5895762.js"> </script> 
+<script src="https://gist.github.com/sloria/5895762.js"> </script>
 
 - Probably the only case to check `isinstance()`
 

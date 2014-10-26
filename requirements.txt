@@ -2,3 +2,4 @@ markdown==2.5.1
 pelican==3.4
 ghp-import==0.4.1
 fabric==1.10.0
+beautifulsoup4==4.3.2

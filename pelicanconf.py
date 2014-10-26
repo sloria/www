@@ -24,7 +24,8 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
-    'post_stats'
+    'post_stats',
+    'pelican_gist',
 ]
 
 # Blogroll
