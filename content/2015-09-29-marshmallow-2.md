@@ -5,9 +5,19 @@ category: programming
 
 One alpha, five betas, and two release candidates after marshmallow's last 1.x release, marshmallow 2.0 is published to the PyPI.
 
-Marshmallow homepage: [https://marshmallow.readthedocs.org/](https://marshmallow.readthedocs.org/)
+## What is marshmallow?
 
-## Benefits
+Marshmallow is a Python library for
+
+1. Validating input data against a schema,
+2. Deserializing data to application objects (e.g. ORM objects), and
+3. Serializing application objects to simple types.
+
+Think Django REST Framework's [Serializers](http://www.django-rest-framework.org/api-guide/serializers/), without the Django.
+
+For more info, see the homepage: [https://marshmallow.readthedocs.org/](https://marshmallow.readthedocs.org/)
+
+## Benefits of Upgrading
 
 Here are a few immediate benefits of upgrading to 2.0:
 
