@@ -79,7 +79,9 @@ errors = schema.validate(invalid_data)
 A number of supporting libraries emerged since the last major release.
 
 * [marshmallow-jsonapi](https://github.com/marshmallow-code/marshmallow-jsonapi) provides [JSON API 1.0](http://jsonapi.org) formatting.
-* [marshmallow-sqlalchemy](https://github.com/marshmallow-code/marshmallow-sqlalchemy) automatically generates marshmallow Schemas from [SQLAlchemy](http://www.sqlalchemy.org/) models and tables.
+* [marshmallow-sqlalchemy](https://github.com/marshmallow-code/marshmallow-sqlalchemy) automatically generates marshmallow Schemas from SQLAlchemy models and tables.
+* [marshmallow-mongoengine](https://github.com/touilleMan/marshmallow-mongoengine) does the same with MongoEngine.
+* [marshmallow-polyfield](https://github.com/Bachmann1234/marshmallow-polyfield) adds a field for polymorphic types.
 * [django-rest-marshmallow](https://github.com/tomchristie/django-rest-marshmallow) allows you to use marshmallow with the [Django REST Framework](http://www.django-rest-framework.org/).
 * [webargs](https://github.com/sloria/webargs), a cross-framework request parsing library, now uses marshmallow for validation, much for the better.
 * [Flask-RESTful](https://github.com/flask-restful/flask-restful) is planning to remove its own request parsing and marshalling modules in favor of marshmallow. See the relevant thread [here](https://github.com/flask-restful/flask-restful/issues/335).
