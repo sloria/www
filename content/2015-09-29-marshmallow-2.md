@@ -60,7 +60,7 @@ errors = schema.validate(invalid_data)
 
 * Better error bundling when validating multiple objects.
 * Improved ``strict`` mode.
-* Field and schema validators can be written as methods.
+* Field and [schema validators](https://marshmallow.readthedocs.org/en/latest/extending.html#schema-level-validation) can be written as methods.
 
 ## Ecosystem
 
@@ -72,7 +72,7 @@ A number of supporting libraries emerged since the last major release.
 * [webargs](https://github.com/sloria/webargs), a cross-framework request parsing library, now uses marshmallow for validation, much for the better.
 * [Flask-RESTful](https://github.com/flask-restful/flask-restful) is planning to remove its own request parsing and marshalling modules in favor of marshmallow. See the relevant thread [here](https://github.com/flask-restful/flask-restful/issues/335).
 * [Flask-Smore](https://github.com/jmcarp/flask-smore) uses webargs and marshmallow for request input and response output and automatically generates Swagger documentation for Flask-powered APIs.
-* [hug](https://github.com/timothycrosley/hug), a new Python HTTP API framework, has built-in support for marshmallow.
+* [hug](https://github.com/timothycrosley/hug), a new API framework, has built-in support for marshmallow.
 
 ## What will happen to marshmallow 1?
 
