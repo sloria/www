@@ -5,6 +5,8 @@ category: programming
 
 One alpha, five betas, and two release candidates after marshmallow's last 1.x release, marshmallow 2.0 is published to the PyPI.
 
+Marshmallow homepage: [https://marshmallow.readthedocs.org/](https://marshmallow.readthedocs.org/)
+
 ## Benefits
 
 Here are a few immediate benefits of upgrading to 2.0:
