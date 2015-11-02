@@ -10,6 +10,8 @@ slug: projects
 
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 
+**[aiohttp_utils](https://github.com/sloria/aiohttp_utils)**: Various utilities for building aiohttp web applications.
+
 
 ## Tiny Utilities
 
