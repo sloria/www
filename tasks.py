@@ -29,7 +29,7 @@ def regenerate():
 
 @task
 def serve():
-    run('cd {deploy_path} && python -m SimpleHTTPServer'.format(deploy_path=DEPLOY_PATH))
+    run('cd {deploy_path} && python -m http.server'.format(deploy_path=DEPLOY_PATH))
 
 @task
 def reserve():
