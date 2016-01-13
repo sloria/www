@@ -3,6 +3,8 @@ category: programming
 tags: python, textblob
 slug: how-to-build-a-text-classification-system-with-python-and-textblob
 
+*Edit January 12, 2016*: Update imports in gists. Thanks Mark Menkhus for pointing this out.
+
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0. Thanks Justyna Chromik for pointing this out.
 
 *Edit February 22, 2014*: Update command to download corpora. Thanks `Jason` for pointing this out.
