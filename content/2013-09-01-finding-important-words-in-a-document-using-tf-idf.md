@@ -3,6 +3,7 @@ category: programming
 tags: python, textblob
 slug: finding-important-words-in-a-document-using-tf-idf
 
+*Edit May 25, 2015*: Fix incorrect filter in `n_containing`. Thanks Chen Liang for reporting.
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
  Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
@@ -30,7 +31,7 @@ def tf(word, blob):
     return blob.words.count(word) / len(blob.words)
 
 def n_containing(word, bloblist):
-    return sum(1 for blob in bloblist if word in blob)
+    return sum(1 for blob in bloblist if word in blob.words)
 
 def idf(word, bloblist):
     return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))

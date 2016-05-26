@@ -35,7 +35,7 @@ $ >python -m textblob.download_corpora
 
 Our first classifier will be a simple sentiment analyzer trained on a small dataset of fake tweets.
 
-To begin, we'll import the `text.classifiers` and create some training and test data.
+To begin, we'll import the `textblob.classifiers` and create some training and test data.
 
 ```python
 from textblob.classifiers import NaiveBayesClassifier
