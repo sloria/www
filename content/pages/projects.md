@@ -4,9 +4,9 @@ slug: projects
 
 # Recent Projects
 
-**[marshmallow](http://marshmallow.readthedocs.org/)**: A lightweight, ORM-agnostic Python library for serializing objects. Useful for building REST APIs.
+**[marshmallow](https://marshmallow.readthedocs.io/)**: A lightweight, ORM-agnostic Python library for serializing objects. Useful for building REST APIs.
 
-**[TextBlob](http://textblob.readthedocs.org/)**: Simple, Pythonic text processing. Includes part-of-speech tagging, noun phrase parsing, sentiment analysis, and more.
+**[TextBlob](https://textblob.readthedocs.io/)**: Simple, Pythonic text processing. Includes part-of-speech tagging, noun phrase parsing, sentiment analysis, and more.
 
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 

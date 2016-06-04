@@ -9,7 +9,7 @@ The MVC design pattern gives us general guidelines on where various components o
 
 But as an application gets larger, it becomes more difficult to decide where certain components belong. Even if we adhere to the "fat models, skinny controllers" advice, we can end up with massive, god-like model classes with many coupled responsibilities.
 
-Here I use the example of data formatting to demonstrate how one might separate responsibilities between classes in a web application and introduce a library called [marshmallow](http://marshmallow.readthedocs.org) which makes the process easier.
+Here I use the example of data formatting to demonstrate how one might separate responsibilities between classes in a web application and introduce a library called [marshmallow](https://marshmallow.readthedocs.io) which makes the process easier.
 
 ## First, let's clear up some terminology.
 
@@ -59,10 +59,10 @@ We should separate these entities so that they can be changed independently of e
 
 The best solution here is to put the serialization logic into a separate class, responsible only for formatting the output data.
 
-You could write these from scratch, though there are a number of libraries that make this easier. One of these is [marshmallow](http://marshmallow.readthedocs.org), written for Python (full disclosure: I'm the author).
+You could write these from scratch, though there are a number of libraries that make this easier. One of these is [marshmallow](https://marshmallow.readthedocs.io), written for Python (full disclosure: I'm the author).
 
-<a href="http://marshmallow.readthedocs.org">
-<img src="http://marshmallow.readthedocs.org/en/latest/_static/marshmallow-logo.png" height="200" alt="marshmallow docs">
+<a href="https://marshmallow.readthedocs.io">
+<img src="https://marshmallow.readthedocs.io/en/latest/_static/marshmallow-logo.png" height="200" alt="marshmallow docs">
 </a>
 
 ## Why marshmallow?
@@ -71,7 +71,7 @@ You could write these from scratch, though there are a number of libraries that 
 - **Reusability.** Schema classes are reusable, are nestable, and allow for inheritance.
 - **Testability.** Schema classes are easier to test than views and controllers.
 - **Agnostic.** ORM, ODM, Flask, Django—doesn't matter. Marshmallow serializes all objects in the same way.
-- **Familiar syntax**. Schemas look very much like [WTForms](https://wtforms.readthedocs.org/en/latest/) or a model definition in any of the popular ORMs.
+- **Familiar syntax**. Schemas look very much like [WTForms](https://wtforms.readthedocs.io/en/latest/) or a model definition in any of the popular ORMs.
 
 ## First steps with marshmallow
 
@@ -130,7 +130,7 @@ schema = TodoSchema()
 schema.dump(todo).data  # Same as above
 ```
 
-Check out marshmallow's documentation—with examples in Flask, SQL-Alchemy, and Peewee—at [http://marshmallow.rtfd.org](http://marshmallow.rtfd.org).
+Check out marshmallow's documentation—with examples in Flask, SQL-Alchemy, and Peewee—at [https://marshmallow.readthedocs.io](https://marshmallow.readthedocs.io).
 
 ## Conclusion
 
