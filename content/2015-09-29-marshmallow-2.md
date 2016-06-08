@@ -15,14 +15,14 @@ Marshmallow is a Python library for
 
 Think Django REST Framework's [Serializers](http://www.django-rest-framework.org/api-guide/serializers/), without the Django.
 
-For more info, see the homepage: [https://marshmallow.readthedocs.org/](https://marshmallow.readthedocs.org/)
+For more info, see the homepage: [https://marshmallow.readthedocs.io/](https://marshmallow.readthedocs.io/)
 
 ## Benefits of Upgrading
 
 Here are a few immediate benefits of upgrading to 2.0:
 
 * Dump-only and load-only fields (analagous to "read-only" and "write-only" in the context of a CRUD app).
-* More consistent treatment of [null](https://marshmallow.readthedocs.org/en/latest/upgrading.html#deserializing-none) and [missing values](https://marshmallow.readthedocs.org/en/latest/upgrading.html#default-values).
+* More consistent treatment of [null](https://marshmallow.readthedocs.io/en/latest/upgrading.html#deserializing-none) and [missing values](https://marshmallow.readthedocs.io/en/latest/upgrading.html#default-values).
 
 * Powerful, user-friendly pre- and post-processing API.
 
@@ -72,7 +72,7 @@ errors = schema.validate(invalid_data)
 
 * Better error bundling when validating multiple objects.
 * Improved ``strict`` mode.
-* Field and [schema validators](https://marshmallow.readthedocs.org/en/latest/extending.html#schema-level-validation) can be written as methods.
+* Field and [schema validators](https://marshmallow.readthedocs.io/en/latest/extending.html#schema-level-validation) can be written as methods.
 
 ## Ecosystem
 
@@ -95,6 +95,6 @@ I will continue to merge bug fixes into the 1.2 release line. No new 1.x feature
 
 ## More
 
- Several refinements were made to the marshmallow API. For details, see the [changelog](https://marshmallow.readthedocs.org/en/latest/changelog.html#changelog). For a guide on upgrading from marshmallow 1, see the [upgrading guide](https://marshmallow.readthedocs.org/en/latest/upgrading.html#upgrading).
+ Several refinements were made to the marshmallow API. For details, see the [changelog](https://marshmallow.readthedocs.io/en/latest/changelog.html#changelog). For a guide on upgrading from marshmallow 1, see the [upgrading guide](https://marshmallow.readthedocs.io/en/latest/upgrading.html#upgrading).
 
  Special thanks to everyone who contributed and reported issues; you made this release awesome.

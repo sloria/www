@@ -7,8 +7,8 @@ slug: tutorial-wordnet-textblob
 
 In short, WordNet is a database of English words that are linked together by their semantic relationships. It is like a supercharged dictionary/thesaurus with a graph structure.
 
-[TextBlob](http://textblob.readthedocs.org/) 0.7
-([changelog](http://textblob.readthedocs.org/en/latest/changelog.html)) now integrates NLTK's WordNet interface, making it very simple to interact with WordNet.
+[TextBlob](https://textblob.readthedocs.io/) 0.7
+([changelog](https://textblob.readthedocs.io/en/latest/changelog.html)) now integrates NLTK's WordNet interface, making it very simple to interact with WordNet.
 
 This tutorial is a gentle introduction to WordNet concepts, using TextBlob for the examples. To follow along with the examples, make sure you have the latest version of TextBlob.
 

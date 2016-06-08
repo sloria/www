@@ -262,5 +262,5 @@ TextBlob makes it easy to create your own custom text classifiers. Always rememb
 - [Naive Bayes Classification on Wikipedia](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
 - [The NLTK Book, Ch. 6: Learning to Classify Text](http://nltk.googlecode.com/svn/trunk/doc/book/ch06.html)
 
-[TextBlob]: https://textblob.readthedocs.org/en/latest/
-[changelog]: https://textblob.readthedocs.org/en/latest/changelog.html#id1
+[TextBlob]: https://textblob.readthedocs.io/en/latest/
+[changelog]: https://textblob.readthedocs.io/en/latest/changelog.html#id1

@@ -6,7 +6,7 @@ slug: finding-important-words-in-a-document-using-tf-idf
 *Edit May 25, 2015*: Fix incorrect filter in `n_containing`. Thanks Chen Liang for reporting.
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
- Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
+ Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.io/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
 
 ## What is TF-IDF?
 
@@ -111,5 +111,5 @@ There may be ways to improve the our TF-IDF algorithm, such as by ignoring stopw
 * [Machine Learning with Python: Meeting TF-IDF for Text Mining](http://aimotion.blogspot.com/2011/12/machine-learning-with-python-meeting-tf.html)
 * [Short introduction to Vector Space Model](http://pyevolve.sourceforge.net/wordpress/?p=1589)
 
-[TextBlob]: https://textblob.readthedocs.org/en/latest/
+[TextBlob]: https://textblob.readthedocs.io/en/latest/
 [TF-IDF]: https://en.wikipedia.org/wiki/Tf%E2%80%93idf

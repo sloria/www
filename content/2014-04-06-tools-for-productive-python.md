@@ -70,7 +70,7 @@ source activate path/to/env/bin/activate
 
 Importing the same packages, modules, and classes every time you run the Python shell is tedious. That's why I created [konch][].
 
-Inspired by [Flask-Script][] and the [shell_plus][] command from [django-extensions](http://django-extensions.readthedocs.org/en/latest/index.html), konch allows you to create project-specific namespaces for your Python shell. You can even configure your shell's [welcome banner and input prompt](http://konch.readthedocs.org/en/latest/#konch-init).
+Inspired by [Flask-Script][] and the [shell_plus][] command from [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html), konch allows you to create project-specific namespaces for your Python shell. You can even configure your shell's [welcome banner and input prompt](https://konch.readthedocs.io/en/latest/#konch-init).
 
 <img src="https://dl.dropboxusercontent.com/u/1693233/blog/konch-logo.png" width="200" alt="konch logo">
 
@@ -123,9 +123,9 @@ $ echo ".env\n.konchrc" >> ~/.gitignore_global
 
 ## Related Links
 
-- [cookiecutter on Github][cookiecutter] and [docs](http://cookiecutter.readthedocs.org/en/latest/)
+- [cookiecutter on Github][cookiecutter] and [docs](https://cookiecutter.readthedocs.io/en/latest/)
 - [autoenv on Github][autoenv]
-- [konch on Github][konch] and [docs](http://konch.readthedocs.org/en/latest/)
+- [konch on Github][konch] and [docs](https://konch.readthedocs.io/en/latest/)
 
 
 [cookiecutter]: https://github.com/audreyr/cookiecutter
@@ -133,5 +133,5 @@ $ echo ".env\n.konchrc" >> ~/.gitignore_global
 [konch]: https://github.com/sloria/konch
 [yak shaving]: http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html
 [Flask-Script]: https://github.com/smurfix/flask-script
-[shell_plus]: http://django-extensions.readthedocs.org/en/latest/shell_plus.html
+[shell_plus]: https://django-extensions.readthedocs.io/en/latest/shell_plus.html
 
