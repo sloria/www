@@ -81,9 +81,10 @@ MAIL_USERNAME = 'sloria1'
 MAIL_HOST = 'gmail.com'
 
 # static paths will be copied under the same name
-STATIC_PATHS = ["images", 'extra/CNAME']
+STATIC_PATHS = ["images", 'extra/CNAME', 'extra/keybase.txt']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/keybase.txt': {'path': 'keybase.txt'},
 }
 
 # A list of files to copy from the source to the destination

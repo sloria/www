@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/sloria
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://stevenloria.com
+  * I am sloria (https://keybase.io/sloria) on keybase.
+  * I have a public key ASBdZO4CS0jaRD3dQZoIfStXBUcfe069S6IIlOJ1cC87nQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01205d64ee024b48da443ddd419a087d2b5705471f7b4ebd4ba20894e275702f3b9d0a",
+            "host": "keybase.io",
+            "kid": "01205d64ee024b48da443ddd419a087d2b5705471f7b4ebd4ba20894e275702f3b9d0a",
+            "uid": "ad25302bd8641241aeabc4dd5b742a19",
+            "username": "sloria"
+        },
+        "service": {
+            "hostname": "stevenloria.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487822470,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487822410,
+        "hash": "23631717fd2710f38ddbb4df6a0b64e7465a74bfc4dd085b6c82040d6ffe65ed21dd38166896880c1937b8a7527522254af3c265b7600fe2b60618699e28f48f",
+        "seqno": 916087
+    },
+    "prev": "5f5a7ea38750814211c5945744079a8ca9a93baa6a7ffa1b493f8cd6b0564e10",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgXWTuAktI2kQ93UGaCH0rVwVHH3tOvUuiCJTidXAvO50Kp3BheWxvYWTFAvV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNWQ2NGVlMDI0YjQ4ZGE0NDNkZGQ0MTlhMDg3ZDJiNTcwNTQ3MWY3YjRlYmQ0YmEyMDg5NGUyNzU3MDJmM2I5ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNWQ2NGVlMDI0YjQ4ZGE0NDNkZGQ0MTlhMDg3ZDJiNTcwNTQ3MWY3YjRlYmQ0YmEyMDg5NGUyNzU3MDJmM2I5ZDBhIiwidWlkIjoiYWQyNTMwMmJkODY0MTI0MWFlYWJjNGRkNWI3NDJhMTkiLCJ1c2VybmFtZSI6InNsb3JpYSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoic3RldmVubG9yaWEuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4NzgyMjQ3MCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDg3ODIyNDEwLCJoYXNoIjoiMjM2MzE3MTdmZDI3MTBmMzhkZGJiNGRmNmEwYjY0ZTc0NjVhNzRiZmM0ZGQwODViNmM4MjA0MGQ2ZmZlNjVlZDIxZGQzODE2Njg5Njg4MGMxOTM3YjhhNzUyNzUyMjI1NGFmM2MyNjViNzYwMGZlMmI2MDYxODY5OWUyOGY0OGYiLCJzZXFubyI6OTE2MDg3fSwicHJldiI6IjVmNWE3ZWEzODc1MDgxNDIxMWM1OTQ1NzQ0MDc5YThjYTlhOTNiYWE2YTdmZmExYjQ5M2Y4Y2Q2YjA1NjRlMTAiLCJzZXFubyI6MTUsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAVKIlbthdjRfGtLJ77adjhnqLbMJk37aqZvuvYujj9wq8zWXnVFLaVPfN341ELYBOxKNFcuuJQ9GXGZN7BRwfCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILt3AlyL4CEUqHEEMspxb6tURCgDQT1We0xLsktpqQ1Uo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sloria
+
+==================================================================

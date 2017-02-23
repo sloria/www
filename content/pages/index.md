@@ -13,7 +13,7 @@ I'm an amateur at everything in a constant struggle to [turn pro]({filename}../2
 
 The easiest way to contact me is by [email][email].
 
-You can also find me on [Github][github], [Twitter][], and [LinkedIn][linkedin].
+You can also find me on [Github][github], [Twitter][], [Keybase][], and [LinkedIn][linkedin].
 
 
 [email]: mailto:sloria1@gmail.com
@@ -22,5 +22,5 @@ You can also find me on [Github][github], [Twitter][], and [LinkedIn][linkedin].
 [github]: http://www.github.com/sloria
 [linkedin]: http://www.linkedin.com/in/sloria
 [Twitter]: https://www.twitter.com/sloria1
+[Keybase]: https://keybase.io/sloria
 [cos]: http://centerforopenscience.org/
-
