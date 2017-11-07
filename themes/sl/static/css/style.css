@@ -19,14 +19,14 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 1.602em;
+  font-size: 2em;
 }
 
-h2 {font-size: 1.424em;}
+h2 {font-size: 1.624em;}
 
-h3 {font-size: 1.266em;}
+h3 {font-size: 1.466em;}
 
-h4 {font-size: 1.125em;}
+h4 {font-size: 1.325em;}
 
 small, .font_small, aside {font-size: 0.889em;}
 
@@ -92,7 +92,7 @@ div.navigation ul           { margin: 0; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 2px; padding: 0;}
 div.body                    { clear: both; }
 div.footer                  { border-top: 1px dotted #ddd; padding-top: 9px;
-                              margin-top: 42px; font-size: 16px; color: #888;
+                              margin-top: 42px; font-size: 14px; color: #888;
                               text-align: center; }
 div.footer a                { color: #888; }
 div.footer p                { margin: 0; }

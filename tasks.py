@@ -28,8 +28,8 @@ def regenerate():
     run('pelican -r -s pelicanconf.py')
 
 @task
-def serve():
-    run('cd {deploy_path} && python -m http.server'.format(deploy_path=DEPLOY_PATH))
+def serve(port=1234):
+    run('cd {deploy_path} && python -m http.server {port}'.format(deploy_path=DEPLOY_PATH, port=port))
 
 @task
 def reserve():
