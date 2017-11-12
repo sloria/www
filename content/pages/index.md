@@ -3,7 +3,7 @@ save_as: index.html
 title: Me
 date: 2014-03-14 10:00
 
-# You can call me Steve.
+<h1 class="lead">You can call me Steve.</h1>
 
 I spend a lot of my time building [open source things][github].
 
