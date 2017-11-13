@@ -21,7 +21,9 @@ Therefore, common words like "the" and "for", which appear in many documents, wi
 
 ## In code
 
-The code here is tested on Python 3 with [TextBlob 0.6.1][TextBlob]. If you're using Python 2, you'll probably need to add `from __future__ import division, unicode_literals` at the top.
+The code here is tested on Python 3 with [TextBlob 0.6.1][TextBlob].
+If you're using Python 2, you'll probably need to add `# -*- coding: utf-8 -*-` and
+`from __future__ import division, unicode_literals` at the top.
 
 ```python
 import math
