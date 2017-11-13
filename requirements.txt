@@ -1,6 +1,6 @@
-markdown==2.6.3
-pelican==3.6.3
-ghp-import==0.4.1
-invoke==0.11.1
-beautifulsoup4==4.4.1
-pelican-gist==0.3.2
+markdown==2.6.9
+pelican==3.7.1
+ghp-import==0.5.5
+invoke==0.21.0
+beautifulsoup4==4.6.0
+pelican-gist==0.3.3
