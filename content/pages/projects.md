@@ -20,6 +20,8 @@ capturing user feedback.
 
 **[TextBlob](https://textblob.readthedocs.io/)**\*: Simple, Pythonic text processing. Includes part-of-speech tagging, noun phrase parsing, sentiment analysis, and more.
 
+**[environs](https://github.com/sloria/environs)**\*: A Python library for parsing and validating environment variables.
+
 **[aiohttp_utils](https://github.com/sloria/aiohttp_utils)**: Various utilities for building aiohttp web applications.
 
 **[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for JavaScript.
