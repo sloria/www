@@ -32,6 +32,8 @@ capturing user feedback.
 
 **[konch](https://github.com/sloria/konch)**\*: Allows you to customize your Python shell.
 
+**[local-repl](https://github.com/sloria/local-repl)**\*: Like konch, but for Node.js.
+
 **[ped](https://github.com/sloria/ped)**: Quickly open Python modules in your text editor.
 
 **[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
