@@ -1,19 +1,14 @@
-<div class=footer>
-  <p>&copy; Copyright <script language="JavaScript">var date = new Date(); document.write(date.getFullYear());</script> by {{ AUTHOR }}</p>
+<footer>
+  <p>&copy; Copyright <script>document.write((new Date()).getFullYear());</script> by {{ AUTHOR }}</p>
   <p>All content is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 License</a>.</p>
-<!--   <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
-    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p>  -->
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
         <script language="JavaScript">
           u = '{{ MAIL_USERNAME }}';
           s = '{{ MAIL_HOST }}';
-          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\"><li><i class="icon-envelope icon-large"></i> </li></a>');
         </script>
-            <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
         <a href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
         <a href="{{ LINKEDIN_URL }}"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
         <a href="{{ GITHUB_URL }}" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
@@ -21,4 +16,4 @@
       </ul>
     </div>
   </p>
-</div>
+</footer>
