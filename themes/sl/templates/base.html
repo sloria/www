@@ -7,22 +7,25 @@
 
     <title>{% block title %} {{SITENAME}} {% endblock %}</title>
 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.css" type="text/css"/>
+    {% assets filters="autoprefixer6,cssmin", output="css/style.min.css", "css/pygments.css", "css/font-awesome.css", "css/style.css" %}
+      <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+
   </head>
-  <body>
-    <div class="container">
-          {% block header %}
-              {% include "header.html" %}
-          {% endblock %}
+  <body class="Site">
+    {% block header %}
+      {% include "header.html" %}
+    {% endblock %}
 
-          {% block content %} {% endblock %}
-
-          {% block footer %}
-              {% include "footer.html" %}
-          {% endblock %}
+    <div class="Site-content">
+      <div class="Container">
+      {% block content %} {% endblock %}
+      </div>
     </div>
+
+    {% block footer %}
+      {% include "footer.html" %}
+    {% endblock %}
     {% include 'googleanalytics.html' %}
   </body>
 </html>

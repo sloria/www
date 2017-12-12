@@ -29,12 +29,12 @@ def rebuild(ctx):
 
 @task
 def regenerate(ctx):
-    run('pelican -r -s pelicanconf.py')
+    run('pelican -r --debug -s pelicanconf.py')
 
 
 @task
 def serve(ctx, port=1234):
-    run('cd {deploy_path} && python -m http.server {port}'.format(
+    run('cd {deploy_path} && python -m pelican.server {port}'.format(
         deploy_path=DEPLOY_PATH, port=port))
 
 

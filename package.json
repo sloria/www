@@ -1,0 +1,17 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloria/www.git"
+  },
+  "author": "Steven Loria",
+  "license": "MIT",
+  "homepage": "https://github.com/sloria/www#readme",
+  "dependencies": {
+    "autoprefixer": "^7.2.2",
+    "postcss-cli": "^4.1.1"
+  }
+}

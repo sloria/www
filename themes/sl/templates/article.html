@@ -3,6 +3,7 @@
 {% block title %} {{ article.title }} | {{ SITENAME }} {% endblock %}
 
 {% block content %}
+<div class="page">
     <h1 class="title"> {{ article.title }}</h1>
     <p class=date> {{ article.locale_date }} </p>
 
@@ -25,4 +26,5 @@
       <p>Please send comments by
       <a href="mailto:{{ MAIL_USERNAME }}@{{MAIL_HOST}}">email</a>. I welcome your feedback, advice, and criticism.</p>
     </section>
+</div>
 {% endblock %}

@@ -4,3 +4,6 @@ ghp-import==0.5.5
 invoke==0.21.0
 beautifulsoup4==4.6.0
 pelican-gist==0.3.3
+# Assets
+webassets==0.12.1
+cssmin==0.2.0

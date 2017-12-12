@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHOR = u'Steven Loria'
 SITENAME = u'stevenloria.com'
 SITEURL = 'http://stevenloria.com'
@@ -24,12 +27,13 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
+    'assets',
     'post_stats',
     'pelican_gist',
 ]
 
 # Blogroll
-LINKS =  None
+LINKS = None
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -41,7 +45,7 @@ THEME = 'themes/sl'
 
 RELATIVE_URLS = True
 
-#Navigation sections and relative URL:
+# Navigation sections and relative URL:
 SECTIONS = [
     ('about', ''),
     ('projects', 'projects'),
@@ -88,4 +92,10 @@ EXTRA_PATH_METADATA = {
 }
 
 # A list of files to copy from the source to the destination
-#FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+# FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+# AUTOPREFIXER_BIN = './node_modules/.bin/postcss'
+AUTOPREFIXER_BIN = os.path.join(HERE, 'node_modules', '.bin', 'postcss')
+ASSET_CONFIG = (
+    ('AUTOPREFIXER_BIN', AUTOPREFIXER_BIN),
+    ('AUTOPREFIXER_BROWSERS', ['> 1%', 'last 2 versions']),
+)
