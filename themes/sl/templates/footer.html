@@ -9,10 +9,10 @@
           <script language="JavaScript">
             u = '{{ MAIL_USERNAME }}';
             s = '{{ MAIL_HOST }}';
-            document.write('<li><a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\"><i class="fas fa-envelope-square fa-lg"></i> </a></li>');
+            document.write('<li><a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i class="fas fa-envelope-square fa-lg"></i> </a></li>');
           </script>
           <li> <a href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a> </li>
-          <li><a href="{{ LINKEDIN_URL }}"><i class="fab fa-linkedin fa-lg" ></i></a></li>
+          <li><a href="{{ LINKEDIN_URL }}" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" ></i></a></li>
           <li> <a href="{{ GITHUB_URL }}" target="_blank"> <i class="fab fa-github-square fa-lg"></i> </a> </li>
           <li> <a href="{{ SITEURL }}/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><i class="fas fa-rss-square fa-lg"></i> </a></li>
         </ul>
