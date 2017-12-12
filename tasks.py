@@ -9,16 +9,22 @@ REPO = 'https://github.com/sloria/sloria.github.io.git'
 run = partial(inv_run, echo=True)
 
 
-@task
-def clean(ctx):
+def do_clean(ctx):
     if os.path.isdir(DEPLOY_PATH):
         run('rm -rf {deploy_path}'.format(deploy_path=DEPLOY_PATH))
         run('mkdir {deploy_path}'.format(deploy_path=DEPLOY_PATH))
 
 
 @task
-def build(ctx):
-    run('pelican -s pelicanconf.py')
+def clean(ctx):
+    do_clean(ctx)
+
+
+@task
+def build(ctx, clean=False):
+    if clean:
+        do_clean(ctx)
+    run('pelican -o output -s pelicanconf.py')
 
 
 @task
@@ -46,6 +52,7 @@ def reserve(ctx):
 
 @task
 def publish(ctx):
+    clean(ctx)
     run('pelican content -o output -s pelicanconf.py')
     run('ghp-import output')
     run('git push {repo}  gh-pages:master'.format(repo=REPO))
