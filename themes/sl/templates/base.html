@@ -7,7 +7,8 @@
 
     <title>{% block title %} {{SITENAME}} {% endblock %}</title>
 
-    {% assets filters="autoprefixer6,cssmin", output="css/style.min.css", "css/pygments.css", "css/font-awesome.css", "css/style.css" %}
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    {% assets filters="autoprefixer6,cssmin", output="css/style.min.css", "css/pygments.css", "css/style.css" %}
       <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
 

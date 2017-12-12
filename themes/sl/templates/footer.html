@@ -9,12 +9,12 @@
           <script language="JavaScript">
             u = '{{ MAIL_USERNAME }}';
             s = '{{ MAIL_HOST }}';
-            document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\"><li><i class="icon-envelope icon-large"></i> </li></a>');
+            document.write('<li><a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\"><i class="fas fa-envelope-square fa-lg"></i> </a></li>');
           </script>
-          <a href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-          <a href="{{ LINKEDIN_URL }}"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-          <a href="{{ GITHUB_URL }}" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-          <a href="{{ SITEURL }}/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+          <li> <a href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a> </li>
+          <li><a href="{{ LINKEDIN_URL }}"><i class="fab fa-linkedin fa-lg" ></i></a></li>
+          <li> <a href="{{ GITHUB_URL }}" target="_blank"> <i class="fab fa-github-square fa-lg"></i> </a> </li>
+          <li> <a href="{{ SITEURL }}/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><i class="fas fa-rss-square fa-lg"></i> </a></li>
         </ul>
       </div>
     </p>
