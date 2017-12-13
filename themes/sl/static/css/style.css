@@ -8,7 +8,6 @@ html {
   font: normal 105%/1.65 var(--fontSecondary); /* base font size 18px with 1.65 line-height */
 }
 body {
-  hyphens: auto;
   color: var(--fontColor);
 }
 
