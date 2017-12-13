@@ -1,18 +1,24 @@
+:root {
+  --fontColor: #57534a;
+  --fontPrimary: 'Lato', 'Helvetica Neue', sans-serif;
+  --fontSecondary: 'Merriweather', Georgia, serif;
+}
+
 html {
-  font: normal 105%/1.65 'Merriweather', Georgia, serif; /* base font size 18px with 1.65 line-height */
+  font: normal 105%/1.65 var(--fontSecondary); /* base font size 18px with 1.65 line-height */
 }
 body {
   hyphens: auto;
-  color: #57534a;
+  color: var(--fontColor);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--fontPrimary);
   font-weight: 700;
-  color: #57534a;
+  color: var(--fontColor);
   margin: 1.2em 0 0.5em;
   line-height: 1.2;
 }
@@ -93,6 +99,7 @@ h4 a:hover {
   color: #32742c;
   text-decoration: underline;
 }
+
 /* layout elements */
 .Site {
   display: flex;
@@ -115,7 +122,7 @@ h4 a:hover {
   margin: 0 auto;
 }
 .page {
-  padding-top: 50px;
+  padding: 50px 2em 0 2em;
 }
 
 .Nav {
@@ -142,7 +149,7 @@ header a {
   padding: 10px;
 }
 div.navigation a {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--fontPrimary);
   font-weight: 300;
   text-decoration: none;
   font-size: 22px;
@@ -280,7 +287,7 @@ div.entry-overview div.summary p {
   padding: 0;
 }
 div.entry-overview div.detail {
-  font: 'Merriweather', Georgia, serif;
+  font: var(--fontSecondary);
   margin-left: 140px;
 }
 div.entry-overview div.date {
@@ -297,7 +304,7 @@ div.entry-overview div.date {
 div.entry-overview .article-summary {
   font-weight: 300;
   font-size: 0.9em;
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-family: var(--fontPrimary);
 }
 
 /* other alignment things */
@@ -410,5 +417,5 @@ aside {
 }
 
 section.meta {
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-family: var(--fontPrimary);
 }

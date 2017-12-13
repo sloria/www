@@ -94,8 +94,7 @@ EXTRA_PATH_METADATA = {
 # A list of files to copy from the source to the destination
 # FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
 # AUTOPREFIXER_BIN = './node_modules/.bin/postcss'
-AUTOPREFIXER_BIN = os.path.join(HERE, 'node_modules', '.bin', 'postcss')
+POSTCSS_BIN = os.path.join(HERE, 'node_modules', '.bin', 'postcss')
 ASSET_CONFIG = (
-    ('AUTOPREFIXER_BIN', AUTOPREFIXER_BIN),
-    ('AUTOPREFIXER_BROWSERS', ['> 1%', 'last 2 versions']),
+    ('POSTCSS_BIN', POSTCSS_BIN),
 )

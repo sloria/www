@@ -5,5 +5,6 @@ invoke==0.21.0
 beautifulsoup4==4.6.0
 pelican-gist==0.3.3
 # Assets
-webassets==0.12.1
+# install fork with postcss support
+git+https://github.com/sloria/webassets.git@postcss
 cssmin==0.2.0

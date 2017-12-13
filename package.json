@@ -11,7 +11,7 @@
   "license": "MIT",
   "homepage": "https://github.com/sloria/www#readme",
   "dependencies": {
-    "autoprefixer": "^7.2.2",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2"
   }
 }
