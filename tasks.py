@@ -21,10 +21,12 @@ def clean(ctx):
 
 
 @task
-def build(ctx, clean=False):
+def build(ctx, debug=False, clean=False):
     if clean:
         do_clean(ctx)
-    run('pelican -o output -s pelicanconf.py')
+    run('NODE_ENV={} pelican -o output -s pelicanconf.py'.format(
+        'development' if debug else 'production',
+    ))
 
 
 @task
@@ -35,7 +37,8 @@ def rebuild(ctx):
 
 @task
 def regenerate(ctx):
-    run('pelican -r --debug -s pelicanconf.py')
+    clean(ctx)
+    run('NODE_ENV=development pelican -r --debug -s pelicanconf.py')
 
 
 @task
@@ -52,7 +55,6 @@ def reserve(ctx):
 
 @task
 def publish(ctx):
-    clean(ctx)
-    run('pelican content -o output -s pelicanconf.py')
+    build(ctx, clean=True)
     run('ghp-import output')
     run('git push {repo}  gh-pages:master'.format(repo=REPO))
