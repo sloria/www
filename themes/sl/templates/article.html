@@ -3,28 +3,30 @@
 {% block title %} {{ article.title }} | {{ SITENAME }} {% endblock %}
 
 {% block content %}
-<div class="page">
-    <h1 class="title"> {{ article.title }}</h1>
-    <p class=date> {{ article.locale_date }} </p>
+<div class="Page">
+  <article class="Article">
+    <h1 class="Article-title"> {{ article.title }}</h1>
+    <p class="Article-date"> {{ article.locale_date }} </p>
 
-    <article>
-      <div class="content article-content">
+    <section class="Article-content">
+      <div class="Article-content">
         {{ article.content }}
       </div>
-    </article>
+    </section>
 
 
     {% if article.tags %}
-    <p class=tags>tagged in
+    <p class="Article-tags">tagged in
       {% for tag in article.tags %}
       <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
       {% endfor %}
     </p>
     {% endif %}
 
-    <section class="meta">
+    <section class="Article-meta">
       <p>Please send comments by
       <a href="mailto:{{ MAIL_USERNAME }}@{{MAIL_HOST}}">email</a>. I welcome your feedback, advice, and criticism.</p>
     </section>
+  </article>
 </div>
 {% endblock %}

@@ -50,8 +50,6 @@ SECTIONS = [
     ('about', ''),
     ('projects', 'projects'),
     ('scribbles', 'archives.html'),
-    # ('Archive', 'archives.html'),
-    # ('Tags', 'tags.html'),
 ]
 
 DEFAULT_CATEGORY = 'uncategorized'

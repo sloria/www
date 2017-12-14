@@ -4,13 +4,13 @@
 
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}
-    <div class=entry-overview>
-      <div class=date>{{ article.date.strftime('%b %d, %Y') }}</div>
-      <div class=detail>
-          <div class="article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-          <div class="article-summary">{{ article.description }}</div>
+    <div class="Entry">
+      <div class="Entry-date">{{ article.date.strftime('%b %d, %Y') }}</div>
+      <div class="Entry-detail">
+          <div class="Entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+          <div class="Entry-description">{{ article.description }}</div>
           <small>
-            <span class="word-count">({{ article.stats['wc'] }} words)</span>
+            <span class="WordCount">({{ article.stats['wc'] }} words)</span>
           </small>
 
           </div>
@@ -20,7 +20,7 @@
 {%endif%}
 
 {% if articles_page and articles_paginator.num_pages > 1 %}
-<div class="pagination">
+<div class="Pagination">
 <ul>
   {% if articles_page.has_previous() %}
     {% set num = articles_page.previous_page_number() %}

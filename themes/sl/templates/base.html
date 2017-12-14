@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Merriweather:400,300' rel='stylesheet' type='text/css'>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+    <meta charset="utf-8">
     <title>{% block title %} {{SITENAME}} {% endblock %}</title>
+    <meta name="description" content="Steven Loria's personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Merriweather:400,300' rel='stylesheet' type='text/css'>
     {% assets filters="postcss", output="css/style.min.css", "css/pygments.css", "css/style.css" %}
       <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
 
   </head>
   <body class="Site">
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
     {% block header %}
       {% include "header.html" %}
     {% endblock %}
 
     <div class="Site-content">
-      <div class="Container">
+      <div class="u-container">
       {% block content %} {% endblock %}
       </div>
     </div>
