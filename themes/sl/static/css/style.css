@@ -113,6 +113,9 @@ h4 a:hover {
 }
 
 /* Components */
+
+/* Site layout */
+
 .Site {
   display: flex;
   flex-direction: column;
@@ -121,14 +124,16 @@ h4 a:hover {
   font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
   color: var(--fontColor);
 }
-
-/* Header */
 .Site-header {
   flex: none;
   padding-top: 40px;
   float: left;
 }
-.Site-header-nav {
+.Site-footer {
+  flex: 0 0 200px;
+}
+/* Nav */
+.Nav {
   max-width: 740px;
   margin: 0 auto 10px auto;
 
@@ -138,7 +143,7 @@ h4 a:hover {
     padding: 10px;
   }
 }
-.Site-header-navigation {
+.Nav-sections {
   float: right;
 
   & a {
@@ -163,13 +168,8 @@ h4 a:hover {
 }
 /* Footer */
 
-.Site-footer {
-  flex: 0 0 200px;
-}
-.Site-footer-content {
+.Footer {
   margin: 10px auto 0 auto;
-}
-.Site-footer {
   font-size: 14px;
   color: var(--mutedColor);
   text-align: center;
@@ -187,8 +187,7 @@ h4 a:hover {
     margin: 0;
   }
 }
-
-.Site-footer-social {
+.Footer-social {
   font-size: 27px;
   padding-top: 20px;
   padding-bottom: 10px;
