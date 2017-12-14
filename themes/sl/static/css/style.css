@@ -243,21 +243,8 @@ h4 a:hover {
 .Entry {
   margin: 25px 122px 25px 102px;
 }
-.Entry h1,
-.Entry div.summary,
-.Entry div.summary p {
-  display: inline;
-  line-height: 25px;
-}
-.Entry h1 {
-  margin: 0;
-  font-size: 20px;
-}
-.Entry div.summary,
-.Entry-date,
-.Entry div.summary p {
-  margin: 0;
-  padding: 0;
+.Entry-title a {
+  text-decoration: none;
 }
 .Entry-detail {
   font: var(--fontSerif);
@@ -265,6 +252,8 @@ h4 a:hover {
 }
 .Entry-date {
   float: left;
+  margin: 0;
+  padding: 0;
   width: 120px;
   color: var(--mutedColor);
   text-align: right;
@@ -288,10 +277,11 @@ h4 a:hover {
 .Pagination {
   margin: 36px 0 0 0;
   text-align: center;
-}
-.Pagination strong {
-  font-weight: normal;
-  font-style: italic;
+
+  & strong {
+    font-weight: normal;
+    font-style: italic;
+  }
 }
 
 /* Tags */
@@ -390,4 +380,3 @@ aside {
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
 }
-
