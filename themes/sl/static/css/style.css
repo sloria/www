@@ -138,6 +138,9 @@ h4 a:hover {
 .Nav {
   max-width: 740px;
   margin: 0 auto 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   & a {
     text-decoration: none;
@@ -145,9 +148,11 @@ h4 a:hover {
     padding: 10px;
   }
 }
+.Nav-home {
+  flex: 0 1 20%;
+}
 .Nav-sections {
-  float: right;
-
+  flex: 1 0 auto;
   & a {
     font-family: var(--fontSansSerif);
     font-weight: 300;
@@ -160,6 +165,7 @@ h4 a:hover {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
   }
 
   & ul li {
@@ -207,7 +213,7 @@ h4 a:hover {
 
   & ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 2vh;
     padding: 0;
   }
 }
@@ -242,7 +248,7 @@ h4 a:hover {
 /* Entry */
 
 .Entry {
-  margin: 25px 122px 25px 102px;
+  margin: 25px 3vw;
 }
 .Entry-title a {
   text-decoration: none;
