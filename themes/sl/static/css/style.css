@@ -35,12 +35,10 @@ h1.u-lead {
 
 h1 {
   margin-top: 0;
-  font-weight: 700;
   font-size: 42px;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 28px;
 }
 
@@ -124,6 +122,7 @@ h4 a:hover {
   margin: 0px;
   height: 100vh;
   font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
+  font-weight: 300;
   color: var(--fontColor);
 }
 .Site-header {
@@ -252,6 +251,7 @@ h4 a:hover {
 }
 .Entry-title a {
   text-decoration: none;
+  font-weight: 400;
 }
 .Entry-detail {
   font: var(--fontSerif);
