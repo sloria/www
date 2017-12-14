@@ -17,8 +17,6 @@ You can also find me on [GitHub][github], [Twitter][], [Keybase][], and [LinkedI
 
 
 [email]: mailto:sloria1@gmail.com
-[marlerlab]: http://psych.wisc.edu/marler/index.htm
-[waisman]: http://brainimaging.waisman.wisc.edu/
 [github]: http://www.github.com/sloria
 [linkedin]: http://www.linkedin.com/in/sloria
 [Twitter]: https://www.twitter.com/sloria1
