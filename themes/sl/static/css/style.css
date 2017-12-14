@@ -1,8 +1,8 @@
 /* Variables */
 :root {
   --fontColor: #57534a;
-  --fontPrimary: 'Lato', 'Helvetica Neue', sans-serif;
-  --fontSecondary: 'Merriweather', Georgia, serif;
+  --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
+  --fontSerif: 'Merriweather', Georgia, serif;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
 
@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--fontPrimary);
+  font-family: var(--fontSerif);
   font-weight: 700;
   color: var(--fontColor);
   margin: 1.2em 0 0.5em;
@@ -27,6 +27,7 @@ h4 {
 }
 
 h1.u-lead {
+  font-family: var(--fontSansSerif);
   font-weight: 300;
 }
 
@@ -54,8 +55,6 @@ aside {
   font-size: 0.889em;
 }
 
-/* general style */
-
 a {
   color: var(--primaryColor);
 }
@@ -63,12 +62,7 @@ a:hover {
   color: var(--secondaryColor);
 }
 
-/**
- *
- * =======================================================================
-   Code Blocks
- * =======================================================================
- */
+/* Code blocks */
 
 pre code {
   word-wrap: normal;
@@ -124,7 +118,7 @@ h4 a:hover {
   flex-direction: column;
   margin: 0px;
   height: 100vh;
-  font: normal 105%/1.65 var(--fontSecondary); /* base font size 18px with 1.65 line-height */
+  font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
   color: var(--fontColor);
 }
 
@@ -147,7 +141,7 @@ h4 a:hover {
   float: right;
 }
 .Site-header-navigation a {
-  font-family: var(--fontPrimary);
+  font-family: var(--fontSansSerif);
   font-weight: 300;
   text-decoration: none;
   font-size: 22px;
@@ -231,7 +225,7 @@ h4 a:hover {
 }
 
 .Article-meta {
-  font-family: var(--fontPrimary);
+  font-family: var(--fontSansSerif);
 }
 
 /* Entry */
@@ -256,7 +250,7 @@ h4 a:hover {
   padding: 0;
 }
 .Entry-detail {
-  font: var(--fontSecondary);
+  font: var(--fontSerif);
   margin-left: 140px;
 }
 .Entry-date {
@@ -270,7 +264,7 @@ h4 a:hover {
 .Entry-description {
   font-weight: 300;
   font-size: 0.9em;
-  font-family: var(--fontPrimary);
+  font-family: var(--fontSansSerif);
 }
 
 /* Word count */
@@ -292,7 +286,7 @@ h4 a:hover {
 
 /* Tags */
 .Tag-header {
-  font-family: var(--fontSecondary);
+  font-family: var(--fontSerif);
 }
 
 /* margins and stuff */
