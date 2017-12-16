@@ -1,4 +1,4 @@
-title: Startup Skepticism::Collected quotes of disillusionment about the startup system
+title: Startup Skepticism: Collected quotes of disillusionment about the startup system
 tags: notes, startups
 slug: startup-skepticism
 

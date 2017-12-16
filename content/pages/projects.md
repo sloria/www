@@ -58,7 +58,7 @@ capturing user feedback.
 
 <i class="fab fa-js-square"></i>
 <i class="fab fa-node-js"></i>
-**[Simplist](http://simplist.sloria.com)**: One-click collaborative lists, written with ReactJS and HapiJS.
+**[Simplist](http://simplist.sloria.com)**: *Early development*. One-click collaborative lists, written with ReactJS and HapiJS.
 
 <i class="fab fa-python"></i>
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.

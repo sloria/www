@@ -5,11 +5,15 @@
 :root {
   --fontColor: #57534a;
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
+  --fontSansSerifWeight: 300;
   --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightMed: 400;
   --fontWeightBold: 700;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
+  --fontSize: 1.125em;
+  --lineHeight: 1.65;
+  --typeScale: 1.414;
 
   --primaryColor: #234764;
   --secondaryColor: #32742c;
@@ -20,8 +24,8 @@
 }
 
 html {
-  font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
-  font-weight: 400;
+  font: normal var(--fontSize)/var(--lineHeight) var(--fontSerif); /* base font size 18px with 1.65 line-height */
+  font-weight: var(--fontWeightMed);
   color: var(--fontColor);
 }
 
@@ -29,41 +33,36 @@ html {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightBold);
   color: var(--fontColor);
-  margin: 1.2em 0 0.5em;
+  margin: calc(1em * var(--typeScale)) 0 0.5em;
   line-height: 1.2;
 }
 
 h1.u-lead {
   font-family: var(--fontSansSerif);
-  font-weight: 300;
-  font-size: 36px;
+  font-weight: var(--fontSansSerifWeight);
+  font-size: calc(1em * var(--typeScale) * var(--typeScale));
 }
 
 h1 {
   margin-top: 0;
-  font-size: 42px;
+  font-size: calc(1em * var(--typeScale) * var(--typeScale));
 }
 
 h2 {
-  font-size: 28px;
+  font-size: calc(1em * var(--typeScale));
 }
 
 h3 {
-  font-size: 1.466em;
-}
-
-h4 {
-  font-size: 1.325em;
+  font-size: 1.1em;
 }
 
 small,
 aside {
-  font-size: 0.889em;
+  font-size: var(1em / var(--typeScale));
 }
 
 a {
@@ -175,7 +174,7 @@ h4 a:hover {
 
   & a {
     font-family: var(--fontSansSerif);
-    font-weight: 300;
+    font-weight: var(--fontSansSerifWeight);
     text-decoration: none;
     font-size: 22px;
     padding: 10px;
@@ -292,9 +291,9 @@ h4 a:hover {
   font-size: 14px;
 }
 .Entry-description {
-  font-weight: 300;
   font-size: 0.9em;
   font-family: var(--fontSansSerif);
+  font-weight: var(--fontSansSerifWeight);
 }
 
 /* Word count */
@@ -346,7 +345,7 @@ code,
 tt {
   font-family: var(--fontMonospace);
   font-size: 0.88em;
-  /*overflow: auto;*/
+  overflow: auto;
 }
 pre {
   /*line-height: 1.3;*/
