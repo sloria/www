@@ -19,6 +19,12 @@
   --codeBGColor: ghostWhite;
 }
 
+html {
+  font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
+  font-weight: 400;
+  color: var(--fontColor);
+}
+
 /* Typography */
 
 h1,
@@ -127,9 +133,6 @@ h4 a:hover {
   flex-direction: column;
   margin: 0px;
   height: 100vh;
-  font: normal 105%/1.65 var(--fontSerif); /* base font size 18px with 1.65 line-height */
-  font-weight: 300;
-  color: var(--fontColor);
 }
 .Site-header {
   flex: none;
