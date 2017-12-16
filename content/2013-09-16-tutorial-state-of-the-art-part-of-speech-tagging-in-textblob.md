@@ -12,6 +12,7 @@ Matthew Honnibal wrote a clear and detailed blog post about the Averaged Percept
 ## Getting the `PerceptronTagger`
 
 -----
+
 **UPDATE September 25, 2013**: TextBlob 0.7.0 and the textblob-aptagger 0.1.0 extension are released. Instead of following the instructions below for getting the PerceptronTagger, just run
 
 ```bash
