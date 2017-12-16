@@ -110,6 +110,7 @@ h4 a:hover {
 
 .u-separator {
   max-width: 740px;
+  width: 90vw;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;
   font-size: 16px;
@@ -241,7 +242,11 @@ h4 a:hover {
 }
 
 .Page {
-  padding: 50px 2em 0 2em;
+  padding: 5vw 2em 0 2em;
+
+  @media (--break-md) {
+    padding: 50px 2em 0 2em;
+  }
 }
 
 /* Article */
