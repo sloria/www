@@ -1,8 +1,13 @@
+/* Custom media queries */
+@custom-media --break-md (width >= 490px);
+
 /* Variables */
 :root {
   --fontColor: #57534a;
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSerif: 'Merriweather', Georgia, serif;
+  --fontWeightMed: 400;
+  --fontWeightBold: 700;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
 
@@ -21,7 +26,7 @@ h2,
 h3,
 h4 {
   font-family: var(--fontSerif);
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
   color: var(--fontColor);
   margin: 1.2em 0 0.5em;
   line-height: 1.2;
@@ -127,8 +132,7 @@ h4 a:hover {
 }
 .Site-header {
   flex: none;
-  padding-top: 40px;
-  float: left;
+  /* float: left; */
 }
 .Site-footer {
   flex: 0 0 200px;
@@ -137,9 +141,15 @@ h4 a:hover {
 .Nav {
   max-width: 740px;
   margin: 0 auto 10px auto;
+  padding-top: 1.0em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+
+  @media (--break-md) {
+    padding-top: 2.0em;
+  }
 
   & a {
     text-decoration: none;
@@ -152,6 +162,13 @@ h4 a:hover {
 }
 .Nav-sections {
   flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+
+  @media (--break-md) {
+    justify-content: flex-end;
+  }
+
   & a {
     font-family: var(--fontSansSerif);
     font-weight: 300;
@@ -164,7 +181,6 @@ h4 a:hover {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: right;
   }
 
   & ul li {
@@ -212,7 +228,7 @@ h4 a:hover {
 
   & ul li {
     display: inline;
-    margin: 0 2vh;
+    margin: 0 1vw;
     padding: 0;
   }
 }
@@ -251,7 +267,7 @@ h4 a:hover {
 }
 .Entry-title a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: var(--fontWeightMed);
 }
 .Entry-detail {
   font: var(--fontSerif);
