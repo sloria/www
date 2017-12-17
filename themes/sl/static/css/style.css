@@ -1,5 +1,6 @@
 /* Custom media queries */
 @custom-media --break-md (width >= 490px);
+@custom-media --break-lg (width >= 768px);
 
 /* Variables */
 :root {
@@ -11,9 +12,11 @@
   --fontWeightBold: 700;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
-  --fontSize: 1.125em;
   --lineHeight: 1.65;
   --typeScale: 1.414;
+  --fontSize: 0.875em;
+  --fontSizeLg: 1.125em;
+  --socialIconSize: 27px;
 
   --primaryColor: #234764;
   --secondaryColor: #32742c;
@@ -27,6 +30,10 @@ html {
   font: normal var(--fontSize)/var(--lineHeight) var(--fontSerif); /* base font size 18px with 1.65 line-height */
   font-weight: var(--fontWeightMed);
   color: var(--fontColor);
+
+  @media (--break-lg) {
+    font-size: var(--fontSizeLg);
+  }
 }
 
 /* Typography */
@@ -44,12 +51,21 @@ h3 {
 h1.u-lead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontSansSerifWeight);
-  font-size: calc(1em * var(--typeScale) * var(--typeScale));
+  font-size: calc(1em *
+                  var(--typeScale) *
+                  var(--typeScale));
 }
 
 h1 {
   margin-top: 0;
-  font-size: calc(1em * var(--typeScale) * var(--typeScale));
+  /* Downsize a bit on smaller screens */
+  font-size: 1.8em;
+  /* Use the ideal typescale on larger screens */
+  @media (--break-lg) {
+    font-size: calc(1em *
+                    var(--typeScale) *
+                    var(--typeScale));
+  }
 }
 
 h2 {
@@ -139,25 +155,25 @@ h4 a:hover {
   /* float: left; */
 }
 .Site-footer {
-  flex: 0 0 200px;
+  flex: 0 0 20%;
 }
 /* Nav */
 .Nav {
   max-width: 740px;
   margin: 0 auto 10px auto;
-  padding-top: 1.0em;
+  padding-top: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (--break-md) {
-    padding-top: 2.0em;
+    padding-top: 2em;
   }
 
   & a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.3em;
     padding: 10px;
   }
 }
@@ -177,16 +193,14 @@ h4 a:hover {
     font-family: var(--fontSansSerif);
     font-weight: var(--fontSansSerifWeight);
     text-decoration: none;
-    font-size: 22px;
     padding: 0 15px;
   }
-
 }
 /* Footer */
 
 .Footer {
   margin: 10px auto 0 auto;
-  font-size: 14px;
+  font-size: calc(1em / var(--typeScale));
   color: var(--mutedColor);
   text-align: center;
 
@@ -204,7 +218,7 @@ h4 a:hover {
   }
 }
 .Footer-social {
-  font-size: 27px;
+  font-size: var(--socialIconSize);
   padding-top: 20px;
   padding-bottom: 10px;
 
@@ -282,9 +296,12 @@ h4 a:hover {
   font-size: 14px;
 }
 .Entry-description {
-  font-size: 0.9em;
+  font-size: 1em;
   font-family: var(--fontSansSerif);
   font-weight: var(--fontSansSerifWeight);
+  @media (--break-lg) {
+    font-size: 0.9em;
+  }
 }
 
 /* Word count */
