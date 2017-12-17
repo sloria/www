@@ -118,6 +118,7 @@ h4 a:hover {
   width: 90vw;
   margin: 0 auto;
   border-bottom: 1px solid var(--gray);
+  opacity: 0.5;
   font-size: 16px;
   color: var(--fontColor);
   text-align: center;
@@ -177,20 +178,9 @@ h4 a:hover {
     font-weight: var(--fontSansSerifWeight);
     text-decoration: none;
     font-size: 22px;
-    padding: 10px;
+    padding: 0 15px;
   }
 
-  & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  & ul li {
-    display: inline;
-    margin: 0 2px;
-    padding: 0;
-  }
 }
 /* Footer */
 
