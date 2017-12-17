@@ -244,7 +244,8 @@ h4 a:hover {
 /* Article */
 
 .Article-date {
-  font-style: italic;
+  font-family: var(--fontSansSerif);
+  font-weight: var(--fontSansSerifWeight);
 }
 
 .Article-tags {
