@@ -1,10 +1,10 @@
 /* Custom media queries */
-@custom-media --break-md (width >= 490px);
+@custom-media --break-md (width >= 528px);
 @custom-media --break-lg (width >= 768px);
 
 /* Variables */
 :root {
-  --fontColor: #57534a;
+  --fontColor: hsla(0 ,0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSansSerifWeight: 300;
   --fontSerif: 'Merriweather', Georgia, serif;
@@ -12,11 +12,18 @@
   --fontWeightBold: 700;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
+
   --lineHeight: 1.65;
-  --typeScale: 1.414;
-  --fontSize: 0.875em;
-  --fontSizeLg: 1.125em;
-  --fontSizeSm: 0.85em;
+
+  /* Use different scales for different screen sizes */
+  --typeScaleSm: 1.333;  /* Perfect fourth */
+  --typeScaleLg: 1.414;  /* Augmented fourth */
+
+  /* Base font size on mobile */
+  --baseFontSizeSm: 15px;
+  /* Base font size on larger screens */
+  --baseFontSizeMd: 18px;
+
   --socialIconSize: 27px;
   --maxWidth: 740px;
 
@@ -29,12 +36,14 @@
 }
 
 html {
-  font: normal var(--fontSize)/var(--lineHeight) var(--fontSerif); /* base font size 18px with 1.65 line-height */
+  font-size: var(--baseFontSizeSm);
+  line-height: var(--lineHeight);
+  font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
   color: var(--fontColor);
 
-  @media (--break-lg) {
-    font-size: var(--fontSizeLg);
+  @media (--break-md) {
+    font-size: var(--baseFontSizeMd);
   }
 }
 
@@ -46,7 +55,7 @@ h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightBold);
   color: var(--fontColor);
-  margin: calc(1em * var(--typeScale)) 0 0.5em;
+  margin: calc(1em * var(--typeScaleLg)) 0 0.5em;
   line-height: 1.2;
 }
 
@@ -54,23 +63,28 @@ h1.u-lead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontSansSerifWeight);
   font-size: calc(1em *
-                  var(--typeScale) *
-                  var(--typeScale));
+                  var(--typeScaleLg) *
+                  var(--typeScaleLg));
 }
 
 h1 {
-  /* Downsize a bit on smaller screens */
-  font-size: 1.8em;
-  /* Use the ideal typescale on larger screens */
+  font-size: calc(1em *
+                  var(--typeScaleSm) *
+                  var(--typeScaleSm));
   @media (--break-lg) {
     font-size: calc(1em *
-                    var(--typeScale) *
-                    var(--typeScale));
+                    var(--typeScaleLg) *
+                    var(--typeScaleLg));
   }
 }
 
 h2 {
-  font-size: calc(1em * var(--typeScale));
+  font-size: calc(1em *
+                  var(--typeScaleSm));
+  @media (--break-lg) {
+    font-size: calc(1em *
+                    var(--typeScaleLg));
+  }
 }
 
 h3 {
@@ -79,7 +93,7 @@ h3 {
 
 small,
 aside {
-  font-size: var(--fontSizeSm);
+  font-size: calc(1em / var(--typeScaleSm));
 }
 
 a {
@@ -200,7 +214,7 @@ h4 a:hover {
 
 .Footer {
   margin: 10px auto 0 auto;
-  font-size: calc(1em / var(--typeScale));
+  font-size: calc(1em / var(--typeScaleLg));
   color: var(--mutedColor);
   text-align: center;
 
@@ -216,7 +230,9 @@ h4 a:hover {
   & p {
     margin: 0;
   }
+
 }
+
 .Footer-social {
   font-size: var(--socialIconSize);
   padding-top: 20px;
@@ -248,11 +264,7 @@ h4 a:hover {
 }
 
 .Page {
-  padding: 5vw 2em 0 2em;
-
-  @media (--break-md) {
-    padding: 50px 2em 0 2em;
-  }
+  padding: 5vh 2em 0 2em;
 }
 
 /* Article */
@@ -262,9 +274,9 @@ h4 a:hover {
 }
 
 .Article-date {
-  font-family: var(--fontSansSerif);
-  font-weight: var(--fontSansSerifWeight);
-  font-size: var(--fontSizeSm);
+  font-family: var(--fontSerif);
+  color: var(--mutedColor);
+  font-size: 0.875em;
   margin-top: 0.5em;
 }
 

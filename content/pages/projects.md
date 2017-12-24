@@ -3,7 +3,7 @@ slug: projects
 
 # Projects
 
-A small selection of my side projects. You can find more at my [GitHub profile][github].
+A small selection of my programming side projects. You can find more at my [GitHub profile][github].
 
 *\* = actively maintained*
 
