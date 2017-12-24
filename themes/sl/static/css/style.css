@@ -18,6 +18,7 @@
   --fontSizeLg: 1.125em;
   --fontSizeSm: 0.85em;
   --socialIconSize: 27px;
+  --maxWidth: 740px;
 
   --primaryColor: #234764;
   --secondaryColor: #32742c;
@@ -125,12 +126,12 @@ h4 a:hover {
 /* Utilities */
 
 .u-container {
-  max-width: 740px;
+  max-width: var(--maxWidth);
   margin: 0 auto;
 }
 
 .u-separator {
-  max-width: 740px;
+  max-width: var(--maxWidth);
   width: 90vw;
   margin: 0 auto;
   border-bottom: 1px solid var(--gray);
@@ -158,7 +159,7 @@ h4 a:hover {
 }
 /* Nav */
 .Nav {
-  max-width: 740px;
+  max-width: var(--maxWidth);
   margin: 0 auto 10px auto;
   padding-top: 1em;
   display: flex;
@@ -362,9 +363,13 @@ tt {
   font-size: 0.88em;
   overflow: auto;
 }
+/* give code blocks and codepens a little extra room */
+pre,
+.cp_embed_wrapper {
+  margin: 1.5em -1.5em;
+}
 pre {
   padding: 1.5em;
-  margin: 1.5em -1.5em;
   background-color: var(--codeBGColor);
 }
 code,
