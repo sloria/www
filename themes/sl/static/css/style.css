@@ -16,6 +16,7 @@
   --typeScale: 1.414;
   --fontSize: 0.875em;
   --fontSizeLg: 1.125em;
+  --fontSizeSm: 0.85em;
   --socialIconSize: 27px;
 
   --primaryColor: #234764;
@@ -77,7 +78,7 @@ h3 {
 
 small,
 aside {
-  font-size: var(1em / var(--typeScale));
+  font-size: var(--fontSizeSm);
 }
 
 a {
@@ -262,6 +263,8 @@ h4 a:hover {
 .Article-date {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontSansSerifWeight);
+  font-size: var(--fontSizeSm);
+  margin-top: 0.5em;
 }
 
 .Article-tags {
