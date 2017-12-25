@@ -32,7 +32,6 @@
   --mutedColor: #888;
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
-  --codeBGColor: #f7f7f7;
 }
 
 html {
@@ -382,7 +381,7 @@ pre,
 }
 pre {
   padding: 1.5em;
-  background-color: var(--codeBGColor);
+  background-color: var(--grayHighlight);
 }
 code,
 tt {
