@@ -377,7 +377,7 @@ tt {
 /* give code blocks and codepens a little extra room */
 pre,
 .cp_embed_wrapper {
-  margin: 1.5em -1.5em;
+  margin: 1.5rem -1.5rem;
 }
 pre {
   padding: 1.5em;
@@ -427,7 +427,7 @@ blockquote cite:before {
 
 aside {
   background: var(--grayHighlight);
-  margin: 20px -30px;
+  margin: 1.5rem -1.5rem;
   padding: 10px 30px;
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
