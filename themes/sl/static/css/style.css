@@ -6,7 +6,7 @@
 :root {
   --fontColor: hsla(0 ,0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
-  --fontSansSerifWeight: 300;
+  --fontWeightLight: 300;
   --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightMed: 400;
   --fontWeightBold: 700;
@@ -15,9 +15,18 @@
 
   --lineHeight: 1.65;
 
-  /* Use different scales for different screen sizes */
+  /* Type scale on smaller screens */
   --typeScaleSm: 1.333;  /* Perfect fourth */
+  --stepUp1Sm: var(--typeScaleSm)em;
+  --stepUp2Sm: calc(var(--stepUp1Sm) * var(--typeScaleSm));
+  --stepUp3Sm: calc(var(--stepUp2Sm) * var(--typeScaleSm));
+  --stepDown1Sm: calc(1 / var(--typeScaleSm))em;
+  /* Type scale on larger screens */
   --typeScaleLg: 1.414;  /* Augmented fourth */
+  --stepUp1Lg: var(--typeScaleLg)em;
+  --stepUp2Lg: calc(var(--stepUp1Lg) * var(--typeScaleLg));
+  --stepUp3Lg: calc(var(--stepUp2Lg) * var(--typeScaleLg));
+  --stepDown1Lg: calc(1 / var(--typeScaleLg))em;
 
   /* Base font size on mobile */
   --baseFontSizeSm: 15px;
@@ -55,35 +64,27 @@ h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightBold);
   color: var(--fontColor);
-  margin: calc(1em * var(--typeScaleLg)) 0 0.5em;
+  margin: var(--stepUp1Lg) 0 0.5em;
   line-height: 1.2;
 }
 
 h1.u-lead {
   font-family: var(--fontSansSerif);
-  font-weight: var(--fontSansSerifWeight);
-  font-size: calc(1em *
-                  var(--typeScaleLg) *
-                  var(--typeScaleLg));
+  font-weight: var(--fontWeightLight);
+  font-size: var(--stepUp2Lg);
 }
 
 h1 {
-  font-size: calc(1em *
-                  var(--typeScaleSm) *
-                  var(--typeScaleSm));
+  font-size: var(--stepUp2Sm);
   @media (--break-lg) {
-    font-size: calc(1em *
-                    var(--typeScaleLg) *
-                    var(--typeScaleLg));
+    font-size: var(--stepUp2Lg);
   }
 }
 
 h2 {
-  font-size: calc(1em *
-                  var(--typeScaleSm));
+  font-size: var(--stepUp1Sm);
   @media (--break-lg) {
-    font-size: calc(1em *
-                    var(--typeScaleLg));
+    font-size: var(--stepUp1Lg);
   }
 }
 
@@ -116,11 +117,11 @@ pre {
 
 code {
   white-space: pre;
-  font-family: monospace;
+  font-family: var(--fontMonospace);
 }
 
 /* headlines */
-
+/* TODO: Delete this? */
 h1 a,
 h2 a,
 h3 a,
@@ -205,7 +206,7 @@ h4 a:hover {
 
   & a {
     font-family: var(--fontSansSerif);
-    font-weight: var(--fontSansSerifWeight);
+    font-weight: var(--fontWeightLight);
     text-decoration: none;
     padding: 0 15px;
   }
@@ -214,7 +215,7 @@ h4 a:hover {
 
 .Footer {
   margin: 10px auto 0 auto;
-  font-size: calc(1em / var(--typeScaleLg));
+  font-size: var(--stepDown1Sm);
   color: var(--mutedColor);
   text-align: center;
 
@@ -231,6 +232,9 @@ h4 a:hover {
     margin: 0;
   }
 
+  @media (--break-lg) {
+    font-size: var(--stepDown1Lg);
+  }
 }
 
 .Footer-social {
@@ -264,14 +268,11 @@ h4 a:hover {
 }
 
 .Page {
-  padding: 5vh var(--typeScaleSm)em 0 var(--typeScaleSm)em;
+  padding: 5vh var(--stepUp1Sm) 0 var(--stepUp1Sm);
   @media (--break-lg) {
-    padding-top: calc(1em *
-                      var(--typeScaleLg) *
-                      var(--typeScaleLg) *
-                      var(--typeScaleLg));
-    padding-right: var(--typeScaleLg)em;
-    padding-left: var(--typeScaleLg)em;
+    padding-top: var(--stepUp3Lg);
+    padding-right: var(--stepUp1Lg);
+    padding-left: var(--stepUp1Lg);
   }
 }
 
@@ -282,13 +283,9 @@ h4 a:hover {
 }
 
 .Article-content {
-  margin-top: calc(1em *
-                   var(--typeScaleSm) *
-                   var(--typeScaleSm));
+  margin-top: var(--stepUp2Sm);
   @media (--break-lg) {
-    margin-top: calc(1em *
-                     var(--typeScaleLg) *
-                     var(--typeScaleLg));
+    margin-top: var(--stepUp2Lg);
   }
 }
 
@@ -343,7 +340,7 @@ h4 a:hover {
 .Entry-description {
   font-size: 1em;
   font-family: var(--fontSansSerif);
-  font-weight: var(--fontSansSerifWeight);
+  font-weight: var(--fontWeightLight);
   @media (--break-lg) {
     font-size: 0.9em;
   }
