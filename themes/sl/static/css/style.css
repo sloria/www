@@ -263,7 +263,15 @@ h4 a:hover {
 }
 
 .Page {
-  padding: 5vh 2em 0 2em;
+  padding: 5vh var(--typeScaleSm)em 0 var(--typeScaleSm)em;
+  @media (--break-lg) {
+    padding-top: calc(1em *
+                      var(--typeScaleLg) *
+                      var(--typeScaleLg) *
+                      var(--typeScaleLg));
+    padding-right: var(--typeScaleLg)em;
+    padding-left: var(--typeScaleLg)em;
+  }
 }
 
 /* Article */
