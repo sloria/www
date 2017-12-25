@@ -6,7 +6,9 @@
 <div class="Page">
   <article class="Article">
     <h1 class="Article-title"> {{ article.title }}</h1>
-    <p class="Article-date"> {{ article.locale_date }} </p>
+    <div class="Article-meta">
+      <time datetime="{{ article.date.date().isoformat() }}" class="Article-date">{{ article.locale_date }}</time>
+    </div>
 
     <section class="Article-content">
         {{ article.content }}
@@ -21,7 +23,7 @@
     </p>
     {% endif %}
 
-    <section class="Article-meta">
+    <section class="Article-comments">
       <p>Please send comments by
       <a href="mailto:{{ MAIL_USERNAME }}@{{MAIL_HOST}}">email</a>. I welcome your feedback, advice, and criticism.</p>
     </section>
