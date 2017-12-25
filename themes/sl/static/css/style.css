@@ -23,6 +23,7 @@
   --baseFontSizeSm: 15px;
   /* Base font size on larger screens */
   --baseFontSizeMd: 18px;
+  --smallFontSize: 0.875em;
 
   --socialIconSize: 27px;
   --maxWidth: 740px;
@@ -92,7 +93,7 @@ h3 {
 
 small,
 aside {
-  font-size: calc(1em / var(--typeScaleSm));
+  font-size: var(--smallFontSize);
 }
 
 a {
@@ -280,10 +281,21 @@ h4 a:hover {
   margin: 0;
 }
 
+.Article-content {
+  margin-top: calc(1em *
+                   var(--typeScaleSm) *
+                   var(--typeScaleSm));
+  @media (--break-lg) {
+    margin-top: calc(1em *
+                     var(--typeScaleLg) *
+                     var(--typeScaleLg));
+  }
+}
+
 .Article-date {
   font-family: var(--fontSerif);
   color: var(--mutedColor);
-  font-size: 0.875em;
+  font-size: var(--smallFontSize);
 }
 
 .Article-tags {
@@ -299,6 +311,10 @@ h4 a:hover {
 .Article img {
   display: block;
   margin: 0 auto;
+}
+
+.Article-meta {
+  padding-top: 0.5em;
 }
 
 /* Entry */
@@ -354,7 +370,6 @@ h4 a:hover {
 /* Tags */
 .Tag-header {
   font-size: 1.1em;
-  font-family: var(--fontSansSerif);
   text-align: center;
 }
 
@@ -411,7 +426,7 @@ tt {
 blockquote {
   background: var(--grayHighlight);
   border-left: 10px solid var(--gray);
-  margin: 1.5em 10px;
+  margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: '\201C''\201D''\2018''\2019';
 }
@@ -428,7 +443,7 @@ blockquote p {
 }
 blockquote cite {
   color: var(--mutedColor);
-  font-size: 14px;
+  font-size: var(--smallFontSize);
   display: block;
   margin-top: 5px;
 }
