@@ -72,7 +72,7 @@ Importing the same packages, modules, and classes every time you run the Python 
 
 Inspired by [Flask-Script][] and the [shell_plus][] command from [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html), konch allows you to create project-specific namespaces for your Python shell. You can even configure your shell's [welcome banner and input prompt](https://konch.readthedocs.io/en/latest/#konch-init).
 
-<img src="https://dl.dropboxusercontent.com/u/1693233/blog/konch-logo.png" width="200" alt="konch logo">
+<img src="https://user-images.githubusercontent.com/2379650/34341299-b3bc22d6-e95a-11e7-9349-2845a27df7ad.png" width="300" alt="konch logo">
 
 ### Installing and using konch
 

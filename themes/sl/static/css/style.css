@@ -289,6 +289,11 @@ h4 a:hover {
   font-family: var(--fontSansSerif);
 }
 
+.Article img {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Entry */
 
 .Entry {
