@@ -49,6 +49,8 @@ html {
   line-height: var(--lineHeight);
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightMed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: var(--fontColor);
 
   @media (--break-md) {
