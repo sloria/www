@@ -2,6 +2,7 @@ url:
 save_as: index.html
 title: Me
 date: 2014-03-14 10:00
+landing: true
 
 <h1 class="u-lead">You can call me Steve.</h1>
 

@@ -47,7 +47,7 @@
 html {
   font-size: var(--baseFontSizeSm);
   line-height: var(--lineHeight);
-  font-family: var(--fontSerif);
+  font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightMed);
   color: var(--fontColor);
 
@@ -193,6 +193,7 @@ h4 a:hover {
   }
 }
 .Nav-home {
+  font-family: var(--fontSerif);
   flex: 0 1 20%;
 }
 .Nav-sections {
@@ -276,6 +277,10 @@ h4 a:hover {
   }
 }
 
+.Page--landing {
+  font-family: var(--fontSerif);
+}
+
 /* Article */
 .Page > h1,
 .Article > h1 {
@@ -314,6 +319,14 @@ h4 a:hover {
   padding-top: 0.5em;
 }
 
+.Article {
+  & h1 + p,
+  & h2 + p,
+  & h3 + p {
+    margin-top: 0px;
+  }
+}
+
 /* Entry */
 
 .Entry {
@@ -321,6 +334,7 @@ h4 a:hover {
 }
 .Entry-title a {
   text-decoration: none;
+  font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
 }
 .Entry-detail {
@@ -334,13 +348,13 @@ h4 a:hover {
   width: 120px;
   color: var(--mutedColor);
   text-align: right;
-  font-style: italic;
-  font-size: 14px;
+  font-family: var(--fontSerif);
+  font-size: var(--smallFontSize);
 }
 .Entry-description {
   font-size: 1em;
   font-family: var(--fontSansSerif);
-  font-weight: var(--fontWeightLight);
+  font-weight: var(--fontWeightMed);
   @media (--break-lg) {
     font-size: 0.9em;
   }
@@ -395,7 +409,7 @@ pre,
 code,
 tt {
   font-family: var(--fontMonospace);
-  font-size: 0.88em;
+  font-size: 0.9em;
   overflow: auto;
 }
 /* give code blocks and codepens a little extra room */
@@ -421,6 +435,7 @@ tt {
 /* Blockquotes */
 
 blockquote {
+  font-family: var(--fontSerif);
   background: var(--grayHighlight);
   border-left: 10px solid var(--gray);
   margin: 1.5em 0;
