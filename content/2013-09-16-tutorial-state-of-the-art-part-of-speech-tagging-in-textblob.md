@@ -51,7 +51,7 @@ This will output the TextBlob directory. Place `trontagger.pickle` in this direc
 You're all set to use the tagger!
 </s>
 
-## A Short Intro to the `Blobber` Class
+## A short intro to the `Blobber` Class
 
 Let's start tagging some text. To do this, you pass an instance of the tagger into the `TextBlob` constructor.
 
@@ -83,7 +83,7 @@ print(b1.tags)
 print(b2.tags)
 ```
 
-## Evaluating the Taggers
+## Evaluating the taggers
 
 Now let's do a quick-and-dirty accuracy comparison of the Perceptron tagger with NLTK's and pattern's implementations.
 
@@ -167,7 +167,7 @@ Full script is [here](https://gist.github.com/sloria/6576933).
 
 You can find more extensive evaluations of these three taggers at [Matthew's blog post][PyAP]. The numbers are quite impressive. Thank you Matthew for all your hard work on this!
 
-## Further Reading
+## Further reading
 
 * [A Good POS Tagger in About 200 Lines of Python - Matthew Honnibal](http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/)
 * [A Course On Machine Learning, Ch. 3. - The Perceptron][Perceptron]

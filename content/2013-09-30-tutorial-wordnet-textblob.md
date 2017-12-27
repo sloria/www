@@ -137,7 +137,7 @@ octopus.path_similarity(pearl)  # 0.07
 
 There are other WordNet-based measures of similarity to explore, which can be found at the [NLTK Wordnet Docs](http://nltk.googlecode.com/svn/trunk/doc/howto/wordnet.html). All these methods are  accessible in TextBlob.
 
-### Further reading
+## Further reading
 
 - [WordNet on Wikipedia](https://en.wikipedia.org/wiki/Wordnet)
 - [NLTK Book Ch. 2](http://nltk.org/book/ch02.html)
@@ -145,7 +145,7 @@ There are other WordNet-based measures of similarity to explore, which can be fo
 Docs](http://nltk.googlecode.com/svn/trunk/doc/howto/wordnet.html)
 
 
-### Other Tutorials in this Series
+## Other tutorials in this series
 
 - [State-of-the-art Part-of-speech Tagging in
 TextBlob](http://www.stevenloria.com/tutorial-state-of-the-art-part-of-speech-

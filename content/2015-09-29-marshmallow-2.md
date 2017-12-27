@@ -17,7 +17,7 @@ Think Django REST Framework's [Serializers](http://www.django-rest-framework.org
 
 For more info, see the homepage: [https://marshmallow.readthedocs.io/](https://marshmallow.readthedocs.io/)
 
-## Benefits of Upgrading
+## Benefits of upgrading
 
 Here are a few immediate benefits of upgrading to 2.0:
 
@@ -93,7 +93,7 @@ A number of supporting libraries emerged since the last major release.
 I will continue to merge bug fixes into the 1.2 release line. No new 1.x feature releases are planned. New libraries in the [marshmallow-code](https://github.com/marshmallow-code) GitHub organization will likely support marshmallow>=2.0 only.
 
 
-## More
+## And more…
 
  Several refinements were made to the marshmallow API. For details, see the [changelog](https://marshmallow.readthedocs.io/en/latest/changelog.html#changelog). For a guide on upgrading from marshmallow 1, see the [upgrading guide](https://marshmallow.readthedocs.io/en/latest/upgrading.html#upgrading).
 

@@ -25,7 +25,7 @@ Any of the components that comprise these layers may not fit neatly into the cla
 
 **When any one component starts to get "fat"—yes, even your models—you must consider if you can break up the component into smaller subclasses or sublayers**.
 
-## The Problem: Outputting Data
+## The problem: outputting data
 
 Let's take the example of determining output data for a REST API. Where does the logic for outputting the model data as JSON belong?
 
@@ -132,7 +132,7 @@ schema.dump(todo).data  # Same as above
 
 Check out marshmallow's documentation—with examples in Flask, SQL-Alchemy, and Peewee—at [https://marshmallow.readthedocs.io](https://marshmallow.readthedocs.io).
 
-## Conclusion
+## Wrapping up
 
 Whatever tools you choose, keeping your classes lightweight (always remind yourself of the SRP) will force you to design with your application's evolution in mind.
 

@@ -112,7 +112,7 @@ Run `konch` to start your shell.
 $ konch
 ```
 
-## A Note for Git Users
+## A note for git users
 
 If you don't want your `.env` and `.konchrc` files to show up in source control, you can add them to a [global .gitignore](https://help.github.com/articles/ignoring-files#create-a-global-gitignore) file.
 
@@ -121,7 +121,7 @@ $ git config --global core.excludesfile ~/.gitignore_global
 $ echo ".env\n.konchrc" >> ~/.gitignore_global
 ```
 
-## Related Links
+## Related links
 
 - [cookiecutter on Github][cookiecutter] and [docs](https://cookiecutter.readthedocs.io/en/latest/)
 - [autoenv on Github][autoenv]

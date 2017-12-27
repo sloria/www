@@ -1,4 +1,4 @@
-title: A professional reinvents himself - Steven Pressfield
+title: A professional reinvents himself
 category: quotes
 slug: a-professional-reinvents-himself
 date: 2013-03-24 10:00

@@ -40,7 +40,9 @@ slug: startup-skepticism
 
 > **If you love doing something, under no condition should you start a VC-backed company to do more of it.** You won’t. You are going to spend all of your time recruiting, fundraising, recruiting, aligning team vision, recruiting, and figuring out which fires you can safely ignore. <cite>Aza Raskin</cite>
 
+
 > To maintain your psychological health, **you’ll need to learn how to shift the fufillment you get from making to the fufillment of enabling a team to make.** You’ll be making vicariously, not making directly. You’ll have to come to terms and internalize it or else your lack of emotional fufillment will trickle down to your team <cite>Aza Raskin</cite>
+
 
 > You’ll live with knowing that you are personally judged based upon your company’s performance. That your reputation is tied to your company’s reputation. You’ll no longer be judged on your own work, but your team’s work. It will make you want to get too directly involved in the design. And, as we know, that’s dangerous. **Be aware that ego can and will get in the way and be ready to fight it.** <cite>Aza Raskin</cite>
 
