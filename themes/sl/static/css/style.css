@@ -80,7 +80,6 @@ h2,
 h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightBold);
-  color: var(--fontColor);
   margin: var(--stepUp1Lg) 0 0.5em;
   line-height: 1.2;
 }
@@ -432,9 +431,15 @@ tt {
   overflow: auto;
 }
 /* give code blocks and codepens a little extra room */
-pre,
-.cp_embed_wrapper {
+pre {
   margin: 1.5rem -1.5rem;
+}
+/* Only give codepens extra room when we have the room
+ * so we don't prevent the user from scrolling */
+@media (--break-md) {
+  .cp_embed_wrapper {
+    margin: 1.5rem -1.5rem;
+  }
 }
 pre {
   padding: 1.5em;
