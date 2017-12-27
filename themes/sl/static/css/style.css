@@ -218,11 +218,14 @@ h4 a:hover {
     justify-content: flex-end;
   }
 
-  & a {
+  & .Nav-section {
     font-family: var(--fontSansSerif);
     font-weight: var(--fontWeightLight);
     text-decoration: none;
     padding: 0 15px;
+  }
+  & .Nav-section.Nav-section--active {
+    font-weight: var(--fontWeightMed);
   }
 }
 /* Footer */

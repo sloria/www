@@ -4,9 +4,12 @@
       <a href="{{SITEURL}}">{{SITENAME}}</a>
     </div>
     <div class="Nav-sections">
-      {% for section in SECTIONS %}
-      <a href="{{ SITEURL }}/{{ section[1]}}">{{ section[0] }}</a>
-      {% endfor %}
+      <a class="Nav-section {{'Nav-section--active' if page and page.url == ''}}" href="{{ SITEURL }}/">about</a>
+      <a class="Nav-section {{'Nav-section--active' if page and page.url == 'projects'}}" href="{{ SITEURL }}/projects">projects</a>
+      <a class="Nav-section {{'Nav-section--active' if not page}}" href="{{ SITEURL }}/archives">scribbles</a>
+      <!-- {% for section in SECTIONS %} -->
+      <!-- <a href="{{ SITEURL }}/{{ section[1]}}">{{ section[0] }}</a> -->
+      <!-- {% endfor %} -->
     </div>
   </nav>
   <div class="u-separator"></div>
