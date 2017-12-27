@@ -406,6 +406,8 @@ h4 a:hover {
   text-align: center;
 }
 
+/* Lists */
+
 /* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
 ul,
 ol,
@@ -416,6 +418,11 @@ dd {
 li li {
   margin-left: 1em;
 }
+
+li {
+  margin: 0.8em 0;
+}
+
 /* code formatting.  no monospace because of webkit (bug?) */
 pre,
 code,
