@@ -43,6 +43,8 @@
   --mutedColor: #888;
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
+
+  --easeTiming: 250ms;
 }
 
 html {
@@ -489,4 +491,21 @@ figcaption {
   margin-top: 0.5em;
   font-size: var(--smallFontSize);
   color: var(--mutedColor);
+}
+
+/* Prevent FOUC from async font loading: https://medium.com/ian-svoboda/resolving-fouc-with-adobe-typekit-fonts-51b3c17fe04e */
+.wf-loading {
+  & .Site-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--easeTiming) ease-out,
+      visibility var(--easeTiming) ease-out; 
+  }
+}
+
+.Site-content {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--easeTiming) ease-out,
+      visibility var(--easeTiming) ease-out;
 }
