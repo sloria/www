@@ -36,7 +36,7 @@
   --smallFontSize: 0.875em;
 
   --socialIconSize: 27px;
-  --maxWidth: 740px;
+  --maxWidth: 38rem;
 
   --primaryColor: #234764;
   --secondaryColor: #32742c;
@@ -57,6 +57,16 @@ html {
   @media (--break-md) {
     font-size: var(--baseFontSizeMd);
   }
+}
+
+/* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Typography */
