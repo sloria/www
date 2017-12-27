@@ -493,3 +493,9 @@ hr {
   opacity: 0.3;
   color: var(--gray);
 }
+
+figcaption {
+  margin-top: 0.5em;
+  font-size: var(--smallFontSize);
+  color: var(--mutedColor);
+}
