@@ -61,7 +61,7 @@ capturing user feedback.
 **[Simplist](http://simplist.sloria.com)**: *Early development*. One-click collaborative lists, written with ReactJS and HapiJS.
 
 <i class="fab fa-python"></i>
-**[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
+**[KillTheYak.com][KillTheYak]**: Collection of guides for accomplishing programming-related tasks.
 
 ## Retired Projects
 

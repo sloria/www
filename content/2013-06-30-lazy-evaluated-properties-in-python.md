@@ -1,4 +1,4 @@
-title: Lazily-evaluated property pattern in Python
+title: Lazily-evaluated Property Pattern in Python
 category: programming
 tags: python
 slug: lazy-evaluated-properties-in-python

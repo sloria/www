@@ -1,5 +1,6 @@
-title: Startup Skepticism: Collected quotes of disillusionment about the startup system
-tags: notes, startups
+title: Startup Skepticism
+description: Collected quotes of disillusionment about the startup system
+tags: notes, startups, quotes
 slug: startup-skepticism
 
 ### From Alex Payne's [Letter To A Young Programmer Considering A Startup](http://al3x.net/2013/05/23/letter-to-a-young-programmer.html):

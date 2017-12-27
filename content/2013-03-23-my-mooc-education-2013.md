@@ -1,6 +1,7 @@
 title: My MOOC education 2013
 category: lists
 tags: notes
+status: draft
 
 *Updated: May 26, 2013*
 
