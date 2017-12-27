@@ -499,6 +499,7 @@ blockquote cite {
   font-size: var(--smallFontSize);
   display: block;
   margin-top: 5px;
+  font-style: italic;
 }
 
 blockquote cite:before {
