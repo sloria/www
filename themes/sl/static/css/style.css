@@ -451,6 +451,15 @@ blockquote {
   margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: '\201C''\201D''\2018''\2019';
+
+  & ol,
+  & ul {
+    padding-left: 2em;
+  }
+}
+blockquote blockquote {
+  border-left: none;
+  quotes: none;
 }
 blockquote:before {
   color: var(--gray);
