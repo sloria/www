@@ -1,6 +1,7 @@
 /* Custom media queries */
-@custom-media --break-md (width >= 528px);
-@custom-media --break-lg (width >= 768px);
+/* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
+@custom-media --break-md (width >= 33em);
+@custom-media --break-lg (width >= 48em);
 
 /* Variables */
 :root {
@@ -13,7 +14,7 @@
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
 
-  --lineHeight: 1.65;
+  --lineHeight: 1.50;
 
   /* Type scale on smaller screens */
   --typeScaleSm: 1.333;  /* Perfect fourth */
@@ -27,11 +28,11 @@
   --stepUp2Lg: calc(var(--stepUp1Lg) * var(--typeScaleLg));
   --stepUp3Lg: calc(var(--stepUp2Lg) * var(--typeScaleLg));
   --stepDown1Lg: calc(1 / var(--typeScaleLg))em;
-
+  /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
   /* Base font size on mobile */
-  --baseFontSizeSm: 15px;
+  --baseFontSizeSm: 100%;
   /* Base font size on larger screens */
-  --baseFontSizeMd: 18px;
+  --baseFontSizeMd: 112.5%;
   --smallFontSize: 0.875em;
 
   --socialIconSize: 27px;
@@ -218,6 +219,7 @@ h4 a:hover {
 
 .Footer {
   margin: 10px auto 0 auto;
+  font-family: var(--fontSerif);
   font-size: var(--stepDown1Sm);
   color: var(--mutedColor);
   text-align: center;
