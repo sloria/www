@@ -1,6 +1,6 @@
 /* Custom media queries */
 /* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
-@custom-media --break-md (width >= 33em);
+@custom-media --break-md (width >= 35.5em);
 @custom-media --break-lg (width >= 48em);
 
 /* Variables */
@@ -36,7 +36,7 @@
   --smallFontSize: 0.875em;
 
   --socialIconSize: 27px;
-  --maxWidth: 38rem;
+  --maxWidth: 40rem;
 
   --primaryColor: #234764;
   --secondaryColor: #32742c;
@@ -153,16 +153,17 @@ h4 a:hover {
 
 /* Utilities */
 
-.u-container {
+.u-container,
+.u-separator,
+.Nav {
   max-width: var(--maxWidth);
   margin: 0 auto;
+  padding: 0 1.8em;
 }
 
 .u-separator {
-  max-width: var(--maxWidth);
-  width: 90vw;
-  margin: 0 auto;
   border-bottom: 1px solid var(--gray);
+  max-width: calc(var(--maxWidth) - 2em);
   opacity: 0.5;
   font-size: 16px;
   color: var(--fontColor);
@@ -187,8 +188,7 @@ h4 a:hover {
 }
 /* Nav */
 .Nav {
-  max-width: var(--maxWidth);
-  margin: 0 auto 10px auto;
+  margin-bottom: 0.556em;
   padding-top: 1em;
   display: flex;
   flex-direction: row;
@@ -202,7 +202,7 @@ h4 a:hover {
   & a {
     text-decoration: none;
     font-size: 1.3em;
-    padding: 10px;
+    /* padding: 0.556em; */
   }
 }
 .Nav-home {
@@ -223,6 +223,9 @@ h4 a:hover {
     font-weight: var(--fontWeightLight);
     text-decoration: none;
     padding: 0 15px;
+  }
+  & .Nav-section:last-child {
+    padding-right: 0;
   }
   & .Nav-section.Nav-section--active {
     font-weight: var(--fontWeightMed);
@@ -286,11 +289,9 @@ h4 a:hover {
 }
 
 .Page {
-  padding: 5vh var(--stepUp1Sm) 0 var(--stepUp1Sm);
+  padding-top: 5vh;
   @media (--break-lg) {
     padding-top: var(--stepUp3Lg);
-    padding-right: var(--stepUp1Lg);
-    padding-left: var(--stepUp1Lg);
   }
 }
 
@@ -401,26 +402,12 @@ h4 a:hover {
   text-align: center;
 }
 
-/* margins and stuff */
-dt {
-  margin: 25px 0 16px 0;
+/* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
+ul, ol, dd {
+  margin: 0;
   padding: 0;
 }
-dd {
-  margin: 16px 0 25px 40px;
-  padding: 0;
-}
-ul ol,
-ol ul,
-ul ul,
-ol ol {
-  margin: 10px 0;
-  padding: 0 0 0 40px;
-}
-li {
-  padding: 0;
-  margin: 6px 0;
-}
+li li {margin-left: 1em;}
 /* code formatting.  no monospace because of webkit (bug?) */
 pre,
 code,
