@@ -54,6 +54,8 @@ html {
   font-weight: var(--fontWeightMed);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
   color: var(--fontColor);
 
   @media (--break-md) {
