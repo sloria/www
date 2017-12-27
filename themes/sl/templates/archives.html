@@ -7,7 +7,7 @@
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}
     <div class="Entry">
-      <div class="Entry-date">{{ article.date.strftime('%b %d, %Y') }}</div>
+      <time datetime="{{ article.date.date().isoformat() }}" class="Entry-date">{{ article.date.strftime('%b %d, %Y') }}</time>
       <div class="Entry-detail">
           <div class="Entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
           <div class="Entry-description">{{ article.description }}</div>

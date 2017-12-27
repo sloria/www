@@ -5,7 +5,7 @@
 
 /* Variables */
 :root {
-  --fontColor: hsla(0 ,0%, 0%, 0.75);
+  --fontColor: hsla(0, 0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontWeightLight: 300;
   --fontSerif: 'Merriweather', Georgia, serif;
@@ -14,16 +14,16 @@
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
 
-  --lineHeight: 1.50;
+  --lineHeight: 1.5;
 
   /* Type scale on smaller screens */
-  --typeScaleSm: 1.333;  /* Perfect fourth */
+  --typeScaleSm: 1.333; /* Perfect fourth */
   --stepUp1Sm: var(--typeScaleSm)em;
   --stepUp2Sm: calc(var(--stepUp1Sm) * var(--typeScaleSm));
   --stepUp3Sm: calc(var(--stepUp2Sm) * var(--typeScaleSm));
   --stepDown1Sm: calc(1 / var(--typeScaleSm))em;
   /* Type scale on larger screens */
-  --typeScaleLg: 1.414;  /* Augmented fourth */
+  --typeScaleLg: 1.414; /* Augmented fourth */
   --stepUp1Lg: var(--typeScaleLg)em;
   --stepUp2Lg: calc(var(--stepUp1Lg) * var(--typeScaleLg));
   --stepUp3Lg: calc(var(--stepUp2Lg) * var(--typeScaleLg));
@@ -403,11 +403,15 @@ h4 a:hover {
 }
 
 /* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
-ul, ol, dd {
+ul,
+ol,
+dd {
   margin: 0;
   padding: 0;
 }
-li li {margin-left: 1em;}
+li li {
+  margin-left: 1em;
+}
 /* code formatting.  no monospace because of webkit (bug?) */
 pre,
 code,
