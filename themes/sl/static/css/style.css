@@ -7,17 +7,16 @@
 :root {
   --fontColor: hsla(0, 0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
-  --fontWeightLight: 300;
   --fontSerif: 'Merriweather', Georgia, serif;
+  --fontWeightLight: 300;
   --fontWeightMed: 400;
-  --fontWeightBold: 700;
   --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
     'Monaco', 'Courier New';
 
   --lineHeight: 1.5;
 
   /* Type scale on smaller screens */
-  --typeScaleSm: 1.333; /* Perfect fourth */
+  --typeScaleSm: 1.2; /* Minor third */
   --stepUp1Sm: var(--typeScaleSm)em;
   --stepUp2Sm: calc(var(--stepUp1Sm) * var(--typeScaleSm));
   --stepUp3Sm: calc(var(--stepUp2Sm) * var(--typeScaleSm));
@@ -79,7 +78,7 @@ h1,
 h2,
 h3 {
   font-family: var(--fontSerif);
-  font-weight: var(--fontWeightBold);
+  font-weight: var(--fontWeightMed);
   margin: var(--stepUp1Lg) 0 0.5em;
   line-height: 1.2;
 }
@@ -196,6 +195,7 @@ h4 a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
 
   @media (--break-md) {
@@ -205,12 +205,15 @@ h4 a:hover {
   & a {
     text-decoration: none;
     font-size: 1.3em;
-    /* padding: 0.556em; */
   }
 }
-.Nav-home {
+.Nav-home a {
   font-family: var(--fontSerif);
   flex: 0 1 20%;
+  font-size: 1em;
+  @media (--break-md) {
+    font-size: 1.3em;
+  }
 }
 .Nav-sections {
   flex: 1 0 auto;
@@ -256,7 +259,7 @@ h4 a:hover {
     margin: 0;
   }
 
-  @media (--break-lg) {
+  @media (--break-md) {
     font-size: var(--stepDown1Lg);
   }
 }
@@ -522,7 +525,7 @@ figcaption {
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--easeTiming) ease-out,
-      visibility var(--easeTiming) ease-out; 
+      visibility var(--easeTiming) ease-out;
   }
 }
 
