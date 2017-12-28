@@ -379,7 +379,6 @@ figcaption {
     padding-bottom: 10px;
 
     & a {
-      color: var(--mutedColor);
       text-decoration: none;
     }
 
