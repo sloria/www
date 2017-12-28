@@ -36,7 +36,7 @@ def rebuild(ctx):
 
 
 @task
-def regenerate(ctx):
+def dev(ctx):
     clean(ctx)
     run('NODE_ENV=development pelican -r --debug -s pelicanconf.py')
 

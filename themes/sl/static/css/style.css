@@ -1,32 +1,25 @@
-/* Custom media queries */
-/* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
-@custom-media --break-md (width >= 35.5em);
-@custom-media --break-lg (width >= 48em);
-
 /* Variables */
 :root {
   --minMd: 35.5em;
   --minLg: 48em;
-
   --fontColor: hsla(0, 0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightLight: 300;
   --fontWeightMed: 400;
-  --fontMonospace: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Monaco', 'Courier New';
-
+  --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
   --lineHeight: 1.5;
 
   /* Type scale ratio on smaller screens */
   --ratioSm: 1.2; /* Minor third */
+
   /* Type scale ratio on larger screens */
   --ratioLg: 1.414; /* Augmented fourth */
 
   /* Type scale */
   --stepUp1: media(
-    var(--ratioSm)em,
-    (min-width: var(--minLg)) var(--ratioLg)em
+    calc(1em * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg))
   );
   --stepUp2: media(
     calc(1em * var(--ratioSm) * var(--ratioSm)),
@@ -37,28 +30,32 @@
     (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
   );
   --stepDown1: media(
-    var(1 / var(--ratioSm))em,
-    (min-width: var(--minLg)) calc(1 / var(--ratioLg))em
+    var(1em / var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em / var(--ratioLg))
   );
 
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
+
   /* Base font size on mobile */
   --baseFontSizeSm: 100%;
+
   /* Base font size on larger screens */
   --baseFontSizeMd: 112.5%;
   --smallFontSize: 0.875em;
-
   --socialIconSize: 27px;
   --maxWidth: 40rem;
-
   --primaryColor: #234764;
   --secondaryColor: #32742c;
   --mutedColor: #888;
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
-
-  --easeTiming: 250ms;
 }
+
+/* Custom media queries */
+
+/* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
+@custom-media --break-md (width >= 35.5em);
+@custom-media --break-lg (width >= 48em);
 
 html {
   font-size: var(--baseFontSizeSm);
@@ -71,18 +68,17 @@ html {
   font-variant-ligatures: common-ligatures contextual;
   color: var(--fontColor);
 
+  /* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  box-sizing: border-box;
+
   @media (--break-md) {
     font-size: var(--baseFontSizeMd);
   }
 }
 
-/* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-html {
-  box-sizing: border-box;
-}
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -93,7 +89,7 @@ h2,
 h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
-  margin: var(--ratioLg)em 0 0.5em;
+  margin: calc(1em * var(--ratioLg)) 0 0.5em;
   line-height: 1.2;
 }
 
@@ -123,42 +119,122 @@ aside {
 a {
   color: var(--primaryColor);
 }
+
 a:hover {
   color: var(--secondaryColor);
 }
 
 /* Code blocks */
-
-pre code {
-  word-wrap: normal;
-  white-space: pre-wrap; /* http://css-tricks.com/almanac/properties/w/whitespace */
+pre,
+code,
+tt {
+  font-family: var(--fontMonospace);
+  font-size: 0.9em;
+  overflow: auto;
 }
 
 pre {
   white-space: pre;
+  margin: 1.5rem -1.5rem;
+  padding: 1.5em;
+  background-color: var(--grayHighlight);
 }
 
-code {
-  white-space: pre;
-  font-family: var(--fontMonospace);
+/* Only give codepens extra room on largerscreens
+ * so we don't prevent the user from scrolling */
+@media (--break-md) {
+  .cp_embed_wrapper {
+    margin: 1.5rem -1.5rem;
+  }
 }
 
-/* headlines */
-/* TODO: Delete this? */
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  text-decoration: none;
+/* Lists */
+
+/* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
 }
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover {
-  color: var(--secondaryColor);
-  text-decoration: underline;
+
+li {
+  margin: 0.8em 0;
+}
+
+li li {
+  margin-left: 1em;
+}
+
+.gist pre,
+.gist code,
+.gist tt {
+  font-size: 1em;
+}
+
+/* Blockquotes */
+
+blockquote {
+  font-family: var(--fontSerif);
+  background: var(--grayHighlight);
+  border-left: 10px solid var(--gray);
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+
+  & ol,
+  & ul {
+    padding-left: 2em;
+  }
+}
+
+blockquote blockquote {
+  border-left: none;
+  quotes: none;
+}
+
+blockquote::before {
+  color: var(--gray);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote cite {
+  color: var(--mutedColor);
+  font-size: var(--smallFontSize);
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+blockquote cite::before {
+  content: '\2014 \2009';
+}
+
+aside {
+  background: var(--grayHighlight);
+  margin: 1.5rem -1.5rem;
+  padding: 10px 30px;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+hr {
+  opacity: 0.3;
+  color: var(--gray);
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-size: var(--smallFontSize);
+  color: var(--mutedColor);
 }
 
 /* Utilities */
@@ -187,15 +263,18 @@ h4 a:hover {
 .Site {
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 0;
   height: 100vh;
 }
+
 .Site-header {
   flex: none;
 }
+
 .Site-footer {
   flex: 0 0 20%;
 }
+
 /* Nav */
 .Nav {
   margin-bottom: 0.556em;
@@ -215,14 +294,17 @@ h4 a:hover {
     font-size: 1.3em;
   }
 }
+
 .Nav-home a {
   font-family: var(--fontSerif);
   flex: 0 1 20%;
   font-size: 1em;
+
   @media (--break-md) {
     font-size: 1.3em;
   }
 }
+
 .Nav-sections {
   flex: 1 0 auto;
   display: flex;
@@ -243,13 +325,16 @@ h4 a:hover {
       font-weight: 200;
     }
   }
+
   & .Nav-section:last-child {
     padding-right: 0;
   }
+
   & .Nav-section.Nav-section--active {
     font-weight: var(--fontWeightMed);
   }
 }
+
 /* Footer */
 
 .Footer {
@@ -271,28 +356,28 @@ h4 a:hover {
   & p {
     margin: 0;
   }
-}
 
-.Footer-social {
-  font-size: var(--socialIconSize);
-  padding-top: 20px;
-  padding-bottom: 10px;
+  & .Footer-social {
+    font-size: var(--socialIconSize);
+    padding-top: 20px;
+    padding-bottom: 10px;
 
-  & a {
-    color: var(--mutedColor);
-    text-decoration: none;
-  }
+    & a {
+      color: var(--mutedColor);
+      text-decoration: none;
+    }
 
-  & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-  & ul li {
-    display: inline;
-    margin: 0 1vw;
-    padding: 0;
+    & ul li {
+      display: inline;
+      margin: 0 1vw;
+      padding: 0;
+    }
   }
 }
 
@@ -305,6 +390,7 @@ h4 a:hover {
 
 .Page {
   padding-top: 5vh;
+
   @media (--break-lg) {
     padding-top: 2.82715em;
   }
@@ -353,7 +439,7 @@ h4 a:hover {
   & h1 + p,
   & h2 + p,
   & h3 + p {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -362,15 +448,18 @@ h4 a:hover {
 .Entry {
   margin: 25px 3vw;
 }
-.Entry-title a {
+
+.Entry .Entry-title a {
   text-decoration: none;
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
 }
+
 .Entry-detail {
   font: var(--fontSerif);
   margin-left: 140px;
 }
+
 .Entry-date {
   float: left;
   margin: 0;
@@ -381,10 +470,12 @@ h4 a:hover {
   font-family: var(--fontSerif);
   font-size: var(--smallFontSize);
 }
+
 .Entry-description {
   font-size: 1em;
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightMed);
+
   @media (--break-lg) {
     font-size: 0.9em;
   }
@@ -415,114 +506,3 @@ h4 a:hover {
   text-align: center;
 }
 
-/* Lists */
-
-/* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
-ul,
-ol,
-dd {
-  margin: 0;
-  padding: 0;
-}
-li li {
-  margin-left: 1em;
-}
-
-li {
-  margin: 0.8em 0;
-}
-
-/* code formatting.  no monospace because of webkit (bug?) */
-pre,
-code,
-tt {
-  font-family: var(--fontMonospace);
-  font-size: 0.9em;
-  overflow: auto;
-}
-/* give code blocks and codepens a little extra room */
-pre {
-  margin: 1.5rem -1.5rem;
-}
-/* Only give codepens extra room when we have the room
- * so we don't prevent the user from scrolling */
-@media (--break-md) {
-  .cp_embed_wrapper {
-    margin: 1.5rem -1.5rem;
-  }
-}
-pre {
-  padding: 1.5em;
-  background-color: var(--grayHighlight);
-}
-code,
-tt {
-  background: var(--grayHighlight);
-}
-
-.gist pre,
-.gist code,
-.gist tt {
-  font-size: 1em;
-}
-
-/* Blockquotes */
-
-blockquote {
-  font-family: var(--fontSerif);
-  background: var(--grayHighlight);
-  border-left: 10px solid var(--gray);
-  margin: 1.5em 0;
-  padding: 0.5em 10px;
-  quotes: '\201C''\201D''\2018''\2019';
-
-  & ol,
-  & ul {
-    padding-left: 2em;
-  }
-}
-blockquote blockquote {
-  border-left: none;
-  quotes: none;
-}
-blockquote:before {
-  color: var(--gray);
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
-blockquote cite {
-  color: var(--mutedColor);
-  font-size: var(--smallFontSize);
-  display: block;
-  margin-top: 5px;
-  font-style: italic;
-}
-
-blockquote cite:before {
-  content: '\2014 \2009';
-}
-
-aside {
-  background: var(--grayHighlight);
-  margin: 1.5rem -1.5rem;
-  padding: 10px 30px;
-  border-top: 1px solid var(--gray);
-  border-bottom: 1px solid var(--gray);
-}
-
-hr {
-  opacity: 0.3;
-  color: var(--gray);
-}
-
-figcaption {
-  margin-top: 0.5em;
-  font-size: var(--smallFontSize);
-  color: var(--mutedColor);
-}

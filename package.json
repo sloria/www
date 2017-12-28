@@ -2,7 +2,9 @@
   "name": "www",
   "version": "1.0.0",
   "description": "My personal website",
-  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint templates/sl/static/css/style.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sloria/www.git"
@@ -16,6 +18,14 @@
     "postcss-cssnext": "^3.0.2"
   },
   "devDependencies": {
-    "postcss-media-fn": "^3.0.0"
+    "postcss-media-fn": "^3.0.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "declaration-colon-newline-after": null
+    }
   }
 }
