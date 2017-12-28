@@ -9,11 +9,12 @@ slug: lazy-evaluated-properties-in-python
 
 This approach may cause initialization to take unnecessarily long, especially when you don't always need to access `Person#relatives`.
 
-A better strategy would be to get `relatives` only when it's needed (i.e. "lazily"):
+A better strategy would be to get `relatives` only when it's needed (i.e., "lazily"):
 
 <script src="https://gist.github.com/sloria/5895446.js"> </script>
 
-In this case, the list of relatives is only computed the first time `Person#relatives` is accessed. After that, it is stored in `Person#_relatives` to prevent repeated evaluations.
+In this case, the list of relatives is only computed the first time `Person#relatives` is accessed. After
+that, it's stored in `Person#_relatives` to prevent repeated evaluations.
 
 A perhaps more Pythonic approach would be to use a decorator that makes a property lazy-evaluated
 

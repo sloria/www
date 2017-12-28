@@ -6,18 +6,19 @@ slug: finding-important-words-in-a-document-using-tf-idf
 *Edit May 25, 2015*: Fix incorrect filter in `n_containing`. Thanks Chen Liang for reporting.
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
- Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.io/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
+Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.io/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document.
+It's simpler than you think.
 
 ## What is TF-IDF?
 
-TF-IDF stands for "Term Frequency, Inverse Document Frequency". It is a way to score the importance of words (or "terms") in a document based on how frequently they appear across multiple documents.
+TF-IDF stands for "Term Frequency, Inverse Document Frequency." It's a way to score the importance of words (or "terms") in a document based on how frequently they appear across multiple documents.
 
-### Intuitively...
+### Intuitively…
 
 * If a word appears frequently in a document, it's important. Give the word a high score.
 * But if a word appears in many documents, it's not a unique identifier. Give the word a low score.
 
-Therefore, common words like "the" and "for", which appear in many documents, will be scaled down. Words that appear frequently in a *single* document will be scaled up.
+Therefore, common words like "the" and "for," which appear in many documents, will be scaled down. Words that appear frequently in a *single* document will be scaled up.
 
 ## In code
 
@@ -42,12 +43,12 @@ def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
 ```
 
-14 lines and we're already [flying](http://xkcd.com/353/).
+Fourteen lines and we're already [flying](http://xkcd.com/353/).
 
 * `tf(word, blob)` computes "term frequency" which is the number of times a word appears in a document `blob`, normalized by dividing by the total number of words in `blob`. We use TextBlob for breaking up the text into words and getting the word counts.
 * `n_containing(word, bloblist)` returns the number of documents containing `word`. A [generator expression](http://www.python.org/dev/peps/pep-0289/) is passed to the `sum()` function.
 * `idf(word, bloblist)` computes "inverse document frequency" which measures how common a word is among all documents in `bloblist`. The more common a word is, the lower its `idf`. We take the ratio of the total number of documents to the number of documents containing `word`, then take the `log` of that. Add 1 to the divisor to prevent division by zero.
-* `tfidf(word, blob, bloblist)` computes the TF-IDF score. It is simply the product of `tf` and `idf`.
+* `tfidf(word, blob, bloblist)` computes the TF-IDF score. It's the product of `tf` and `idf`.
 
 Now to test it out on some real documents taken from Wikipedia.
 

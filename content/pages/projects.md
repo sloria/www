@@ -3,7 +3,7 @@ slug: projects
 
 # Projects
 
-A small selection of my programming side projects. You can find more at my [GitHub profile][github].
+A small selection of my side projects. You can find more at my [GitHub profile][github].
 
 *\* = actively maintained*
 
@@ -32,12 +32,12 @@ capturing user feedback.
 **[environs](https://github.com/sloria/environs)**\*: A Python library for parsing and validating environment variables.
 
 <i class="fab fa-python"></i>
-**[aiohttp_utils](https://github.com/sloria/aiohttp_utils)**: Various utilities for building aiohttp web applications.
+**[aiohttp_utils](https://github.com/sloria/aiohttp_utils)**: Utilities for building aiohttp web applications.
 
 <i class="fab fa-js-square"></i>
 **[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for JavaScript.
 
-## Command Line
+## Command line
 
 <i class="fab fa-python"></i>
 **[doitlive](https://github.com/sloria/doitlive)**\*: A tool for "live" presentations in the terminal.
@@ -58,12 +58,13 @@ capturing user feedback.
 
 <i class="fab fa-js-square"></i>
 <i class="fab fa-node-js"></i>
-**[Simplist](http://simplist.sloria.com)**: *Early development*. One-click collaborative lists, written with ReactJS and HapiJS.
+**[Simplist](https://github.com/sloria/simplist)**: *Early development*. One-click collaborative lists, written with ReactJS and HapiJS.
+I use this for gift lists.
 
 <i class="fab fa-python"></i>
-**[KillTheYak.com][KillTheYak]**: Collection of guides for accomplishing programming-related tasks.
+**[KillTheYak.com][KillTheYak]**: User-contributed collection of guides for accomplishing programming-related tasks.
 
-## Retired Projects
+## Retired projects
 
 <i class="fab fa-python"></i>
 **[SEPAL](http://sepalbio.com)**: Cloud-based acoustic feature extraction.

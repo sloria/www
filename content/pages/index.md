@@ -6,7 +6,7 @@ landing: true
 
 <h1 class="u-lead">You can call me Steve.</h1>
 
-I spend a lot of my time building [open source things](/projects/).
+Sometimes I build [open source software](/projects/).
 
 Sometimes I scribble down [things I've learned](/archives.html).
 

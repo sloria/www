@@ -21,7 +21,7 @@ To get the cookiecutter CLI, install with pip.
 $ pip install cookiecutter
 ```
 
-Choose a template and copy its git URL. There are a number of [available Python templates](https://github.com/audreyr/cookiecutter#python).
+Choose a template and copy its git URL. There are many [available Python templates](https://github.com/audreyr/cookiecutter#python).
 
 Run the `cookiecutter` command with the git URL.
 
@@ -48,7 +48,7 @@ $ echo 'source /usr/local/opt/autoenv/activate.sh' >> ~/.bash_profile
 ```
 
 <aside>
-Note: If you are using zsh, change "~/.bash_profile" to "~/.zshrc".
+Note: If you are using zsh, change <code>~/.bash_profile</code> to <code>~/.zshrc</code>.
 </aside>
 
 You can also use [pip or git](https://github.com/kennethreitz/autoenv#install) to install on other platforms.

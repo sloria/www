@@ -10,7 +10,7 @@ One alpha, five betas, and two release candidates after marshmallow's last 1.x r
 Marshmallow is a Python library for
 
 1. Validating input data against a schema,
-2. Deserializing data to application objects (e.g. ORM objects), and
+2. Deserializing data to application objects (e.g., ORM objects), and
 3. Serializing application objects to simple types.
 
 Think Django REST Framework's [Serializers](http://www.django-rest-framework.org/api-guide/serializers/), without the Django.
@@ -23,8 +23,7 @@ Here are a few immediate benefits of upgrading to 2.0:
 
 * Dump-only and load-only fields (analagous to "read-only" and "write-only" in the context of a CRUD app).
 * More consistent treatment of [null](https://marshmallow.readthedocs.io/en/latest/upgrading.html#deserializing-none) and [missing values](https://marshmallow.readthedocs.io/en/latest/upgrading.html#default-values).
-
-* Powerful, user-friendly pre- and post-processing API.
+* Powerful, pre- and post-processing API.
 
 ```python
 from marshmallow import Schema, fields, pre_load, post_dump, post_load
@@ -92,9 +91,8 @@ A number of supporting libraries emerged since the last major release.
 
 I will continue to merge bug fixes into the 1.2 release line. No new 1.x feature releases are planned. New libraries in the [marshmallow-code](https://github.com/marshmallow-code) GitHub organization will likely support marshmallow>=2.0 only.
 
-
 ## And more…
 
  Several refinements were made to the marshmallow API. For details, see the [changelog](https://marshmallow.readthedocs.io/en/latest/changelog.html#changelog). For a guide on upgrading from marshmallow 1, see the [upgrading guide](https://marshmallow.readthedocs.io/en/latest/upgrading.html#upgrading).
 
- Special thanks to everyone who contributed and reported issues; you made this release awesome.
+ Special thanks to everyone who contributed and reported issues. You made this release awesome.

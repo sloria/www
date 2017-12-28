@@ -1,8 +1,8 @@
-title: Hosting static Flask sites for free on Github Pages
+title: Hosting Static Flask Sites on Github Pages
 category: programming
 tags: python, flask
 
-This past weekend, I released [KillTheYak.com](http://killtheyak.com/), a website with guides for installing and using various tools. It's a static site powered by [Flask][] and hosted for free on [Github Pages][].
+This past weekend, I released [KillTheYak.com](http://killtheyak.com/), a website with guides for installing and using various tools. It's a static site powered by [Flask][] and hosted for free (as in beer) on [Github Pages][].
 
 Static Flask sites are a big win because:
 

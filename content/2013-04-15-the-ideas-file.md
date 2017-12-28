@@ -13,17 +13,16 @@ Create a hidden file called `.ideas.md` in your home directory.
 $ touch ~/.ideas.md
 ```
 
-
-Add an alias to your `.bash_profile` or `.zshrc` file so you can open the file quickly 
+Add an alias to your `.bash_profile` or `.zshrc` file so you can open the file quickly
 
 ```bash
-alias idea="subl ~/.ideas.md"  # for Sublime Text user
+alias idea="subl ~/.ideas.md"  # for Sublime Text users
 ```
 
 **OR**
 
 ```bash
-alias idea="vim ~/.ideas.md"  # for Vim users 
+alias idea="vim ~/.ideas.md"  # for Vim users
 ```
 
 
@@ -36,17 +35,17 @@ $ idea
 
 at the command line to open up the `.ideas.md` file in your text editor.
 
-What you put in this file is completely up to you. Mine looks something like this:
+What you put in this file is up to you. Mine looks something like this:
 
 ```
 ~/.ideas.md
-    
+
 # Software
     - doomed startup idea 1
-    - some feature for an open-source project 
+    - some feature for an open-source project
     - doomed startup idea 2
     - ...
- 
+
 # Blog posts
     - the .ideas file
     - stuff about nothing...

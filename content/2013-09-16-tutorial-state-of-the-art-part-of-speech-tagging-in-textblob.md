@@ -32,7 +32,7 @@ First, upgrade to the latest version of `TextBlob`.
 $ pip install -U textblob
 ```
 
-The `PerceptronTagger` requires a `trontagger.pickle` file that is not included in the TextBlob distribution (in order to keep the distribution lightweight).
+The `PerceptronTagger` requires a `trontagger.pickle` file that's not included in the TextBlob distribution (in order to keep the distribution lightweight).
 
 The file can be downloaded from [TextBlob's Releases page](https://github.com/sloria/TextBlob/releases) on Github [^1].
 
@@ -173,7 +173,7 @@ You can find more extensive evaluations of these three taggers at [Matthew's blo
 * [A Course On Machine Learning, Ch. 3. - The Perceptron][Perceptron]
 * [TextBlob Docs - Overriding Models and the Blobber Class](https://textblob.readthedocs.io/en/latest/advanced_usage.html)
 
-[^1]: Hosting supplemental models and data on the Releases page is not an ideal solution for the long-term because Github imposes a 5MB limit on file uploads, but it will work for now. If you have a suggestion for a better solution, please join the discussion [here](https://github.com/sloria/TextBlob/issues/20).
+[^1]: Hosting supplemental models and data on the Releases page isn't an ideal solution for the long-term because Github imposes a 5MB limit on file uploads, but it will work for now. If you have a suggestion for a better solution, please join the discussion [here](https://github.com/sloria/TextBlob/issues/20).
 
 [TextBlob]: https://textblob.readthedocs.io/
 [PyAP]: http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/
