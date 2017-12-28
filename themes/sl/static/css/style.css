@@ -25,13 +25,14 @@
     calc(1em * var(--ratioSm) * var(--ratioSm)),
     (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg))
   );
+  --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
   --stepUp3: media(
     calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm)),
     (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
   );
   --stepDown1: media(
-    var(1em / var(--ratioSm)),
-    (min-width: var(--minLg)) calc(1em / var(--ratioLg))
+    calc(1em / var(--ratioSm)),
+    (min-width: var(--minMd)) calc(1em / var(--ratioLg))
   );
 
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
@@ -96,7 +97,7 @@ h3 {
 h1.u-lead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
-  font-size: var(--stepUp2);
+  font-size: var(--stepUp2Fixed);
 }
 
 h1 {
