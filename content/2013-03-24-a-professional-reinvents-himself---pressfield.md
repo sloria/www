@@ -1,4 +1,5 @@
 title: A professional reinvents himself
+description: …he shucks his outworn body and dons a new one.
 category: quotes
 slug: a-professional-reinvents-himself
 date: 2013-03-24 10:00

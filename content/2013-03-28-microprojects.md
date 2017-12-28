@@ -1,4 +1,5 @@
 title: Microprojects
+description: Small projects I'm working on.
 date: 2013-03-28
 
 It was UW-Madison's spring break this past week, so I finally had some time to see family, friends, and improve my programming chops--something I desperately needed to do but haven't had nearly enough time for because of my college classes. Here are a few things I finished in the past 5 days:
