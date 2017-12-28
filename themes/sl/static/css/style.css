@@ -159,12 +159,26 @@ dd {
   padding: 0;
 }
 
-li {
-  margin: 0.8em 0;
+ul {
+  list-style: none;
 }
 
-li li {
-  margin-left: 1em;
+li {
+  /* margin: 0.8em 0; */
+  margin-left: 1.875em;
+  margin-bottom: 0.6em;
+}
+
+li::before {
+  font-weight: var(--fontWeightLight);
+  padding-right: 0.7em;
+  content: '\2022';
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 4.875em;
+  margin-left: -4.875em;
+  text-align: right;
 }
 
 .gist pre,
@@ -344,6 +358,7 @@ figcaption {
   font-size: var(--stepDown1);
   color: var(--mutedColor);
   text-align: center;
+  padding: 0 1.8em;
 
   & a {
     color: var(--mutedColor);
@@ -368,13 +383,7 @@ figcaption {
       text-decoration: none;
     }
 
-    & ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    & ul li {
+    & .SocialIcon {
       display: inline;
       margin: 0 1vw;
       padding: 0;

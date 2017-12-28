@@ -5,17 +5,15 @@
     <p>All content is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 License</a>.</p>
     <p>
       <div class="Footer-social">
-        <ul>
-          <script>
-            u = '{{ MAIL_USERNAME }}';
-            s = '{{ MAIL_HOST }}';
-            document.write('<li><a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i class="fas fa-envelope-square fa-lg"></i> </a></li>');
-          </script>
-          <li> <a href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a> </li>
-          <li> <a href="{{ GITHUB_URL }}" target="_blank"> <i class="fab fa-github-square fa-lg"></i> </a> </li>
-          <li><a href="{{ LINKEDIN_URL }}" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" ></i></a></li>
-          <li> <a href="{{ SITEURL }}/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><i class="fas fa-rss-square fa-lg"></i> </a></li>
-        </ul>
+        <script>
+          u = '{{ MAIL_USERNAME }}';
+          s = '{{ MAIL_HOST }}';
+          document.write('<a class="SocialIcon" href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i class="fas fa-envelope-square fa-lg"></i> </a>');
+        </script>
+        <a class="SocialIcon" href="http://twitter.com/{{ TWITTER_USERNAME }}" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a> 
+        <a class="SocialIcon" href="{{ GITHUB_URL }}" target="_blank"> <i class="fab fa-github-square fa-lg"></i> </a> 
+        <a class="SocialIcon" href="{{ LINKEDIN_URL }}" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" ></i></a>
+        <a class="SocialIcon" href="{{ SITEURL }}/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><i class="fas fa-rss-square fa-lg"></i> </a>
       </div>
     </p>
   </div>
