@@ -5,6 +5,9 @@
 
 /* Variables */
 :root {
+  --minMd: 35.5em;
+  --minLg: 48em;
+
   --fontColor: hsla(0, 0%, 0%, 0.75);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSerif: 'Merriweather', Georgia, serif;
@@ -15,18 +18,29 @@
 
   --lineHeight: 1.5;
 
-  /* Type scale on smaller screens */
-  --typeScaleSm: 1.2; /* Minor third */
-  --stepUp1Sm: var(--typeScaleSm)em;
-  --stepUp2Sm: calc(var(--stepUp1Sm) * var(--typeScaleSm));
-  --stepUp3Sm: calc(var(--stepUp2Sm) * var(--typeScaleSm));
-  --stepDown1Sm: calc(1 / var(--typeScaleSm))em;
-  /* Type scale on larger screens */
-  --typeScaleLg: 1.414; /* Augmented fourth */
-  --stepUp1Lg: var(--typeScaleLg)em;
-  --stepUp2Lg: calc(var(--stepUp1Lg) * var(--typeScaleLg));
-  --stepUp3Lg: calc(var(--stepUp2Lg) * var(--typeScaleLg));
-  --stepDown1Lg: calc(1 / var(--typeScaleLg))em;
+  /* Type scale ratio on smaller screens */
+  --ratioSm: 1.2; /* Minor third */
+  /* Type scale ratio on larger screens */
+  --ratioLg: 1.414; /* Augmented fourth */
+
+  /* Type scale */
+  --stepUp1: media(
+    var(--ratioSm)em,
+    (min-width: var(--minLg)) var(--ratioLg)em
+  );
+  --stepUp2: media(
+    calc(1em * var(--ratioSm) * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg))
+  );
+  --stepUp3: media(
+    calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
+  );
+  --stepDown1: media(
+    var(1 / var(--ratioSm))em,
+    (min-width: var(--minLg)) calc(1 / var(--ratioLg))em
+  );
+
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
   /* Base font size on mobile */
   --baseFontSizeSm: 100%;
@@ -79,28 +93,22 @@ h2,
 h3 {
   font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
-  margin: var(--stepUp1Lg) 0 0.5em;
+  margin: var(--ratioLg)em 0 0.5em;
   line-height: 1.2;
 }
 
 h1.u-lead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
-  font-size: var(--stepUp2Lg);
+  font-size: var(--stepUp2);
 }
 
 h1 {
-  font-size: var(--stepUp2Sm);
-  @media (--break-lg) {
-    font-size: var(--stepUp2Lg);
-  }
+  font-size: var(--stepUp2);
 }
 
 h2 {
-  font-size: var(--stepUp1Sm);
-  @media (--break-lg) {
-    font-size: var(--stepUp1Lg);
-  }
+  font-size: var(--stepUp1);
 }
 
 h3 {
@@ -247,7 +255,7 @@ h4 a:hover {
 .Footer {
   margin: 10px auto 0 auto;
   font-family: var(--fontSerif);
-  font-size: var(--stepDown1Sm);
+  font-size: var(--stepDown1);
   color: var(--mutedColor);
   text-align: center;
 
@@ -262,10 +270,6 @@ h4 a:hover {
 
   & p {
     margin: 0;
-  }
-
-  @media (--break-md) {
-    font-size: var(--stepDown1Lg);
   }
 }
 
@@ -302,7 +306,7 @@ h4 a:hover {
 .Page {
   padding-top: 5vh;
   @media (--break-lg) {
-    padding-top: var(--stepUp3Lg);
+    padding-top: 2.82715em;
   }
 }
 
@@ -317,10 +321,7 @@ h4 a:hover {
 }
 
 .Article-content {
-  margin-top: var(--stepUp2Sm);
-  @media (--break-lg) {
-    margin-top: var(--stepUp2Lg);
-  }
+  margin-top: var(--stepUp2);
 }
 
 .Article-date {
@@ -393,6 +394,7 @@ h4 a:hover {
 
 .WordCount {
   color: var(--mutedColor);
+  font-variant-numeric: oldstyle-nums;
 }
 
 /* Pagination */
