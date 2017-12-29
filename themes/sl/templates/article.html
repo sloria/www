@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="Page">
-  <article class="Article">
+  <article role="main" class="Article">
     <h1 class="Article-title"> {{ article.title }}</h1>
     <div class="Article-meta">
       <time datetime="{{ article.date.date().isoformat() }}" class="Article-date">{{ article.locale_date }}</time>
@@ -29,4 +29,9 @@
     </section>
   </article>
 </div>
+<div id="progress" class="Progress"></div>
+{% endblock %}
+
+{% block javascript %}
+  <script src="{{ SITEURL }}/theme/js/progress.js"></script>
 {% endblock %}
