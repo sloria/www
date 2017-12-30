@@ -15,10 +15,11 @@
   "dependencies": {
     "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2"
+    "postcss-cssnext": "^3.0.2",
+    "postcss-media-fn": "^3.0.0",
+    "uglify-js": "^3.3.3"
   },
   "devDependencies": {
-    "postcss-media-fn": "^3.0.0",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0"
   },

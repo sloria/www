@@ -35,5 +35,9 @@
 {% endblock %}
 
 {% block javascript %}
-  <script src="{{ SITEURL }}/theme/js/progress.js"></script>
+  {# <script src="{{ SITEURL }}/theme/js/progress.js"></script> #}
+
+  {% assets filters="uglifyjs", output="js/progress.min.js", "js/progress.js" %}
+  <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
+  {% endassets %}
 {% endblock %}

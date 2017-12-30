@@ -97,6 +97,8 @@ EXTRA_PATH_METADATA = {
 # FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
 # AUTOPREFIXER_BIN = './node_modules/.bin/postcss'
 POSTCSS_BIN = os.path.join(HERE, 'node_modules', '.bin', 'postcss')
+UGLIFYJS_BIN = os.path.join(HERE, 'node_modules', '.bin', 'uglifyjs')
 ASSET_CONFIG = (
     ('POSTCSS_BIN', POSTCSS_BIN),
+    ('UGLIFYJS_BIN', UGLIFYJS_BIN),
 )
