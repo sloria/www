@@ -1,7 +1,8 @@
 title: Tutorial: Simple Text Classification with Python and TextBlob
 category: programming
 tags: python, textblob
-slug: how-to-build-a-text-classification-system-with-python-and-textblob
+slug: simple-text-classification
+alias: /how-to-build-a-text-classification-system-with-python-and-textblob/
 
 *Edit January 12, 2016*: Update imports in gists. Thanks Mark Menkhus for pointing this out.
 

@@ -1,6 +1,8 @@
 title: Tutorial: State-of-the-art Part-of-Speech Tagging in TextBlob
 category: programming
 tags: programming, python, textblob, nlp
+slug: pos-tagging
+alias: /tutorial-state-of-the-art-part-of-speech-tagging-in-textblob/
 ---
 
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.

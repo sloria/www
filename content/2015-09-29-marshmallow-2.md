@@ -2,6 +2,8 @@ title: Marshmallow 2.0 Released
 tags: python, marshmallow
 description: pip install -U marshmallow
 category: programming
+slug: marshmallow-2
+alias: /marshmallow-20-released/
 
 One alpha, five betas, and two release candidates after marshmallow's last 1.x release, marshmallow 2.0 is published to the PyPI.
 

@@ -30,6 +30,7 @@ PLUGINS = [
     'assets',
     'post_stats',
     'pelican_gist',
+    'pelican_alias',
 ]
 
 # Blogroll

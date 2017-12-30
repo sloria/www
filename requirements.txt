@@ -8,3 +8,4 @@ pelican-gist==0.3.3
 # install fork with postcss support
 git+https://github.com/sloria/webassets.git@postcss
 cssmin==0.2.0
+pelican-alias==1.1

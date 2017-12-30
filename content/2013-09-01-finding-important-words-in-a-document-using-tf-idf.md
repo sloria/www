@@ -1,7 +1,8 @@
 title: Tutorial: Finding Important Words in Text Using TF-IDF
 category: programming
 tags: python, textblob
-slug: finding-important-words-in-a-document-using-tf-idf
+slug: tf-idf
+alias: /finding-important-words-in-a-document-using-tf-idf/
 
 *Edit May 25, 2015*: Fix incorrect filter in `n_containing`. Thanks Chen Liang for reporting.
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.

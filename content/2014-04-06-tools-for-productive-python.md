@@ -2,6 +2,8 @@ title: Three Command-line Tools for Productive Python Development
 tags: python
 description: Time-saving tools for developing in Python.
 category: programming
+slug: python-clis
+alias: /three-command-line-tools-for-productive-python-development/
 
 Below are three tools that I started using recently that I have since found indispensable when developing with Python.
 

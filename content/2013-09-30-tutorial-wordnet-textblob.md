@@ -1,7 +1,8 @@
 title: Tutorial: What is WordNet? A Conceptual Introduction Using Python
 category: programming
 tags: python, textblob, nlp
-slug: tutorial-wordnet-textblob
+slug: wordnet-tutorial
+alias: /tutorial-wordnet-textblob/
 
 *Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 

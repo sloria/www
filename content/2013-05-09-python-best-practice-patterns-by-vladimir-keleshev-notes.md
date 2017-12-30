@@ -1,6 +1,8 @@
 title: Python Best Practice Patterns by Vladimir Keleshev (Notes)
 category: programming
 tags: python, notes
+slug: python-best-practice
+alias: /python-best-practice-patterns-by-vladimir-keleshev-notes/
 date: 2013-05-09
 
 *Edit March 14, 2014*: Fix conditional in Composed Method section. Thanks Rufus Smith.

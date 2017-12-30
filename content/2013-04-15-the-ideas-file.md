@@ -1,9 +1,8 @@
 title: The .ideas file
-tags: terminal, tips
 
 > The best way to a good idea is to have lots of ideas. <cite>Linus Pauling</cite>
 
-If you're a regular Terminal user, chances are you've had a stroke of inspiration while your command prompt was up.
+If you're a regular terminal user, chances are you've had a stroke of inspiration while your command prompt was up.
 
 I find plain text in [Markdown](http://daringfireball.net/projects/markdown/) to be the quickest way to record these spontaneous ideas. Here's one way to do it:
 

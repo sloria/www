@@ -1,7 +1,8 @@
 title: The M's, V's, and C's: Keep 'em light and fluffy
 category: software design
 tags: python, rest, marshmallow
-slug: mvc-and-apis-keep-em-light-and-fluffy
+slug: mvc-light-and-fluffy
+alias: /mvc-and-apis-keep-em-light-and-fluffy/
 
 *Edit October 26, 2014*: Update code for marshmallow 1.0.
 
