@@ -90,9 +90,12 @@ browser's text size setting. See [CSS Font-Size: em vs. px vs. pt vs. percent](h
   --bodyFont: 'Georgia', serif;
   --fontColor: hsla(0, 0%, 0%, 0.8);
   --lineHeight: 1.5;
-  --baseFontSize: 112.5%;
+  --baseFontSize: 112.5%;  /* 18px */
   /* Type scale */
   --ratio: 1.414;  /* Augmented fourth */
+  /* Each step of the scale is a power
+     of --ratio
+  */
   --stepUp1: calc(1em * var(--ratio));
   --stepUp2: calc(var(--stepUp1) *
                   var(--ratio));
@@ -157,7 +160,7 @@ Jason Pamental explains why:
  > As the screen size shrinks and fewer elements are visible, the relative scale between elements becomes exaggerated.
  <cite>Jason Pamental, <a href="https://typecast.com/blog/a-more-modern-scale-for-web-typography">A More Modern Scale for Web Typography</a></cite>
 
-Consequently, our chosen ratio has disproportionately large
+Consequently, we have disproportionately large
 headings on small screen sizes.
 
 <figure>
@@ -402,12 +405,15 @@ small {
 }
 ```
 
+This approach requires a little more setup, but it results in tidier
+code when you use your scale in many places.
+
 ## In summary…
 
 Follow these guidelines when designing with modular type scales on
 the web:
 
-* Use custom properties and `calc()` to dynamically scale your font sizes.
+* Use custom properties and `calc()` to dynamically scale your font sizes according to a modular scale.
 * Use percent units for base font sizes. Use `em` for sizing text and media queries.
 * Use different scales for different viewport sizes. The smaller the viewport, the smaller the type scale ratio can be.
 * Use media queries or the `media()` function to change the ratio and base font size based on the viewport.
