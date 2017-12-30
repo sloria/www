@@ -3,7 +3,7 @@ tags: css, postcss, typography
 description: A guide to implementing responsive type scales.
 slug: responsive-typography
 category: programming
-status: draft
+status: published
 
 
 Choosing type sizes for a website can be daunting. Heading and
@@ -25,8 +25,8 @@ as guidelines for font sizes and spacing.
 </figure>
 
 Implementing a modular scale in the context of the web typically involves manual calculation
-and hand-coding values in different places in your CSS. Extra care must
-be taken to maintain balanced proportions on all screen sizes.
+and hand-coding values in different places in your CSS. **Extra care must
+be taken to maintain balanced proportions on all screen sizes.**
 
 We can take advantage of new CSS features to make it easier to design with modular scales in a responsive website.
 We'll start by using custom properties and
@@ -378,7 +378,7 @@ Here is the full scale using `media()`:
   );
   --stepDown1: media(
     calc(1em / var(--ratioSm)),
-    (min-width: var(--minMd)) calc(1em / var(--ratioLg))
+    (min-width: var(--minLg)) calc(1em / var(--ratioLg))
   );
 }
 ```
