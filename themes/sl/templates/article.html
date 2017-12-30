@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block description %}{{article.description}}{% endblock %}
+
 {% block title %} {{ article.title }} | {{ SITENAME }} {% endblock %}
 
 {% block content %}
