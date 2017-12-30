@@ -9,70 +9,136 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
 ## Libraries
 
-<i class="fab fa-python"></i>
-**[marshmallow](https://marshmallow.readthedocs.io/)**\*: A lightweight, ORM-agnostic Python library for validating, serializing, and deserializing objects.
+<ul class="u-2-col-list">
 
-<i class="fab fa-python"></i>
-**[webargs](https://github.com/sloria/webargs)**\*: A declarative HTTP request argument parser with support for Flask, Django, Bottle, Tornado, Pyramid, webapp2, Falcon, and aiohttp.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://marshmallow.readthedocs.io/en/latest/"><strong>marshmallow</strong></a>*
+    <span>A lightweight, ORM-agnostic Python library for validating, serializing, and deserializing objects.</span>
+  </li>
 
-<i class="fab fa-python"></i>
-**[apispec](https://github.com/marshmallow-code/apispec)**\*: A pluggable API specification generator. Currently targets the OpenAPI 2.0 specification.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://github.com/sloria/webargs"><strong>webargs</strong></a>*
+    <span>A declarative HTTP request argument parser with support for Flask, Django, Bottle, Tornado, Pyramid, webapp2, Falcon, and aiohttp.</span>
+  </li>
 
-<i class="fab fa-node-js"></i>
-**[MicroFeedback](https://github.com/microfeedback)**\*: *Early development*. Easily deployable microservices and UI components for
-capturing user feedback.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://github.com/marshmallow-code/apispec"><strong>apispec</strong></a>*
+    <span>A pluggable API specification generator.
+    Currently targets the OpenAPI 2.0 specification.</span>
+  </li>
 
-<i class="fab fa-node-js"></i>
-**[perspective-api-client](https://github.com/sloria/perspective-api-client)**\*:  Node.js client for the [Perspective API](https://www.perspectiveapi.com).
+  <li>
+    <i class="fab fa-node-js"></i>
+    <a href="https://github.com/microfeedback"><strong>MicroFeedback</strong></a>*
+    <span><em>Early development</em>. Easily-deployable microservices and UI components for collecting user feedback.</span>
+  </li>
 
-<i class="fab fa-python"></i>
-**[TextBlob](https://textblob.readthedocs.io/)**\*: Simple, Pythonic text processing. Includes part-of-speech tagging, noun phrase parsing, sentiment analysis, and more.
+  <li>
+    <i class="fab fa-node-js"></i>
+    <a href="https://github.com/sloria/perspective-api-client"><strong>perspective-api-client</strong></a>*
+    <span>Node.js client for the <a href="https://www.perspectiveapi.com">Perspective API</a>.</span>
+  </li>
 
-<i class="fab fa-python"></i>
-**[environs](https://github.com/sloria/environs)**\*: A Python library for parsing and validating environment variables.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://textblob.readthedocs.io/"><strong>TextBlob</strong></a>*
+    <span>Simple, Pythonic text processing. Includes part-of-speech tagging,
+    noun phrase parsing, sentiment analysis, and more.</span>
+  </li>
 
-<i class="fab fa-python"></i>
-**[aiohttp_utils](https://github.com/sloria/aiohttp_utils)**: Utilities for building aiohttp web applications.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://github.com/sloria/environs"><strong>environs</strong></a>*
+    <span>Python library for parsing and validating environment variables.</span>
+  </li>
 
-<i class="fab fa-js-square"></i>
-**[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for JavaScript.
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="https://github.com/sloria/aiohttp_utils"><strong>aiohttp_utils</strong></a>
+    <span> Utilities for building aiohttp web applications.</span>
+  </li>
+
+  <li>
+    <i class="fab fa-js-square"></i>
+    <a href="https://github.com/sloria/AreYouSure.js"><strong>AreYouSure.js</strong></a>
+    <span> Inline confirmation dialogs for JavaScript.</span>
+  </li>
+
+</ul>
 
 ## Command line
 
-<i class="fab fa-python"></i>
-**[doitlive](https://github.com/sloria/doitlive)**\*: A tool for "live" presentations in the terminal.
 
-<i class="fab fa-python"></i>
-**[konch](https://github.com/sloria/konch)**\*: Allows you to customize your Python shell.
+<ul class="u-2-col-list">
 
-<i class="fab fa-node-js"></i>
-**[local-repl](https://github.com/sloria/local-repl)**\*: Like konch, but for Node.js.
+<li>
+  <i class="fab fa-python"></i>
+  <a href="https://github.com/sloria/doitlive"><strong>doitlive</strong></a>*
+<span> A tool for "live" presentations in the terminal.</span>
+</li>
 
-<i class="fab fa-python"></i>
-**[ped](https://github.com/sloria/ped)**: Quickly open Python modules in your text editor.
+<li>
+  <i class="fab fa-python"></i>
+  <a href="https://github.com/sloria/konch"><strong>konch</strong></a>*
+<span> Allows you to customize your Python shell.</span>
+</li>
 
-<i class="fab fa-python"></i>
-**[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
+<li>
+  <i class="fab fa-node-js"></i>
+  <a href="https://github.com/sloria/local-repl"><strong>local-repl</strong></a>*
+<span> Like konch, but for Node.js.</span>
+</li>
+
+<li>
+  <i class="fab fa-python"></i>
+  <a href="https://github.com/sloria/ped"><strong>ped</strong></a>
+<span> Quickly open Python modules in your text editor.</span>
+</li>
+
+<li>
+  <i class="fab fa-python"></i>
+  <a href="https://www.github.com/sloria/gig"><strong>gig</strong></a>
+<span> Generate <code>.gitignore</code> files from the command line.</span>
+</li>
+
+</ul>
 
 ## Websites
 
-<i class="fab fa-js-square"></i>
-<i class="fab fa-node-js"></i>
-**[Simplist](https://github.com/sloria/simplist)**: *Early development*. One-click collaborative lists, written with ReactJS and HapiJS.
-I use this for gift lists.
+<ul class="u-2-col-list">
 
-<i class="fab fa-python"></i>
-**[KillTheYak.com][KillTheYak]**: User-contributed collection of guides for accomplishing programming-related tasks.
+<li>
+  <i class="fab fa-node-js"></i>
+  <a href="https://github.com/sloria/simplist"><strong>Simplist</strong></a>
+  <span> <em>Early development.</em> One-click collaborative lists,
+    written with ReactJS and HapiJS. I use this for gift lists.</span>
+</li>
+
+<li>
+  <i class="fab fa-python"></i>
+  <a href="http://killtheyak.com"><strong>KillTheYak.com</strong></a>
+  <span>User-contributed guides for accomplishing programming-related tasks.</span>
+</li>
+</ul>
 
 ## Retired projects
 
-<i class="fab fa-python"></i>
-**[SEPAL](http://sepalbio.com)**: Cloud-based acoustic feature extraction.
 
-<i class="fab fa-python"></i>
-**[Sqk](http://www.github.com/sloria/usv)**: Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.
+<ul class="u-2-col-list">
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="http://sepalbio.com"><strong>SEPAL</strong></a>
+    <span>Online tool for acoustic feature extraction and analysis.</span>
+  </li>
 
-
+  <li>
+    <i class="fab fa-python"></i>
+    <a href="http://www.github.com/sloria/usv"><strong>Sqk</strong></a>
+    <span> Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.</span>
+  </li>
+</ul>
 
 [github]: http://www.github.com/sloria
-[KillTheYak]: http://killtheyak.com/

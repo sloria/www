@@ -162,34 +162,11 @@ pre {
 
 /* Lists */
 
-/* Hanging bullets: https://prowebtype.com/seeing-typographic-details/#hangingbullets */
 ul,
 ol,
 dd {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  /* margin: 0.8em 0; */
-  margin-left: 1.875em;
-  margin-bottom: 0.6em;
-}
-
-ul li::before {
-  font-weight: var(--fontWeightLight);
-  padding-right: 0.7em;
-  content: '\2022';
-  position: absolute;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 4.875em;
-  margin-left: -4.875em;
-  text-align: right;
 }
 
 .gist pre,
@@ -285,11 +262,30 @@ figcaption {
   opacity: 0.5;
   font-size: 16px;
   color: var(--fontColor);
-  text-align: center;
 }
 
 .u-muted {
   color: var(--mutedColor);
+}
+
+.u-2-col-list {
+  padding: 0.5rem 0 0 0;
+  list-style: none;
+
+  & li {
+    margin-bottom: 1.3em;
+  }
+
+  & li span {
+    display: block;
+    font-size: 0.9em;
+    margin-top: -1.5em;
+    padding: 1.7em 0 0.5em 0;
+
+    @media (--break-lg) {
+      padding: 0 0 0 13.5em;
+    }
+  }
 }
 
 /* Components */
@@ -488,6 +484,27 @@ figcaption {
   & h3 + p {
     margin-top: 0;
   }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    margin-left: 1.875em;
+    margin-bottom: 0.6em;
+  }
+}
+
+.Article ul li::before {
+  font-weight: var(--fontWeightLight);
+  padding-right: 0.7em;
+  content: '\2022';
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 4.875em;
+  margin-left: -4.875em;
+  text-align: right;
 }
 
 /* Entry */
