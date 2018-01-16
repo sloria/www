@@ -48,12 +48,6 @@ def serve(ctx, port=1234):
 
 
 @task
-def reserve(ctx):
-    build(ctx)
-    serve(ctx)
-
-
-@task
 def publish(ctx):
     build(ctx, clean=True)
     run('ghp-import output')

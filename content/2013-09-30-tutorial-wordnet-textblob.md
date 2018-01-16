@@ -4,7 +4,6 @@ tags: python, textblob, nlp
 slug: wordnet-tutorial
 alias: /tutorial-wordnet-textblob/
 
-*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
 
 In short, WordNet is a database of English words that are linked together by their semantic relationships. It is like a supercharged dictionary/thesaurus with a graph structure.
 
@@ -155,3 +154,7 @@ tagging-in-textblob/)
 /finding-important-words-in-a-document-using-tf-idf/)
 - [Simple Text Classification in Python and TextBlob](http://www.stevenloria.com
 /how-to-build-a-text-classification-system-with-python-and-textblob/)
+
+## Edits
+
+*October 26, 2014*: Update imports for TextBlob>=0.8.0.

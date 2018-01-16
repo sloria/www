@@ -5,25 +5,9 @@ slug: python-best-practice
 alias: /python-best-practice-patterns-by-vladimir-keleshev-notes/
 date: 2013-05-09
 
-*Edit March 14, 2014*: Fix conditional in Composed Method section. Thanks Rufus Smith.
-
-*Edit February 28, 2014*: `__eq__` returns `NotImplemented` to avoid asymmetric comparison. Thanks Daniel Smith.
-
-*Edit February 28, 2014*: Removed `enumerate` usage in  "Interesting Return Value" section. Thanks Hugh Brown and Paul Winkler.
-
-*Edit September 5, 2013*: Fixed error in Sorted Collection. Thanks Frank Sievertsen.
-
-*Edit September 4, 2013*: Fixed typo in Choosing Message gist. `instanceof()` should be `isinstance()`. Thanks to `richardborcsik` for catching this.
-
-*Edit July 30, 2013*: Fixed typo in Sorted Collection gist. `__lt__(self, other)` needs two arguments. Thanks to Tiago Oliveira for catching this.
-
-----
-
 These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice Patterns", given on May 2, 2013 at the Python Meetup in Denmark. The original video is [here](http://youtu.be/GZNUfkVIHAY) (about 38 minutes long).
 
-**NOTE**: Some of the code examples have been has been modified from the original presentation based on readers' feedback (see edits above).
-
-**NOTE**: As Keleshev points out in the video, the code examples are written for **Python 3**, so all classes are new-style, even if they do not explicitly subclass from `object`.
+Note: Some of the code examples have been has been modified from the original presentation based on readers' feedback.
 
 ## Composed method
 
@@ -144,10 +128,23 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 - Explicit better than implicit
 - Include return value if it's interesting (even if it's `None`)
 
-### Further reading
+## Further reading
 - [Smalltalk Best Practice Patterns](http://www.amazon.com/Smalltalk-Best-Practice-Patterns-ebook/dp/B00BBDLIME/ref=dp_kinw_strp_1)
     - Not just for Smalltalk: applicable to Python, Ruby, and many other languages
 
+## Edits
+
+*March 14, 2014*: Fix conditional in Composed Method section. Thanks Rufus Smith.
+
+*February 28, 2014*: `__eq__` returns `NotImplemented` to avoid asymmetric comparison. Thanks Daniel Smith.
+
+*February 28, 2014*: Removed `enumerate` usage in  "Interesting Return Value" section. Thanks Hugh Brown and Paul Winkler.
+
+*September 5, 2013*: Fixed error in Sorted Collection. Thanks Frank Sievertsen.
+
+*September 4, 2013*: Fixed typo in Choosing Message gist. `instanceof()` should be `isinstance()`. Thanks to `richardborcsik` for catching this.
+
+*July 30, 2013*: Fixed typo in Sorted Collection gist. `__lt__(self, other)` needs two arguments. Thanks to Tiago Oliveira for catching this.
 
 
 

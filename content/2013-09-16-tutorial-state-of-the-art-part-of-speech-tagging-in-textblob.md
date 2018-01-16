@@ -5,8 +5,6 @@ slug: pos-tagging
 alias: /tutorial-state-of-the-art-part-of-speech-tagging-in-textblob/
 ---
 
-*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0.
-
 Following the tradition of writing a short tutorial with each new [TextBlob][] release (0.6.3, [changelog](https://textblob.readthedocs.io/en/latest/changelog.html)), here's an introduction to TextBlob's first outside code contribution from Matthew Honnibal, a.k.a. [syllog1sm](https://github.com/syllog1sm): a part-of-speech tagger based on the [Averaged Perceptron][Perceptron] algorithm which is **faster and more accurate than [NLTK](http://nltk.org/)'s and [pattern](http://www.clips.ua.ac.be/pages/pattern-en)'s default implementations**.
 
 Matthew Honnibal wrote a clear and detailed blog post about the Averaged Perception and his implementation [here][PyAP]. For this reason, this post will focus on how to get and use the tagger without providing implementation details.
@@ -174,6 +172,11 @@ You can find more extensive evaluations of these three taggers at [Matthew's blo
 * [A Good POS Tagger in About 200 Lines of Python - Matthew Honnibal](http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/)
 * [A Course On Machine Learning, Ch. 3. - The Perceptron][Perceptron]
 * [TextBlob Docs - Overriding Models and the Blobber Class](https://textblob.readthedocs.io/en/latest/advanced_usage.html)
+
+## Edits
+
+*October 26, 2014*: Update imports for TextBlob>=0.8.0.
+
 
 [^1]: Hosting supplemental models and data on the Releases page isn't an ideal solution for the long-term because Github imposes a 5MB limit on file uploads, but it will work for now. If you have a suggestion for a better solution, please join the discussion [here](https://github.com/sloria/TextBlob/issues/20).
 

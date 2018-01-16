@@ -4,7 +4,9 @@ tags: python
 slug: lazy-properties
 alias: /lazy-evaluated-properties-in-python/
 
-[Lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation) is a useful pattern that can improve your code's efficiency in many situations. One example of this is instance attributes that take long to compute:
+[Lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation) is a useful pattern that can improve your code's efficiency in many situations.
+
+One example of this is instance attributes that take long to compute:
 
 <script src="https://gist.github.com/sloria/5895397.js"> </script>
 

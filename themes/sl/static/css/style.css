@@ -47,9 +47,10 @@
   --smallFontSize: 0.875em;
   --socialIconSize: 27px;
   --maxWidth: 40rem;
-  --primaryColor: #234764;
+  --primaryColor: hsl(207, 48%, 26%);
   --secondaryColor: #32742c;
   --mutedColor: #888;
+  --mutedPrimary: hsla(207, 48%, 26%, 0.8);
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
 }
@@ -183,6 +184,7 @@ blockquote {
   border-left: 10px solid var(--gray);
   margin: 1.5em 0;
   padding: 0.5em 10px;
+  line-height: 1.65;
   quotes: '\201C''\201D''\2018''\2019';
 
   & ol,
@@ -450,6 +452,19 @@ figcaption {
 
 .Article-content {
   margin-top: var(--stepUp2);
+
+  & > p:first-child {
+    font-size: 1.15em;
+    color: var(--mutedColor);
+
+    & a {
+      color: var(--mutedPrimary);
+    }
+
+    @media (--break-lg) {
+      font-size: 1.3em;
+    }
+  }
 }
 
 .Article-date {

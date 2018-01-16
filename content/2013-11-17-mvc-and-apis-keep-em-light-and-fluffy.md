@@ -4,8 +4,6 @@ tags: python, rest, marshmallow
 slug: mvc-light-and-fluffy
 alias: /mvc-and-apis-keep-em-light-and-fluffy/
 
-*Edit October 26, 2014*: Update code for marshmallow 1.0.
-
 The MVC design pattern gives us general guidelines on where  components of an application should go. Web frameworks attempt to enforce MVC by giving us cookiecutter classes and interfaces for each of the three layers.
 
 But as an application gets larger, it becomes more difficult to decide where certain components belong. Even if we adhere to the "fat models, skinny controllers" advice, we can end up with massive, god-like model classes with many coupled responsibilities.
@@ -138,6 +136,11 @@ Check out marshmallow's documentation—with examples in Flask, SQL-Alchemy, and
 ## Wrapping up
 
 Whatever tools you choose, keeping your classes lightweight (always remind yourself of the SRP) will force you to design with your application's evolution in mind.
+
+## Edits 
+
+*October 26, 2014*: Update code for marshmallow 1.0.
+
 
 [^1]: The Django docs distinguish between "what data are presented" (the view) and "how the data look" (the template). They therefore call Django a Model-Template-View framework, which is probably a more accurate description of many other popular frameworks such as Rails and Flask.
 

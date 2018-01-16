@@ -4,12 +4,6 @@ tags: python, textblob
 slug: simple-text-classification
 alias: /how-to-build-a-text-classification-system-with-python-and-textblob/
 
-*Edit January 12, 2016*: Update imports in gists. Thanks Mark Menkhus.
-
-*Edit October 26, 2014*: Update imports for TextBlob>=0.8.0. Thanks Justyna Chromik.
-
-*Edit February 22, 2014*: Update command to download corpora. Thanks `Jason`.
-
 Yesterday, [TextBlob 0.6.0][TextBlob] was released ([changelog][]), which introduces Naive Bayes classification. This tutorial shows how to use TextBlob to create your own text classification systems.
 
 The tutorial assumes that you have <strike>TextBlob >= 0.6.0 and nltk >= 2.0</strike> TextBlob >= 8.0 installed. If you don't yet have TextBlob or need to upgrade, run:
@@ -19,14 +13,6 @@ $ pip install -U textblob nltk
 ```
 
 If this is your first time installing TextBlob, you may have to download the necessary NLTK corpora. This can be done with one command:
-
-<strike>
-```bash
-$ curl https://raw.github.com/sloria/TextBlob/master/download_corpora.py | python
-```
-</strike>
-
-Edit: As of version 0.8.4, corpora should be downloaded with this command:
 
 ```bash
 $ >python -m textblob.download_corpora
@@ -262,6 +248,14 @@ TextBlob makes it easy to create your own custom text classifiers. Always rememb
 - [TextBlob documentation][TextBlob]
 - [Naive Bayes Classification on Wikipedia](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
 - [The NLTK Book, Ch. 6: Learning to Classify Text](http://nltk.googlecode.com/svn/trunk/doc/book/ch06.html)
+
+## Edits
+
+*January 12, 2016*: Update imports in gists. Thanks Mark Menkhus.
+
+*October 26, 2014*: Update imports for TextBlob>=0.8.0. Thanks Justyna Chromik.
+
+*February 22, 2014*: Update command to download corpora. Thanks `Jason`.
 
 [TextBlob]: https://textblob.readthedocs.io/en/latest/
 [changelog]: https://textblob.readthedocs.io/en/latest/changelog.html#id1
