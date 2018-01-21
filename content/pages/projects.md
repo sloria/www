@@ -32,7 +32,7 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
   <li>
     <i class="fab fa-node-js"></i>
-    <a href="https://github.com/microfeedback"><strong>MicroFeedback</strong></a>*
+    <a href="https://microfeedback.js.org"><strong>MicroFeedback</strong></a>*
     <span><em>Early development</em>. Easily-deployable microservices and UI components for collecting user feedback.</span>
   </li>
 
