@@ -14,11 +14,9 @@ def do_clean(ctx):
         run('rm -rf {deploy_path}'.format(deploy_path=DEPLOY_PATH))
         run('mkdir {deploy_path}'.format(deploy_path=DEPLOY_PATH))
 
-
 @task
 def clean(ctx):
     do_clean(ctx)
-
 
 @task
 def build(ctx, debug=False, clean=False):
@@ -28,24 +26,15 @@ def build(ctx, debug=False, clean=False):
         'development' if debug else 'production',
     ))
 
-
 @task
 def rebuild(ctx):
     clean(ctx)
     build(ctx)
 
-
 @task
 def dev(ctx):
     clean(ctx)
     run('NODE_ENV=development pelican -r --debug -s pelicanconf.py')
-
-
-@task
-def serve(ctx, port=1234):
-    run('cd {deploy_path} && python -m pelican.server {port}'.format(
-        deploy_path=DEPLOY_PATH, port=port))
-
 
 @task
 def publish(ctx):

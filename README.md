@@ -1,9 +1,10 @@
 
 Writing
 
-- Start automatic regeneration: `inv dev`
-- In another pane: `inv serve`
+- Start the dev server: `npm run dev`
+- Open http://localhost:8080
 - Write content to `./content`
+
 
 Publishing
 
