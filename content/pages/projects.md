@@ -32,7 +32,7 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
   <li>
     <i class="fab fa-node-js"></i>
-    <a href="https://microfeedback.js.org"><strong>MicroFeedback</strong></a>*
+    <a href="https://github.com/microfeedback"><strong>MicroFeedback</strong></a>*
     <span><em>Early development</em>. Easily-deployable microservices and UI components for collecting user feedback.</span>
   </li>
 
@@ -111,10 +111,16 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 <ul class="u-2-col-list">
 
 <li>
+  <i class="fab fa-js-square"></i>
+  <a href="https://microfeedback.js.org"><strong>microfeedback.js.org</strong></a>*
+  <span>Project website for MicroFeedback, written using <a href="https://www.gatsbyjs.org/">Gatsby</a>.</span>
+</li>
+
+<li>
   <i class="fab fa-node-js"></i>
   <a href="https://github.com/sloria/simplist"><strong>Simplist</strong></a>
   <span> <em>Early development.</em> One-click collaborative lists,
-    written with ReactJS and HapiJS. I use this for gift lists.</span>
+    written using ReactJS and HapiJS. I use this for gift lists.</span>
 </li>
 
 <li>
