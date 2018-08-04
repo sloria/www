@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --fontColor: hsla(0, 0%, 0%, 0.75);
+  --fontColor: #111;
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightLight: 300;
@@ -49,7 +49,7 @@
   --maxWidth: 40rem;
   --primaryColor: hsl(207, 48%, 26%);
   --secondaryColor: #32742c;
-  --mutedColor: #888;
+  --mutedColor: #777;
   --mutedPrimary: hsla(207, 48%, 26%, 0.8);
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
