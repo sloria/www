@@ -1,4 +1,8 @@
-Writing
+# stevenloria.com
+
+[![Build Status](https://travis-ci.org/sloria/www.svg?branch=master)](https://travis-ci.org/sloria/www)
+
+## Writing
 
 - Install requirements: `pip install -r requirements.txt && npm install`
 - Start the dev server: `npm run dev`
@@ -6,7 +10,7 @@ Writing
 - Write content to `./content`
 
 
-Publishing
+## Publishing
 
 ```
 $ inv publish
