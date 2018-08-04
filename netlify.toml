@@ -1,0 +1,3 @@
+[build]
+  command = "invoke build --clean"
+  publish = "output"
