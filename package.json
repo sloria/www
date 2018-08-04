@@ -4,7 +4,8 @@
   "description": "My personal website",
   "scripts": {
     "dev": "concurrently -n \"dev,serve\" \"inv dev\" \"http-server output\"",
-    "lint": "stylelint templates/sl/static/css/style.css"
+    "lint": "stylelint templates/sl/static/css/style.css",
+    "test": "npm run lint && invoke build"
   },
   "repository": {
     "type": "git",
