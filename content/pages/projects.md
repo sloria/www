@@ -37,6 +37,12 @@ A small selection of my side projects. You can find more at my [GitHub profile][
   </li>
 
   <li>
+    <i class="fab fa-js-square"></i>
+    <a href="https://github.com/sloria/jrnl-render"><strong>jrnl-render</strong></a>*
+    <span>Render <a href="http://jrnl.sh">jrnl</a> files as a webpage.</span>
+  </li>
+
+  <li>
     <i class="fab fa-node-js"></i>
     <a href="https://github.com/sloria/perspective-api-client"><strong>perspective-api-client</strong></a>*
     <span>Node.js client for the <a href="https://www.perspectiveapi.com">Perspective API</a>.</span>
