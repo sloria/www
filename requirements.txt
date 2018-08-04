@@ -5,7 +5,7 @@ invoke==0.21.0
 beautifulsoup4==4.6.0
 pelican-gist==0.3.3
 # Assets
-# install fork with postcss support
-git+https://github.com/sloria/webassets.git@postcss
+# master has postcss support
+git+https://github.com/miracle2k/webassets.git@e3e82114324ffd6cf1a2877976a1de08c515eb10
 cssmin==0.2.0
 pelican-alias==1.1
