@@ -117,6 +117,12 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 </li>
 
 <li>
+  <i class="fab fa-js-square"></i>
+  <a href="https://til.sloria.com"><strong>til.sloria.com</strong></a>*
+  <span>A notebook of random things I've learned. Built with <a href="https://github.com/sloria/jrnl-render">jrnl-render</a>.</span>
+</li>
+
+<li>
   <i class="fab fa-node-js"></i>
   <a href="https://github.com/sloria/simplist"><strong>Simplist</strong></a>
   <span> <em>Early development.</em> One-click collaborative lists,
