@@ -20,8 +20,8 @@ You can also find me on [GitHub][github], [Twitter][], [Keybase][], and [LinkedI
 
 
 [email]: mailto:sloria1@gmail.com
-[github]: http://www.github.com/sloria
-[linkedin]: http://www.linkedin.com/in/sloria
+[github]: https://www.github.com/sloria
+[linkedin]: https://www.linkedin.com/in/sloria
 [Twitter]: https://www.twitter.com/sloria1
 [Keybase]: https://keybase.io/sloria
-[cos]: http://centerforopenscience.org/
+[cos]: https://cos.io
