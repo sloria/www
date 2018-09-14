@@ -1,6 +1,6 @@
 markdown==2.6.11
 pelican==3.7.1
-invoke==1.1.1
+invoke==1.2.0
 beautifulsoup4==4.6.3
 pelican-gist==0.3.4
 # master has postcss support
