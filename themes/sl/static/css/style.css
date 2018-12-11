@@ -60,6 +60,7 @@
 /* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
 @custom-media --break-md (width >= 35.5em);
 @custom-media --break-lg (width >= 48em);
+@custom-media --break-height-lg (height >= 56.25em);
 
 html {
   font-size: var(--baseFontSizeSm);
@@ -425,6 +426,10 @@ figcaption {
 .Site-content {
   flex: 1 0 auto;
   width: 100%;
+
+  @media (--break-height-lg) {
+    flex: 0.5 0 auto;
+  }
 }
 
 .Page {
