@@ -10,7 +10,7 @@ Sometimes I build [open source software](/projects/).
 
 Sometimes I scribble down [things I've learned](/archives.html).
 
-I'm currently living in Charlottesville, VA working for the [Center for Open Science][cos]. 
+I'm currently living in Charlottesville, VA working for [Butterfly Network][butterfly]. 
 
 I'm an amateur at everything in a constant struggle to [turn pro]({filename}../2013-03-24-a-professional-reinvents-himself---pressfield.md).
 
@@ -24,4 +24,4 @@ You can also find me on [GitHub][github], [Twitter][], [Keybase][], and [LinkedI
 [linkedin]: https://www.linkedin.com/in/sloria
 [Twitter]: https://www.twitter.com/sloria1
 [Keybase]: https://keybase.io/sloria
-[cos]: https://cos.io
+[butterfly]: https://www.butterflynetwork.com/
