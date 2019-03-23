@@ -26,13 +26,12 @@ A small selection of my side projects. You can find more at my [GitHub profile][
   <li>
     <i class="fab fa-python"></i>
     <a href="https://github.com/marshmallow-code/apispec"><strong>apispec</strong></a>*
-    <span>A pluggable API specification generator.
-    Currently targets the OpenAPI 2.0 specification.</span>
+    <span>A pluggable OpenAPI specification generator.</span>
   </li>
 
   <li>
     <i class="fab fa-node-js"></i>
-    <a href="https://github.com/microfeedback"><strong>MicroFeedback</strong></a>*
+    <a href="https://github.com/microfeedback"><strong>MicroFeedback</strong></a>
     <span><em>Early development</em>. Easily-deployable microservices and UI components for collecting user feedback.</span>
   </li>
 
@@ -44,7 +43,7 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
   <li>
     <i class="fab fa-node-js"></i>
-    <a href="https://github.com/sloria/perspective-api-client"><strong>perspective-api-client</strong></a>*
+    <a href="https://github.com/sloria/perspective-api-client"><strong>perspective-api-client</strong></a>
     <span>Node.js client for the <a href="https://www.perspectiveapi.com">Perspective API</a>.</span>
   </li>
 
@@ -118,7 +117,7 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
 <li>
   <i class="fab fa-js-square"></i>
-  <a href="https://microfeedback.js.org"><strong>microfeedback.js.org</strong></a>*
+  <a href="https://microfeedback.js.org"><strong>microfeedback.js.org</strong></a>
   <span>Project website for MicroFeedback, written using <a href="https://www.gatsbyjs.org/">Gatsby</a>.</span>
 </li>
 
