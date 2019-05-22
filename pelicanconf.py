@@ -66,7 +66,7 @@ LOCALE = ""
 DEFAULT_PAGINATION = 10
 
 FEED_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
 
 OUTPUT_PATH = './output/'
 
