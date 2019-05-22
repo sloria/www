@@ -49,7 +49,7 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
   <li>
     <i class="fab fa-python"></i>
-    <a href="https://textblob.readthedocs.io/"><strong>TextBlob</strong></a>*
+    <a href="https://textblob.readthedocs.io/"><strong>TextBlob</strong></a>
     <span>Simple, Pythonic text processing. Includes part-of-speech tagging,
     noun phrase parsing, sentiment analysis, and more.</span>
   </li>
@@ -64,12 +64,6 @@ A small selection of my side projects. You can find more at my [GitHub profile][
     <i class="fab fa-python"></i>
     <a href="https://github.com/sloria/aiohttp_utils"><strong>aiohttp_utils</strong></a>
     <span> Utilities for building aiohttp web applications.</span>
-  </li>
-
-  <li>
-    <i class="fab fa-js-square"></i>
-    <a href="https://github.com/sloria/AreYouSure.js"><strong>AreYouSure.js</strong></a>
-    <span> Inline confirmation dialogs for JavaScript.</span>
   </li>
 
 </ul>
@@ -130,8 +124,8 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 <li>
   <i class="fab fa-node-js"></i>
   <a href="https://github.com/sloria/simplist"><strong>Simplist</strong></a>
-  <span> <em>Early development.</em> One-click collaborative lists,
-    written using ReactJS and HapiJS. I use this for gift lists.</span>
+  <span> Toy project. One-click collaborative lists,
+    written using ReactJS and HapiJS.</span>
 </li>
 
 <li>
