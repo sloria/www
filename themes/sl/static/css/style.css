@@ -1,11 +1,12 @@
 /* Variables */
 :root {
   --fontColor: #111;
-  --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
-  --fontSerif: 'Merriweather', Georgia, serif;
+  --fontSansSerif: "Lato", "Helvetica Neue", sans-serif;
+  --fontSerif: "Merriweather", Georgia, serif;
   --fontWeightLight: 300;
   --fontWeightMed: 400;
-  --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
+  --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier,
+    monospace;
   --lineHeight: 1.5;
 
   /* Type scale ratio on smaller screens */
@@ -30,7 +31,8 @@
   --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
   --stepUp3: media(
     calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm)),
-    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
+    (min-width: var(--minLg))
+      calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
   );
   --stepDown1: media(
     calc(1em / var(--ratioSm)),
@@ -186,7 +188,7 @@ blockquote {
   margin: 1.5em 0;
   padding: 0.5em 10px;
   line-height: 1.65;
-  quotes: '\201C''\201D''\2018''\2019';
+  quotes: "\201C""\201D""\2018""\2019";
 
   & ol,
   & ul {
@@ -221,7 +223,7 @@ blockquote cite {
 }
 
 blockquote cite::before {
-  content: '\2014 \2009';
+  content: "\2014 \2009";
 }
 
 aside {
@@ -498,10 +500,14 @@ figcaption {
   padding-top: 0.5em;
 }
 
+.Article ul {
+  list-style: none;
+}
+
 .Article ul li::before {
   font-weight: var(--fontWeightLight);
-  padding-right: 0.7em;
-  content: '\2022';
+  padding-right: 0.3em;
+  content: "\2022";
   position: absolute;
   display: inline-block;
   box-sizing: border-box;
