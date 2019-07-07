@@ -1,6 +1,7 @@
 {
   "name": "www",
   "version": "1.0.0",
+  "private": true,
   "description": "My personal website",
   "scripts": {
     "dev": "concurrently -n \"dev,serve\" \"inv dev\" \"http-server output\"",
@@ -24,14 +25,14 @@
   "devDependencies": {
     "concurrently": "^4.1.1",
     "http-server": "^0.11.1",
+    "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0"
+    "stylelint-prettier": "^1.1.1"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard",
+    "plugins": "stylelint-prettier",
     "rules": {
-      "declaration-colon-newline-after": null,
-      "no-descending-specificity": null
+      "prettier/prettier": true
     }
   }
 }
