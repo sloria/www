@@ -1,4 +1,4 @@
-title: Marshmallow 2.0 Released
+title: marshmallow 2.0 Released
 tags: python, marshmallow
 description: pip install -U marshmallow
 category: programming
