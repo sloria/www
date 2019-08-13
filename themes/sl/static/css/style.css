@@ -170,7 +170,7 @@ ul,
 ol,
 dd {
   margin: 0;
-  padding: 0;
+  padding-left: 1em;
 }
 
 .gist pre,
