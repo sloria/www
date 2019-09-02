@@ -17,7 +17,7 @@ I made a simple dashboard for visualizing marshmallow PyPI downloads.
 While maintaining marshmallow, I found myself running one-off queries against [PyPI's BigQuery dataset](https://packaging.python.org/guides/analyzing-pypi-package-downloads/) to answer some recurring questions:
 
 - How many marshmallow users are using Python 2 vs Python 3?
-- Can we drop support for a minor Python version without pissing too many users off?
+- Can we drop support for a minor Python version without pissing off too many users?
 - Are users migrating to marshmallow 3?
 - How long should we support old marshmallow versions?
 
@@ -182,7 +182,8 @@ To achieve this, the query includes duplicates of the above `SELECT`s with an ad
     -- and so on ...
 ```
 
-The full query looks is [here](https://gist.github.com/sloria/74a911fa53d4de036c2eca638ece8234). The resulting dataset looks like this:
+The full query is [here](https://gist.github.com/sloria/74a911fa53d4de036c2eca638ece8234).
+The resulting dataset looks like this:
 
 <figure>
   <img alt="Dataset" height="250" src="https://user-images.githubusercontent.com/2379650/64126217-f44e7f00-cd7a-11e9-94b9-c92dc6e2c33a.png">
