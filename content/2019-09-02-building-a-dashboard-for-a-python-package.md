@@ -57,6 +57,7 @@ WITH
         (1)]) AS string) AS python_minor,
     -- Full marshmallow version
     file.version AS marshmallow_version,
+    -- marshmallow major version
     CAST(SPLIT(file.version, '.')[
     OFFSET
       (0)] AS string) AS marshmallow_major,
