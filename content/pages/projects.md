@@ -5,7 +5,7 @@ slug: projects
 
 A small selection of my side projects. You can find more at my [GitHub profile][github].
 
-*\* = actively maintained*
+_\* = actively maintained_
 
 ## Libraries
 
@@ -70,7 +70,6 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 
 ## Command line
 
-
 <ul class="u-2-col-list">
 
 <li>
@@ -110,6 +109,12 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 <ul class="u-2-col-list">
 
 <li>
+  <i class="fab fa-python"></i>
+  <a href="https://marshmallow.sloria.io"><strong>marshmallow.sloria.io</strong></a>
+  <span>Dashboard for visualizing marshmallow PyPI downloads. Blog post <a href="/building-a-dashboard-for-a-python-package/">here</a>.</span>
+</li>
+
+<li>
   <i class="fab fa-js-square"></i>
   <a href="https://microfeedback.js.org"><strong>microfeedback.js.org</strong></a>
   <span>Project website for MicroFeedback, written using <a href="https://www.gatsbyjs.org/">Gatsby</a>.</span>
@@ -136,7 +141,6 @@ A small selection of my side projects. You can find more at my [GitHub profile][
 </ul>
 
 ## Retired projects
-
 
 <ul class="u-2-col-list">
   <li>
