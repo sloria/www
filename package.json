@@ -20,7 +20,7 @@
     "postcss-cli": "^7.1.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-media-fn": "^3.0.0",
-    "uglify-js": "^3.7.7"
+    "uglify-js": "^3.8.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
