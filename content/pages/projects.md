@@ -140,6 +140,17 @@ _\* = actively maintained_
 </li>
 </ul>
 
+## Mobile apps
+
+<ul class="u-2-col-list">
+  <li>
+    <i class="fab fa-swift"></i>
+    <a href="https://github.com/sloria/Fingerspelling-iOS"><strong>Fingerspelling</strong></a>*
+    <span>iOS app for practicing American Sign Language (ASL) fingerspelling. 
+    Available on the <a href="https://apps.apple.com/us/app/asl-fingerspelling-practice/id1503242863">App Store</a>.</span>
+  </li>
+</ul>
+
 ## Retired projects
 
 <ul class="u-2-col-list">
