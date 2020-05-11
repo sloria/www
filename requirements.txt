@@ -1,4 +1,4 @@
-markdown==3.2.1
+markdown==3.2.2
 pelican==4.2.0
 invoke==1.4.1
 beautifulsoup4==4.9.0
