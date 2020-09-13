@@ -37,7 +37,7 @@ _\* = actively maintained_
 
   <li>
     <i class="fab fa-js-square"></i>
-    <a href="https://github.com/sloria/jrnl-render"><strong>jrnl-render</strong></a>*
+    <a href="https://github.com/sloria/jrnl-render"><strong>jrnl-render</strong></a>
     <span>Render <a href="http://jrnl.sh">jrnl</a> files as a webpage.</span>
   </li>
 
@@ -86,7 +86,7 @@ _\* = actively maintained_
 
 <li>
   <i class="fab fa-node-js"></i>
-  <a href="https://github.com/sloria/local-repl"><strong>local-repl</strong></a>*
+  <a href="https://github.com/sloria/local-repl"><strong>local-repl</strong></a>
 <span> Like konch, but for Node.js.</span>
 </li>
 
@@ -145,7 +145,7 @@ _\* = actively maintained_
 <ul class="u-2-col-list">
   <li>
     <i class="fab fa-swift"></i>
-    <a href="https://github.com/sloria/Fingerspelling-iOS"><strong>Fingerspelling</strong></a>*
+    <a href="https://github.com/sloria/Fingerspelling-iOS"><strong>Fingerspelling</strong></a>
     <span>iOS app for practicing American Sign Language (ASL) fingerspelling. 
     Available on the <a href="https://apps.apple.com/us/app/asl-fingerspelling-practice/id1503242863">App Store</a>.</span>
   </li>
