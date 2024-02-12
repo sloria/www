@@ -92,7 +92,7 @@ _\* = actively maintained_
 
 <li>
   <i class="fab fa-python"></i>
-  <a href="https://github.com/sloria/ped"><strong>ped</strong></a>
+  <a href="https://github.com/sloria/ped"><strong>ped</strong></a>*
 <span> Quickly open Python modules in your text editor.</span>
 </li>
 
@@ -122,7 +122,7 @@ _\* = actively maintained_
 
 <li>
   <i class="fab fa-js-square"></i>
-  <a href="https://til.sloria.com"><strong>til.sloria.com</strong></a>*
+  <a href="https://til.sloria.com"><strong>til.sloria.com</strong></a>
   <span>A notebook of random things I've learned. Built with <a href="https://github.com/sloria/jrnl-render">jrnl-render</a>.</span>
 </li>
 
