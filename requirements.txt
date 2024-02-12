@@ -1,9 +1,8 @@
-markdown==3.3.4
-pelican==4.6.0
-invoke==1.6.0
-beautifulsoup4==4.9.3
+markdown==3.5.2
+pelican==4.9.1
+invoke==2.2.0
+beautifulsoup4==4.12.3
 pelican-gist==0.3.4
-# master has postcss support
-git+https://github.com/miracle2k/webassets.git@e3e82114324ffd6cf1a2877976a1de08c515eb10
+webassets==2.0
 cssmin==0.2.0
 pelican-alias==1.1
