@@ -109,6 +109,12 @@ _\* = actively maintained_
 <ul class="u-2-col-list">
 
 <li>
+  <i class="fab fa-js-square"></i>
+  <a href="https://howsign.app/"><strong>howsign.app</strong></a>
+  <span>Search multiple ASL dictionaries and videos.</span>
+</li>
+
+<li>
   <i class="fab fa-python"></i>
   <a href="https://marshmallow.sloria.io"><strong>marshmallow.sloria.io</strong></a>
   <span>Dashboard for visualizing marshmallow PyPI downloads. Blog post <a href="/building-a-dashboard-for-a-python-package/">here</a>.</span>

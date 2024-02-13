@@ -10,7 +10,7 @@ Sometimes I build [open source software](/projects/).
 
 Sometimes I scribble down [things I've learned](/archives.html).
 
-I'm currently on sabbatical living in Brooklyn, NY.
+I'm currently on sabbatical while living in Brooklyn, NY.
 
 I'm an amateur at everything in a constant struggle to [turn pro]({filename}../2013-03-24-a-professional-reinvents-himself---pressfield.md).
 
