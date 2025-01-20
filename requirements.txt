@@ -1,5 +1,5 @@
 markdown==3.7
-pelican==4.10.1
+pelican==4.11.0
 invoke==2.2.0
 beautifulsoup4==4.12.3
 pelican-gist==0.3.4
