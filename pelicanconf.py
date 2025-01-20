@@ -56,7 +56,6 @@ DATE_FORMAT = {
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
 
 DISQUS_SITENAME = None
-TWITTER_USERNAME = 'sloria1'
 LINKEDIN_URL = 'http://www.linkedin.com/in/sloria/'
 GITHUB_URL = 'http://github.com/sloria'
 
