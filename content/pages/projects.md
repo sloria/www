@@ -60,12 +60,6 @@ _\* = actively maintained_
     <span>Python library for parsing and validating environment variables.</span>
   </li>
 
-  <li>
-    <i class="fab fa-python"></i>
-    <a href="https://github.com/sloria/aiohttp_utils"><strong>aiohttp_utils</strong></a>
-    <span> Utilities for building aiohttp web applications.</span>
-  </li>
-
 </ul>
 
 ## Command line
@@ -154,22 +148,6 @@ _\* = actively maintained_
     <a href="https://github.com/sloria/Fingerspelling-iOS"><strong>Fingerspelling</strong></a>
     <span>iOS app for practicing American Sign Language (ASL) fingerspelling. 
     Available on the <a href="https://apps.apple.com/us/app/asl-fingerspelling-practice/id1503242863">App Store</a>.</span>
-  </li>
-</ul>
-
-## Retired projects
-
-<ul class="u-2-col-list">
-  <li>
-    <i class="fab fa-python"></i>
-    <a href="http://sepalbio.com"><strong>SEPAL</strong></a>
-    <span>Online tool for acoustic feature extraction and analysis.</span>
-  </li>
-
-  <li>
-    <i class="fab fa-python"></i>
-    <a href="http://www.github.com/sloria/usv"><strong>Sqk</strong></a>
-    <span> Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.</span>
   </li>
 </ul>
 
