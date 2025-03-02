@@ -69,12 +69,6 @@ CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
 
 OUTPUT_PATH = './output/'
 
-GOOGLE_ANALYTICS_ACCOUNT = 'UA-39544608-1'
-
-PIWIK_URL = None
-PIWIK_SSL_URL = None
-PIWIK_SITE_ID = None
-
 MAIL_USERNAME = 'sloria1'
 MAIL_HOST = 'gmail.com'
 
