@@ -70,15 +70,15 @@ MAIL_HOST = "gmail.com"
 # static paths will be copied under the same name
 STATIC_PATHS = [
     "extra/CNAME",
-    "extra/keybase.txt",
     "extra/favicon.ico",
     "extra/icon.png",
+    "extra/robots.txt",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
-    "extra/keybase.txt": {"path": "keybase.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/icon.png": {"path": "icon.png"},
+    "extra/robots.txt": {"path": "robots.txt"},
 }
 
 # A list of files to copy from the source to the destination
