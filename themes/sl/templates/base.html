@@ -7,33 +7,29 @@
  /-->
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{% block title %} {{SITENAME}} {% endblock %}</title>
-    <meta name="author" content="{{AUTHOR}}">
-    <meta name="description" content="{% block description %} The personal website of {{AUTHOR}} {% endblock %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="/icon.png">
+    <meta name="author" content="{{AUTHOR}}" />
+    <meta
+      name="description"
+      content="{% block description %} The personal website of {{AUTHOR}} {% endblock %}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="/icon.png" />
 
-    {% assets filters="postcss", output="css/style.min.css", "css/pygments.css", "css/style.css" %}
-      <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% assets filters="postcss", output="css/style.min.css", "css/pygments.css",
+    "css/style.css" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}" />
     {% endassets %}
-
   </head>
   <body class="Site">
-    {% block header %}
-      {% include "header.html" %}
-    {% endblock %}
+    {% block header %} {% include "header.html" %} {% endblock %}
 
     <div class="Site-content">
-      <div class="u-container">
-      {% block content %} {% endblock %}
-      </div>
+      <div class="u-container">{% block content %} {% endblock %}</div>
     </div>
 
-    {% block footer %}
-      {% include "footer.html" %}
-    {% endblock %}
-    {% block javascript %}{% endblock %}
+    {% block footer %} {% include "footer.html" %} {% endblock %} {% block
+    javascript %}{% endblock %}
   </body>
 </html>
-
