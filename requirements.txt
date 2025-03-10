@@ -6,3 +6,4 @@ pelican-gist==0.3.4
 webassets==2.0
 cssmin==0.2.0
 pelican-alias==1.1
+pelican-sitemap==1.2.0
