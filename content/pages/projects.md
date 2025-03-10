@@ -151,4 +151,6 @@ _\* = actively maintained_
   </li>
 </ul>
 
+<script src="https://kit.fontawesome.com/dbc123d7f6.js" crossorigin="anonymous"></script>
+
 [github]: http://www.github.com/sloria
